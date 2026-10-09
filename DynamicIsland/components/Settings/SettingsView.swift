@@ -321,6 +321,8 @@ private enum SettingsSearchIndex {
         // only exists while lyrics are on, so a search result pointing at it
         // scrolls to nothing for anyone who has not turned them on yet -- which
         // is everyone, by default.
+        SettingsSearchEntry(tab: .media, title: "Lyrics script", keywords: ["lyrics", "simplified", "traditional", "original", "简体", "繁体", "原文"], highlightID: SettingsTab.media.highlightID(for: "Show lyrics")),
+        SettingsSearchEntry(tab: .media, title: "Lyrics timing adjustment", keywords: ["lyrics", "sync", "delay", "advance", "歌词", "快慢"], highlightID: SettingsTab.media.highlightID(for: "Show lyrics")),
         SettingsSearchEntry(tab: .media, title: "Lyric highlight", keywords: ["lyrics", "highlight", "sweep", "gradient", "solid", "karaoke", "animation"], highlightID: SettingsTab.media.highlightID(for: "Show lyrics")),
         SettingsSearchEntry(tab: .media, title: "Side lyrics width", keywords: ["lyrics", "width", "panel"], highlightID: SettingsTab.media.highlightID(for: "Side lyrics width")),
         SettingsSearchEntry(tab: .media, title: "Side lyrics horizontal offset", keywords: ["lyrics", "offset", "panel"], highlightID: SettingsTab.media.highlightID(for: "Side lyrics horizontal offset")),
@@ -3178,6 +3180,8 @@ struct Media: View {
     @Default(.pinLyricsWhenClosed) private var pinLyricsWhenClosed
     @Default(.pinnedLyricContext) private var pinnedLyricContext
     @Default(.lyricHighlightStyle) private var lyricHighlightStyle
+    @Default(.lyricsScript) private var lyricsScript
+    @Default(.lyricsTimingOffset) private var lyricsTimingOffset
     @Default(.lyricsPanelWidth) private var lyricsPanelWidth
     @Default(.lyricsPanelOffset) private var lyricsPanelOffset
     @Default(.visualizerBarCount) private var visualizerBarCount
@@ -3185,7 +3189,7 @@ struct Media: View {
     @Default(.colorExtractionMode) private var colorExtractionMode
     @Default(.parallaxEffectIntensity) private var parallaxEffectIntensity
 
-    
+
     @ObservedObject private var musicManager = MusicManager.shared
 
     private var isAppleMusicActive: Bool {
@@ -3365,6 +3369,51 @@ struct Media: View {
                 Toggle("Enable sneak peek", isOn: $enableSneakPeek)
                 Toggle("Show sneak peek on playback changes", isOn: $showSneakPeekOnTrackChange)
                     .disabled(!enableSneakPeek)
+                Defaults.Toggle(key: .showLiveCanvasInDynamicIsland) {
+                    Text("Show live canvas in Dynamic Island")
+                }
+                .settingsHighlight(id: highlightID("Show live canvas in Dynamic Island"))
+                .help("Replaces the artwork tile with the live canvas when the current app provides one, and reuses that moving canvas for the surrounding lighting effect.")
+
+                //Parallax Effect Intensity to control how much parallax is wanted
+                Slider(value: $parallaxEffectIntensity, in: 0...12, step: 1.0) {
+                    HStack {
+                        Text("Parallax Effect Intensity")
+                        Spacer()
+                        Text("\(parallaxEffectIntensity, specifier: "%0.1f")")
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .settingsHighlight(id: highlightID("Enable album art parallax effect"))
+
+                Picker("Sneak Peek Style", selection: $sneakPeekStyles){
+                    ForEach(SneakPeekStyle.allCases) { style in
+                        Text(style.localizedName).tag(style)
+                    }
+                }
+                .disabled(!enableSneakPeek)
+                .settingsHighlight(id: highlightID("Sneak Peek Style"))
+
+                HStack {
+                    Stepper(value: $waitInterval, in: 0...10, step: 1) {
+                        HStack {
+                            Text("Media inactivity timeout")
+                            Spacer()
+                            Text("\(Defaults[.waitInterval], specifier: "%.0f") seconds")
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+
+                Defaults.Toggle(key: .showSongMetadataInClosedNotch) {
+                    Text("Show song title and artist on non-notch displays")
+                }
+                .settingsHighlight(id: highlightID("Show song title and artist in closed notch"))
+            } header: {
+                Text("Media playback live activity")
+            }
+
+            Section {
                 Defaults.Toggle(key: .enableLyrics) {
                     Text("Show lyrics")
                 }
@@ -3380,6 +3429,13 @@ struct Media: View {
                 .settingsHighlight(id: highlightID("Show lyrics"))
 
                 if enableLyrics && !enableMinimalisticUI && showStandardMediaControls {
+                    SettingsSegmentedPicker(
+                        "Lyrics script",
+                        selection: $lyricsScript,
+                        items: Array(LyricsScript.allCases)
+                    ) { $0.localizedName }
+                    .settingsHighlight(id: highlightID("Lyrics script"))
+
                     // Caption inside the row rather than after it: a Form gives
                     // every top-level view its own row and a divider, so the
                     // explanation was being ruled off from the control it
@@ -3398,6 +3454,25 @@ struct Media: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .settingsHighlight(id: highlightID("Lyric highlight"))
+
+                    VStack(alignment: .leading, spacing: 6) {
+                        HStack(alignment: .center) {
+                            Text("Lyrics timing adjustment")
+                            Spacer()
+                            Text(lyricsTimingOffset, format: .number.precision(.fractionLength(1)).sign(strategy: .always()))
+                                .monospacedDigit()
+                            Button("Reset to Default") { lyricsTimingOffset = 0 }
+                                .disabled(lyricsTimingOffset == 0)
+                            Stepper("Lyrics timing adjustment", value: $lyricsTimingOffset, in: -10...10, step: 0.1)
+                                .labelsHidden()
+                                .fixedSize()
+                                .accessibilityValue(lyricsTimingOffset.formatted(.number.precision(.fractionLength(1))))
+                        }
+                        Text("Seconds: + advances lyrics, − delays them. Applies to all songs.")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    .settingsHighlight(id: highlightID("Lyrics timing adjustment"))
                 }
 
                 if enableLyrics && !enableMinimalisticUI && showStandardMediaControls {
@@ -3464,48 +3539,8 @@ struct Media: View {
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
-                Defaults.Toggle(key: .showLiveCanvasInDynamicIsland) {
-                    Text("Show live canvas in Dynamic Island")
-                }
-                .settingsHighlight(id: highlightID("Show live canvas in Dynamic Island"))
-                .help("Replaces the artwork tile with the live canvas when the current app provides one, and reuses that moving canvas for the surrounding lighting effect.")
-                
-                //Parallax Effect Intensity to control how much parallax is wanted
-                Slider(value: $parallaxEffectIntensity, in: 0...12, step: 1.0) {
-                    HStack {
-                        Text("Parallax Effect Intensity")
-                        Spacer()
-                        Text("\(parallaxEffectIntensity, specifier: "%0.1f")")
-                            .foregroundStyle(.secondary)
-                    }
-                }
-                .settingsHighlight(id: highlightID("Enable album art parallax effect"))
-                
-                Picker("Sneak Peek Style", selection: $sneakPeekStyles){
-                    ForEach(SneakPeekStyle.allCases) { style in
-                        Text(style.localizedName).tag(style)
-                    }
-                }
-                .disabled(!enableSneakPeek)
-                .settingsHighlight(id: highlightID("Sneak Peek Style"))
-
-                HStack {
-                    Stepper(value: $waitInterval, in: 0...10, step: 1) {
-                        HStack {
-                            Text("Media inactivity timeout")
-                            Spacer()
-                            Text("\(Defaults[.waitInterval], specifier: "%.0f") seconds")
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                }
-                
-                Defaults.Toggle(key: .showSongMetadataInClosedNotch) {
-                    Text("Show song title and artist on non-notch displays")
-                }
-                .settingsHighlight(id: highlightID("Show song title and artist in closed notch"))
             } header: {
-                Text("Media playback live activity")
+                Text("Lyrics")
             }
 
             Section {

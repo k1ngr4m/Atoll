@@ -449,3 +449,62 @@ final class LyricsRecordingIdentityTests: XCTestCase {
         withExtendedLifetime(observation) {}
     }
 }
+
+@MainActor
+final class LyricsTimingAdjustmentTests: XCTestCase {
+    func testOffsetAdvancesDelaysAndResetsWithoutMovingPlayback() {
+        let previousOffset = Defaults[.lyricsTimingOffset]
+        let wasEnabled = Defaults[.enableLyrics]
+        Defaults[.enableLyrics] = false
+        let manager = MusicManager(startsControllerSetup: false)
+        defer {
+            manager.destroy()
+            Defaults[.lyricsTimingOffset] = previousOffset
+            Defaults[.enableLyrics] = wasEnabled
+        }
+        manager.elapsedTime = 10
+        let lyrics = LyricsResolution(lines: [
+            LyricLine(timestamp: 9, text: "First"),
+            LyricLine(timestamp: 11, text: "Second")
+        ])
+        for (offset, expectedIndex) in [(0.0, 0), (1.0, 1), (-2.0, -1), (0.0, 0)] {
+            Defaults[.lyricsTimingOffset] = offset
+            manager.applyLyricsToDisplay(lyrics)
+            XCTAssertEqual(manager.currentLyricIndex, expectedIndex)
+            XCTAssertEqual(manager.elapsedTime, 10)
+        }
+    }
+}
+
+@MainActor
+final class LyricsScriptTests: XCTestCase {
+    func testScriptConversionPreservesTimingAndOriginalText() {
+        let previousScript = Defaults[.lyricsScript]
+        let wasEnabled = Defaults[.enableLyrics]
+        Defaults[.enableLyrics] = false
+        let manager = MusicManager(startsControllerSetup: false)
+        defer {
+            manager.destroy()
+            Defaults[.lyricsScript] = previousScript
+            Defaults[.enableLyrics] = wasEnabled
+        }
+        let original = LyricsResolution(lines: [
+            LyricLine(timestamp: 12, text: "後來愛過風裡 Hello"),
+            LyricLine(timestamp: 0, text: "后来爱过风里", isTimed: false),
+            LyricLine(timestamp: 20, text: "")
+        ])
+        for (script, expected) in [(LyricsScript.simplified, "后来爱过风里 Hello"),
+                                   (.traditional, "後來愛過風裡 Hello"),
+                                   (.original, "後來愛過風裡 Hello")] {
+            Defaults[.lyricsScript] = script
+            manager.applyLyricsToDisplay(original)
+            XCTAssertEqual(manager.syncedLyrics[0].text, expected)
+            XCTAssertEqual(manager.syncedLyrics.map(\.timestamp), [12, 0, 20])
+            XCTAssertFalse(manager.syncedLyrics[1].isTimed)
+            XCTAssertEqual(manager.syncedLyrics[2].text, "")
+        }
+        XCTAssertEqual(LyricsScript.traditional.convert("后来爱过风里"), "後來愛過風裡")
+        XCTAssertEqual(LyricsScript.original.convert("後来"), "後来")
+        XCTAssertEqual(LyricsScript.simplified.convert("Hello 123"), "Hello 123")
+    }
+}

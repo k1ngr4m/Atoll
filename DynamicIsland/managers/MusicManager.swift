@@ -656,6 +656,7 @@ class MusicManager: ObservableObject {
     // tell it apart from a newer fetch for the same track.
     private var lyricsFetchID: UUID?
     private var activeLyricsKey: LyricsLookupKey?
+    private var originalLyrics: LyricsResolution?
     private var lyricsCache: [LyricsLookupKey: LyricsResolution] = [:]
     // Bounded, insertion-order eviction so the cache cannot grow unboundedly.
     private static let lyricsCacheLimit = 80
@@ -737,6 +738,24 @@ class MusicManager: ObservableObject {
             .receive(on: RunLoop.main)
             .sink { [weak self] change in
                 self?.handleLyricsPreferenceChange(isEnabled: change.newValue)
+            }
+            .store(in: &cancellables)
+
+        Defaults.publisher(.lyricsTimingOffset)
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in
+                guard let self else { return }
+                self.updateCurrentLyric(for: self.lyricPlaybackPosition())
+                self.stopLyricSync()
+                if Defaults[.enableLyrics] { self.startLyricSync() }
+            }
+            .store(in: &cancellables)
+
+        Defaults.publisher(.lyricsScript)
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in
+                guard let self, let original = self.originalLyrics else { return }
+                self.applyLyricsToDisplay(original)
             }
             .store(in: &cancellables)
 
@@ -1790,6 +1809,7 @@ class MusicManager: ObservableObject {
         lyricsFetchTask?.cancel()
         lyricsFetchTask = nil
         lyricsAvailability = .unavailable
+        originalLyrics = nil
         syncedLyrics = []
         currentLyrics = ""
         currentLyricIndex = -1
@@ -1823,6 +1843,7 @@ class MusicManager: ObservableObject {
 
         if trackChanged {
             lyricsAvailability = .loading
+            originalLyrics = nil
             syncedLyrics = []
             currentLyricIndex = -1
             currentLyrics = shouldShowLoading ? "Loading lyrics..." : ""
@@ -1984,7 +2005,11 @@ class MusicManager: ObservableObject {
     }
 
     func applyLyricsToDisplay(_ resolution: LyricsResolution) {
-        let lyrics = resolution.lines
+        originalLyrics = resolution
+        let script = Defaults[.lyricsScript]
+        let lyrics = script == .original ? resolution.lines : resolution.lines.map {
+            LyricLine(timestamp: $0.timestamp, text: script.convert($0.text), isTimed: $0.isTimed)
+        }
         syncedLyrics = lyrics
         lyricsAvailability = resolution.availability
         currentLyricIndex = -1
@@ -2097,7 +2122,7 @@ class MusicManager: ObservableObject {
         } else {
             position = max(0, elapsedTime)
         }
-        return position + Self.lyricLeadTime
+        return position + Self.lyricLeadTime + Defaults[.lyricsTimingOffset]
     }
 
     /// How far ahead of the voice the lyrics run.

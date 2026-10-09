@@ -420,6 +420,29 @@ enum PinnedLyricContext: Int, CaseIterable, Identifiable, Defaults.Serializable 
     }
 }
 
+enum LyricsScript: String, CaseIterable, Identifiable, Defaults.Serializable {
+    case original, simplified, traditional
+
+    var id: String { rawValue }
+    var localizedName: String {
+        switch self {
+        case .original: return String(localized: "Original lyrics")
+        case .simplified: return String(localized: "Simplified Chinese")
+        case .traditional: return String(localized: "Traditional Chinese")
+        }
+    }
+
+    func convert(_ text: String) -> String {
+        switch self {
+        case .original: return text
+        case .simplified:
+            return text.applyingTransform(StringTransform("Traditional-Simplified"), reverse: false) ?? text
+        case .traditional:
+            return text.applyingTransform(StringTransform("Simplified-Traditional"), reverse: false) ?? text
+        }
+    }
+}
+
 enum LyricHighlightStyle: String, CaseIterable, Identifiable, Defaults.Serializable {
     case sweep = "Sweep"
     case gradient = "Gradient"
@@ -1504,6 +1527,10 @@ extension Defaults.Keys {
     
     // MARK: Lyrics Feature
     static let enableLyrics = Key<Bool>("enableLyrics", default: false)
+
+    static let lyricsScript = Key<LyricsScript>("lyricsScript", default: .original)
+    /// User adjustment in seconds: positive advances lyrics, negative delays them.
+    static let lyricsTimingOffset = Key<Double>("lyricsTimingOffset", default: 0)
 
     /// Whether the sung line is swept or simply lit.
     static let lyricHighlightStyle = Key<LyricHighlightStyle>("lyricHighlightStyle", default: .sweep)
