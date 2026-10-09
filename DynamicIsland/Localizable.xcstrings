@@ -11522,7 +11522,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "允許拖出時移動文件"
+            "value" : "允許拖出時移動檔案"
           }
         }
       }
@@ -19408,13 +19408,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "选择从架子共享文件时使用的服务。将文件拖到架子上或点击架子按钮选择文件。"
+            "value" : "选择从暂存器共享文件时使用的服务。将文件拖入暂存器，或点击暂存器按钮选择文件。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "選擇從架子共享檔案時使用的服務。將檔案拖到架子上或點按架子按鈕選擇檔案。"
+            "value" : "選擇從暫存器共享檔案時使用的服務。將檔案拖入暫存器，或點按暫存器按鈕選擇檔案。"
           }
         }
       }
@@ -34897,13 +34897,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用架子"
+            "value" : "启用暂存器"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "啟用架子"
+            "value" : "啟用暫存器"
           }
         }
       }
@@ -36579,13 +36579,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "扩展的拖拽检测区域"
+            "value" : "扩大拖拽检测区域"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "延伸功能的拖移偵測區域"
+            "value" : "擴大拖移偵測區域"
           }
         }
       }
@@ -37477,13 +37477,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "拖放到架子上的文件将通过此服务共享"
+            "value" : "拖入暂存器的文件将通过此服务共享"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "拖放到架子上的檔案將透過此服務共享"
+            "value" : "拖入暫存器的檔案將透過此服務共享"
           }
         }
       }
@@ -37525,13 +37525,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "从架子共享的文件将使用此服务"
+            "value" : "从暂存器共享文件时将使用此服务"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "從架子共享的檔案將使用此服務"
+            "value" : "從暫存器共享檔案時將使用此服務"
           }
         }
       }
@@ -58296,13 +58296,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "添加项目时默认打开搁板标签"
+            "value" : "有暂存内容时默认打开暂存器页面"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "新增項目時預設開啟擱板標籤"
+            "value" : "有暫存內容時預設開啟暫存器頁面"
           }
         }
       }
@@ -64522,7 +64522,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "从置物架移除"
+            "value" : "从暂存器移除"
           }
         }
       }
@@ -64568,13 +64568,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "拖拽后从架子上移除"
+            "value" : "拖出后从暂存器移除"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "拖移後從架子上移除"
+            "value" : "拖出後從暫存器移除"
           }
         }
       }
