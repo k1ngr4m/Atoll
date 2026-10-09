@@ -225,6 +225,7 @@ private enum SettingsSearchIndex {
         SettingsSearchEntry(tab: .general, title: "Enable Minimalistic UI", keywords: ["minimalistic", "ui mode", "general"], highlightID: SettingsTab.general.highlightID(for: "Enable Minimalistic UI")),
         SettingsSearchEntry(tab: .general, title: "Menubar icon", keywords: ["menu bar", "status bar", "icon"], highlightID: SettingsTab.general.highlightID(for: "Menubar icon")),
         SettingsSearchEntry(tab: .general, title: "Launch at login", keywords: ["autostart", "startup"], highlightID: SettingsTab.general.highlightID(for: "Launch at login")),
+        SettingsSearchEntry(tab: .general, title: "Language", keywords: ["locale", "translation", "system", "语言", "語言"], highlightID: SettingsTab.general.highlightID(for: "Language")),
         SettingsSearchEntry(tab: .general, title: "Show on all displays", keywords: ["multi-display", "external monitor"], highlightID: SettingsTab.general.highlightID(for: "Show on all displays")),
         SettingsSearchEntry(tab: .general, title: "Show on a specific display", keywords: ["preferred screen", "display picker"], highlightID: SettingsTab.general.highlightID(for: "Show on a specific display")),
         SettingsSearchEntry(tab: .general, title: "Automatically switch displays", keywords: ["auto switch", "displays"], highlightID: SettingsTab.general.highlightID(for: "Automatically switch displays")),
@@ -1154,6 +1155,9 @@ struct GeneralSettings: View {
 
     var body: some View {
         Form {
+            AppLanguageSettingsSection()
+                .settingsHighlight(id: highlightID("Language"))
+
             Section {
                 Defaults.Toggle(key: .enableMinimalisticUI) {
                     Text("Enable Minimalistic UI")
