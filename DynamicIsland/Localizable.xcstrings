@@ -1,6 +1,1830 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "New" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新功能"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新功能"
+          }
+        }
+      }
+    },
+    "Last Activity" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上次活动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上次活動"
+          }
+        }
+      }
+    },
+    "Granted" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授权时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授權時間"
+          }
+        }
+      }
+    },
+    "Auto Reverse" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "往返播放"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "往返播放"
+          }
+        }
+      }
+    },
+    "Play Once" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放一次"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放一次"
+          }
+        }
+      }
+    },
+    "Loop" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "循环播放"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "循環播放"
+          }
+        }
+      }
+    },
+    "Auto (Transparent)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动（半透明）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動（半透明）"
+          }
+        }
+      }
+    },
+    "Auto" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動"
+          }
+        }
+      }
+    },
+    "Black (Transparent)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色（半透明）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色（半透明）"
+          }
+        }
+      }
+    },
+    "Black" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色"
+          }
+        }
+      }
+    },
+    "Dark Gray" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深灰色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深灰色"
+          }
+        }
+      }
+    },
+    "Light Gray" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浅灰色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "淺灰色"
+          }
+        }
+      }
+    },
+    "White (Transparent)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "白色（半透明）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "白色（半透明）"
+          }
+        }
+      }
+    },
+    "Solid Auto" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯色自动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "純色自動"
+          }
+        }
+      }
+    },
+    "Solid Light" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯色浅色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "純色淺色"
+          }
+        }
+      }
+    },
+    "Solid Dark" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯色深色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "純色深色"
+          }
+        }
+      }
+    },
+    "New API returned an invalid response" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 返回了无效响应"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 返回了無效響應"
+          }
+        }
+      }
+    },
+    "New API returned an unsuccessful response" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 返回了失败响应"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 返回了失敗響應"
+          }
+        }
+      }
+    },
+    "New API request failed" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 请求失败"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 請求失敗"
+          }
+        }
+      }
+    },
+    "Invalid New API request URL" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 请求 URL 无效"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 請求 URL 無效"
+          }
+        }
+      }
+    },
+    "Invalid New API URL" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API URL 无效"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API URL 無效"
+          }
+        }
+      }
+    },
+    "Unable to store the New API key (Keychain status %d)." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法保存 New API 密钥（钥匙串状态码：%d）。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法保存 New API 密鑰（鑰匙串狀態碼：%d）。"
+          }
+        }
+      }
+    },
+    "Enter a valid New API URL, including http:// or https://." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入有效的 New API URL，包含 http:// 或 https://。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入有效的 New API URL，包含 http:// 或 https://。"
+          }
+        }
+      }
+    },
+    "Enter an API key for this account." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入此账户的 API 密钥。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入此帳號的 API 密鑰。"
+          }
+        }
+      }
+    },
+    "Enter a name for this account." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入账户名称。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入帳號名稱。"
+          }
+        }
+      }
+    },
+    "Unable to save the icon file." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法保存图标文件。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法保存圖標文件。"
+          }
+        }
+      }
+    },
+    "That file could not be loaded as an image." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法将该文件加载为图片。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法將該文件加載為圖片。"
+          }
+        }
+      }
+    },
+    "Icon import was canceled or failed." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图标导入已取消或失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圖標導入已取消或失敗。"
+          }
+        }
+      }
+    },
+    "Revoked" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已撤销"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已撤銷"
+          }
+        }
+      }
+    },
+    "Failed to delete %@: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除 %@ 失败：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除 %@ 失敗：%@"
+          }
+        }
+      }
+    },
+    "%lld%% of screen" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏幕的 %lld%%"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏幕的 %lld%%"
+          }
+        }
+      }
+    },
+    "Failed to download animation" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动画下载失败"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動畫下載失敗"
+          }
+        }
+      }
+    },
+    "Invalid Lottie JSON format" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lottie JSON 格式无效"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lottie JSON 格式無效"
+          }
+        }
+      }
+    },
+    "Only .json files are supported" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅支持 .json 文件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅支持 .json 文件"
+          }
+        }
+      }
+    },
+    "Visible Width" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可见宽度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可見寬度"
+          }
+        }
+      }
+    },
+    "Visible Height" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可见高度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可見高度"
+          }
+        }
+      }
+    },
+    "Vertical Offset" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "垂直偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "垂直偏移"
+          }
+        }
+      }
+    },
+    "Use 3D Bluetooth HUD icon" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 3D 蓝牙提示图标"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 3D 藍牙提示圖標"
+          }
+        }
+      }
+    },
+    "Update Installed!" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新已安装！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新已安裝！"
+          }
+        }
+      }
+    },
+    "Until turned off" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直到手动关闭"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直到手動關閉"
+          }
+        }
+      }
+    },
+    "Unknown error occurred" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发生未知错误"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "發生未知錯誤"
+          }
+        }
+      }
+    },
+    "Transform & Display" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "变换与显示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "變換與顯示"
+          }
+        }
+      }
+    },
+    "Third-party DDC provider" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三方 DDC 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三方 DDC 服務"
+          }
+        }
+      }
+    },
+    "Third-party DDC app integration" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三方 DDC 应用集成"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三方 DDC 應用集成"
+          }
+        }
+      }
+    },
+    "Start from a popular layout and tweak from there." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择常用布局作为起点，再按需微调。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇常用佈局作為起點，再按需微調。"
+          }
+        }
+      }
+    },
+    "Size & Crop" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尺寸与裁剪"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尺寸與裁剪"
+          }
+        }
+      }
+    },
+    "Shows copied items in a separate tab within the Dynamic Island (merges with Notes if enabled)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在灵动岛的独立标签页中显示复制内容（启用备忘录时会合并显示）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在靈動島的獨立標籤頁中顯示複製內容（啓用備忘錄時會合併顯示）"
+          }
+        }
+      }
+    },
+    "Shows copied items in a dedicated clipboard tab inside the notch; drag items straight out to other apps" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海内的独立剪贴板标签页中显示复制内容，可直接将项目拖到其他应用"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在劉海內的獨立剪貼簿標籤頁中顯示複製內容，可直接將項目拖到其他應用"
+          }
+        }
+      }
+    },
+    "Shows clipboard in a floating panel near the notch" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海附近的悬浮面板中显示剪贴板"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在劉海附近的懸浮面板中顯示剪貼簿"
+          }
+        }
+      }
+    },
+    "Shows clipboard as a dropdown attached to the clipboard button" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在剪贴板按钮旁以下拉面板显示剪贴板"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在剪貼簿按鈕旁以下拉麵板顯示剪貼簿"
+          }
+        }
+      }
+    },
+    "Show Change Media Output control" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示更改媒体输出控件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示更改媒體輸出控制項"
+          }
+        }
+      }
+    },
+    "Select Timer Sound" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择计时器提示音"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇計時器提示音"
+          }
+        }
+      }
+    },
+    "Scale" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "缩放"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "縮放"
+          }
+        }
+      }
+    },
+    "Rotation" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旋转"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旋轉"
+          }
+        }
+      }
+    },
+    "Reverse scroll gestures" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "反转滚动手势"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "反轉滾動手勢"
+          }
+        }
+      }
+    },
+    "Reminder vertical offset" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒垂直偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒垂直偏移"
+          }
+        }
+      }
+    },
+    "Reminder alignment" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒对齐方式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒對齊方式"
+          }
+        }
+      }
+    },
+    "Recording Hover Style" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "录制悬停样式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "錄制懸停樣式"
+          }
+        }
+      }
+    },
+    "Recording Controls" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "录制控件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "錄制控制項"
+          }
+        }
+      }
+    },
+    "Quick Presets" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速预设"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速預設"
+          }
+        }
+      }
+    },
+    "Position & Padding" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "位置与留白"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "位置與留白"
+          }
+        }
+      }
+    },
+    "Please provide both a valid URL and name" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请提供有效的 URL 和名称"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請提供有效的 URL 和名稱"
+          }
+        }
+      }
+    },
+    "Playback Speed" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放速度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放速度"
+          }
+        }
+      }
+    },
+    "Output" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输出"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輸出"
+          }
+        }
+      }
+    },
+    "Option as Meta" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将 Option 用作 Meta 键"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將 Option 用作 Meta 鍵"
+          }
+        }
+      }
+    },
+    "Opacity" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不透明度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不透明度"
+          }
+        }
+      }
+    },
+    "Offset" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "偏移"
+          }
+        }
+      }
+    },
+    "Nudge the animation inside the notch." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微调动画在刘海内的位置。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微調動畫在劉海內的位置。"
+          }
+        }
+      }
+    },
+    "Not running" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未运行"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未運行"
+          }
+        }
+      }
+    },
+    "Not detected" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未检测到"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未檢測到"
+          }
+        }
+      }
+    },
+    "New API Provider" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 服務"
+          }
+        }
+      }
+    },
+    "Mouse reporting" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鼠标事件报告"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鼠標事件報告"
+          }
+        }
+      }
+    },
+    "Match the notch footprint or intentionally exceed it." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调整为与刘海尺寸一致，或按需超出刘海范围。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調整為與劉海尺寸一致，或按需超出劉海範圍。"
+          }
+        }
+      }
+    },
+    "Manage app permissions" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理应用权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理應用權限"
+          }
+        }
+      }
+    },
+    "Lyric highlight" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌词高亮"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌詞高亮"
+          }
+        }
+      }
+    },
+    "Lunar is running but the socket connection is not yet established. It will connect automatically." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lunar 正在运行，但尚未建立套接字连接，稍后会自动连接。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lunar 正在運行，但尚未建立套接字連接，稍後會自動連接。"
+          }
+        }
+      }
+    },
+    "Lunar is installed but not currently running. Launch Lunar to enable integration." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安装 Lunar，但尚未运行。启动 Lunar 即可启用集成。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安裝 Lunar，但尚未運行。啓動 Lunar 即可啓用集成。"
+          }
+        }
+      }
+    },
+    "Lock" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "锁"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鎖"
+          }
+        }
+      }
+    },
+    "LocalSend Device Picker Style" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocalSend 设备选择器样式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocalSend 設備選擇器樣式"
+          }
+        }
+      }
+    },
+    "Install [Lunar](https://lunar.fyi) to control external display brightness, contrast, and optional volume through Atoll's HUD via DDC." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安装 [Lunar](https://lunar.fyi)，即可通过 DDC 和 Atoll 的提示面板控制外接显示器的亮度、对比度和可选的音量。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安裝 [Lunar](https://lunar.fyi)，即可通過 DDC 和 Atoll 的提示面板控制外接顯示器的亮度、對比度和可選的音量。"
+          }
+        }
+      }
+    },
+    "Install [BetterDisplay](https://betterdisplay.pro) to control external display brightness (and optional volume) through Atoll's HUD." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安装 [BetterDisplay](https://betterdisplay.pro)，即可通过 Atoll 的提示面板控制外接显示器的亮度和可选的音量。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安裝 [BetterDisplay](https://betterdisplay.pro)，即可通過 Atoll 的提示面板控制外接顯示器的亮度和可選的音量。"
+          }
+        }
+      }
+    },
+    "Horizontal Offset" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "水平偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "水平偏移"
+          }
+        }
+      }
+    },
+    "Hide until hovered" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "悬停时才显示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "懸停時才顯示"
+          }
+        }
+      }
+    },
+    "Give it a friendly name and control playback speed." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置易于识别的名称，并调整播放速度。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設置易於識別的名稱，並調整播放速度。"
+          }
+        }
+      }
+    },
+    "Full Disk Access for global mode" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全局模式需要完全磁盘访问权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全局模式需要完全磁盤訪問權限"
+          }
+        }
+      }
+    },
+    "Foreground color" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前景颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前景顏色"
+          }
+        }
+      }
+    },
+    "Focus Enabled" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "专注模式已开启"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "專注模式已開啓"
+          }
+        }
+      }
+    },
+    "Fingerprint" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "指纹"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "指紋"
+          }
+        }
+      }
+    },
+    "Extracting Update…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在解压更新…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在解壓更新…"
+          }
+        }
+      }
+    },
+    "Enable Custom OSD" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用自定义屏幕提示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啓用自定義屏幕提示"
+          }
+        }
+      }
+    },
+    "Downloading Update…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在下载更新…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在下載更新…"
+          }
+        }
+      }
+    },
+    "Dial in the final polish." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微调动画的最终效果。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微調動畫的最終效果。"
+          }
+        }
+      }
+    },
+    "Cursor color" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "光标颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "游標顏色"
+          }
+        }
+      }
+    },
+    "Cursor Provider" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cursor 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cursor 服務"
+          }
+        }
+      }
+    },
+    "Connected to Lunar's DDC socket. Brightness and contrast adjustments are shown through Atoll's HUD; volume follows when external volume control listener is enabled below." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已连接到 Lunar 的 DDC 套接字。亮度和对比度调整将通过 Atoll 的提示面板显示；启用下方的外部音量控制监听后，也会显示音量调整。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已連接到 Lunar 的 DDC 套接字。亮度和對比度調整將通過 Atoll 的提示面板顯示；啓用下方的外部音量控制監聽後，也會顯示音量調整。"
+          }
+        }
+      }
+    },
+    "Codex Provider" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex 服務"
+          }
+        }
+      }
+    },
+    "Claude Provider" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude 服務"
+          }
+        }
+      }
+    },
+    "Bottom Padding" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "底部留白"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "底部留白"
+          }
+        }
+      }
+    },
+    "Bold as bright" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "以亮色显示粗体"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "以亮色顯示粗體"
+          }
+        }
+      }
+    },
+    "BetterDisplay is installed but not currently running. Launch BetterDisplay to enable integration." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安装 BetterDisplay，但尚未运行。启动 BetterDisplay 即可启用集成。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安裝 BetterDisplay，但尚未運行。啓動 BetterDisplay 即可啓用集成。"
+          }
+        }
+      }
+    },
+    "BetterDisplay OSD events will be routed through Atoll's active HUD style. Brightness is always routed; volume is routed when external volume control listener is enabled below. Make sure BetterDisplay's OSD integration is enabled in Settings › Application › Integration." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BetterDisplay 的屏幕提示将使用 Atoll 当前的提示样式显示。亮度提示始终转发；音量提示仅在下方启用外部音量控制监听后转发。请确保已在 BetterDisplay 的 Settings → Application → Integration 中开启 OSD 集成。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BetterDisplay 的屏幕提示將使用 Atoll 當前的提示樣式顯示。亮度提示始終轉發；音量提示僅在下方啓用外部音量控制監聽後轉發。請確保已在 BetterDisplay 的 Settings → Application → Integration 中開啓 OSD 集成。"
+          }
+        }
+      }
+    },
+    "Background color" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景顏色"
+          }
+        }
+      }
+    },
+    "Atoll Update" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll 更新"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll 更新"
+          }
+        }
+      }
+    },
+    "Atoll Settings" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll 设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll 設置"
+          }
+        }
+      }
+    },
+    "Antigravity Provider" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigravity 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigravity 服務"
+          }
+        }
+      }
+    },
+    "Animation Details" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动画详情"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動畫詳情"
+          }
+        }
+      }
+    },
+    "An unknown error occurred." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发生未知错误。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "發生未知錯誤。"
+          }
+        }
+      }
+    },
+    "An unknown error occurred while updating Atoll." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新 Atoll 时发生未知错误。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新 Atoll 時發生未知錯誤。"
+          }
+        }
+      }
+    },
+    "Additional folder access required" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要额外的文件夹访问权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要額外的資料夾訪問權限"
+          }
+        }
+      }
+    },
+    "60 s (1 min)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "60 秒（1 分钟）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "60 秒（1 分鐘）"
+          }
+        }
+      }
+    },
+    "4 hours" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4 小时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4 小時"
+          }
+        }
+      }
+    },
+    "30 minutes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 分鐘"
+          }
+        }
+      }
+    },
+    "15 minutes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 分鐘"
+          }
+        }
+      }
+    },
+    "1 s" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 秒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 秒"
+          }
+        }
+      }
+    },
     "" : {
       "localizations" : {
         "ar" : {
@@ -1524,6 +3348,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@%lld px"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%lld 像素"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%lld 像素"
           }
         }
       }
@@ -3846,6 +5682,7 @@
     },
     "±10 Seconds" : {
       "comment" : "Display name for the \"±10 Seconds\" music skip behavior option.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -4361,6 +6198,18 @@
             "state" : "translated",
             "value" : "3시간"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 小时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 小時"
+          }
         }
       }
     },
@@ -4425,6 +6274,7 @@
     },
     "3 lines" : {
       "comment" : "Pinned lyrics setting in Media settings.",
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -4621,6 +6471,12 @@
             "state" : "translated",
             "value" : "3D"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3D"
+          }
         }
       }
     },
@@ -4643,11 +6499,14 @@
             "state" : "translated",
             "value" : "4"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4"
+          }
         }
       }
-    },
-    "4 hours" : {
-
     },
     "5" : {
       "localizations" : {
@@ -4664,6 +6523,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "5"
@@ -4791,6 +6656,7 @@
     },
     "5 lines" : {
       "comment" : "Pinned lyrics setting in Media settings.",
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -5019,6 +6885,12 @@
             "state" : "translated",
             "value" : "6"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6"
+          }
         }
       }
     },
@@ -5028,6 +6900,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "6시간"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6 小时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6 小時"
           }
         }
       }
@@ -5262,6 +7146,18 @@
             "state" : "translated",
             "value" : "12시간"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12 小时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12 小時"
+          }
         }
       }
     },
@@ -5369,9 +7265,6 @@
           }
         }
       }
-    },
-    "15 minutes" : {
-
     },
     "15m" : {
       "localizations" : {
@@ -5620,9 +7513,6 @@
         }
       }
     },
-    "30 minutes" : {
-
-    },
     "45 mins" : {
       "localizations" : {
         "ko" : {
@@ -5760,7 +7650,20 @@
       "shouldTranslate" : false
     },
     "A bar that fills as the download runs, or a ring around the notch's corner." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下载时显示逐渐填充的进度条，或环绕刘海边角的进度环。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下載時顯示逐漸填充的進度條，或環繞劉海邊角的進度環。"
+          }
+        }
+      }
     },
     "A new version of Atoll is available!" : {
       "comment" : "A title for a view that displays an update is available.",
@@ -5919,6 +7822,7 @@
     },
     "Accent" : {
       "comment" : "Display name for the caps lock indicator tint mode.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -6404,7 +8308,20 @@
       }
     },
     "Account name" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "账户名称"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "帳號名稱"
+          }
+        }
+      }
     },
     "Actions" : {
       "localizations" : {
@@ -6883,6 +8800,7 @@
     },
     "Adaptive gradient" : {
       "comment" : "Display name for the timer icon color mode: adaptive gradient.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -6930,11 +8848,24 @@
       }
     },
     "Adapts based on power source and battery level." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "전원 공급원과 배터리 잔량에 따라 자동으로 조절됩니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "根据供电方式和电池电量自动调整。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "根據供電方式和電池電量自動調整。"
           }
         }
       }
@@ -7467,7 +9398,20 @@
       }
     },
     "Add New API Account" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加 New API 账户"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加 New API 帳號"
+          }
+        }
+      }
     },
     "Add new visualizer" : {
       "comment" : "merge:ko:alt='새 비주얼라이저 추가'",
@@ -7589,7 +9533,20 @@
       }
     },
     "Add one or more New API accounts to monitor their balance and usage." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加一个或多个 New API 账户以监控余额和用量。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加一個或多個 New API 帳號以監控餘額和用量。"
+          }
+        }
+      }
     },
     "Add Preset" : {
       "comment" : "A button label that adds a new timer preset.",
@@ -7928,11 +9885,36 @@
             "state" : "translated",
             "value" : "AirPlay/경로 선택기 버튼을 사용자화 가능한 제어기 팔레트에 다시 추가합니다. 잠금 화면 패널도 이 버튼을 음량 슬라이더로 사용하므로, 끄면 해당 패널에 음량 제어기가 없어집니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在自定义控件面板中添加 AirPlay／音频输出选择按钮。锁屏面板的音量滑块也依赖此按钮，关闭后锁屏面板将不再提供音量控制。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在自定義控制項面板中添加 AirPlay／音頻輸出選擇按鈕。鎖定畫面面板的音量滑塊也依賴此按鈕，關閉後鎖定畫面面板將不再提供音量控制。"
+          }
         }
       }
     },
     "Adds the current rate beside the indicator, measured from how fast the files in your Downloads folder are growing." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在指示器旁显示当前下载速度，根据“下载”文件夹中文件的增长速度计算。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在指示器旁顯示當前下載速度，根據“下載”資料夾中文件的增長速度計算。"
+          }
+        }
+      }
     },
     "Adjust settings above to see changes in real-time. The actual OSD appears at the bottom center of your screen." : {
       "comment" : "A footer in the \"Preview\" section of the Custom OSD settings, explaining how to use the live preview feature.",
@@ -8890,6 +10872,18 @@
             "state" : "translated",
             "value" : "전체 기간"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不限时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不限時間"
+          }
         }
       }
     },
@@ -9518,6 +11512,18 @@
             "state" : "translated",
             "value" : "드래그해서 꺼낼 때 파일 이동 허용"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许拖出时移动文件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允許拖出時移動文件"
+          }
         }
       }
     },
@@ -9582,6 +11588,18 @@
             "state" : "translated",
             "value" : "알파"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "早期测试版"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "早期測試版"
+          }
         }
       }
     },
@@ -9629,7 +11647,20 @@
       "shouldTranslate" : false
     },
     "Also keep the display awake" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同时保持屏幕常亮"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同時保持屏幕常亮"
+          }
+        }
+      }
     },
     "Always hide in fullscreen" : {
       "localizations" : {
@@ -9869,7 +11900,20 @@
       }
     },
     "Always show volume control" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "始终显示音量控制"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "始終顯示音量控制"
+          }
+        }
+      }
     },
     "Amazon Music" : {
       "localizations" : {
@@ -9908,11 +11952,30 @@
             "state" : "translated",
             "value" : "Amazon Music"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amazon Music"
+          }
         }
       }
     },
     "Amazon Music ships no scripting dictionary, and the system media interface has no way to favourite." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amazon Music 不提供脚本接口，系统媒体接口也不支持收藏歌曲。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amazon Music 不提供腳本接口，系統媒體接口也不支持收藏歌曲。"
+          }
+        }
+      }
     },
     "Animation" : {
       "extractionState" : "stale",
@@ -10034,11 +12097,24 @@
       }
     },
     "Anthropic's Claude with strong analytical skills" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "뛰어난 분석 능력을 갖춘 Anthropic의 Claude"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anthropic 的 Claude，擅长分析推理"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anthropic 的 Claude，擅長分析推理"
           }
         }
       }
@@ -10085,6 +12161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "反重力"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigravity"
           }
         }
       }
@@ -10148,7 +12230,20 @@
       }
     },
     "API key" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API 密钥"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API 密鑰"
+          }
+        }
+      }
     },
     "API Key Required" : {
       "localizations" : {
@@ -10209,10 +12304,36 @@
       }
     },
     "API keys are stored in the macOS Keychain. Balance and usage are shown in the quota units reported by your New API server." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API 密钥保存在 macOS 钥匙串中。余额和用量按 New API 服务器返回的额度单位显示。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API 密鑰保存在 macOS 鑰匙串中。餘額和用量按 New API 伺服器返回的額度單位顯示。"
+          }
+        }
+      }
     },
     "API token" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API 令牌"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API 權杖"
+          }
+        }
+      }
     },
     "App" : {
       "localizations" : {
@@ -10433,7 +12554,20 @@
       }
     },
     "App Volume" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用音量"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "應用音量"
+          }
+        }
+      }
     },
     "Appearance" : {
       "localizations" : {
@@ -10644,7 +12778,20 @@
       }
     },
     "AppleScript on Music.app. No subscription needed." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通过 AppleScript 控制“音乐”应用，无需订阅。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通過 AppleScript 控制“音樂”應用，無需訂閱。"
+          }
+        }
+      }
     },
     "Applies everywhere the transport controls appear: the notch player, the lock screen panel, and the floating window." : {
       "localizations" : {
@@ -10652,6 +12799,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "재생 제어기가 표시되는 모든 곳에 적용됩니다. 노치 플레이어, 잠금 화면 패널, 떠 있는 윈도우가 해당합니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "适用于所有播放控件，包括刘海播放器、锁屏面板和悬浮窗口。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "適用於所有播放控制項，包括劉海播放器、鎖定畫面面板和懸浮窗口。"
           }
         }
       }
@@ -10716,11 +12875,36 @@
             "state" : "translated",
             "value" : "상태 위젯 전체에 적용됩니다. 날씨, 배터리, 집중 모드, 위치, 다음 일정 행이 모두 선택한 모양과 레이아웃으로 그려집니다. 배경화면이 밝을 때는 제목과 레이블이 잘 보이도록 '밝게'를 사용하세요."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "对整个状态小组件生效：天气、电池、专注模式、位置和下一项日程均使用所选外观和布局。壁纸较亮时可选择浅色模式，让标题和标签更易阅读。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "對整個狀態小工具生效：天氣、電池、專注模式、位置和下一項日程均使用所選外觀和佈局。壁紙較亮時可選擇淺色模式，讓標題和標籤更易閱讀。"
+          }
         }
       }
     },
     "Apps built with AtollExtensionKit, collected in one place. Opens in your browser." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "集中浏览使用 AtollExtensionKit 构建的应用，将在浏览器中打开。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "集中瀏覽使用 AtollExtensionKit 構建的應用，將在瀏覽器中打開。"
+          }
+        }
+      }
     },
     "Apps using AtollExtensionKit will appear here once they request permission" : {
       "comment" : "A description below the placeholder text in the \"Search extensions...\" text field, explaining that apps using AtollExtensionKit will be listed here once they grant permission to use the app.",
@@ -11085,6 +13269,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll %@"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Atoll %@"
@@ -11545,6 +13735,18 @@
             "state" : "translated",
             "value" : "오디오"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音频"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音頻"
+          }
         }
       }
     },
@@ -11811,11 +14013,24 @@
       }
     },
     "Automatic" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "자동"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動"
           }
         }
       }
@@ -12109,6 +14324,18 @@
             "state" : "translated",
             "value" : "인라인 레이아웃에서만 사용할 수 있습니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅适用于内嵌布局。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅適用於內嵌佈局。"
+          }
         }
       }
     },
@@ -12319,17 +14546,31 @@
       }
     },
     "Balanced" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "균형"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "均衡"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "均衡"
+          }
         }
       }
     },
     "Bar" : {
       "comment" : "Name of the timer progress style that shows a horizontal bar.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -12383,6 +14624,18 @@
             "state" : "translated",
             "value" : "막대(깜박임)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "竖线（闪烁）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "竪線（閃爍）"
+          }
         }
       }
     },
@@ -12393,11 +14646,36 @@
             "state" : "translated",
             "value" : "막대(고정)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "竖线（常亮）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "竪線（常亮）"
+          }
         }
       }
     },
     "Base URL" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基础 URL"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基礎 URL"
+          }
+        }
+      }
     },
     "Battery" : {
       "localizations" : {
@@ -13409,6 +15687,18 @@
             "state" : "translated",
             "value" : "베타"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "测试版"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "測試版"
+          }
         }
       }
     },
@@ -13462,6 +15752,18 @@
             "state" : "translated",
             "value" : "dev 브랜치에서 매일 빌드되는 최신 버전"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每日从开发分支构建，包含最新改动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每日從開發分支構建，包含最新改動"
+          }
         }
       }
     },
@@ -13472,6 +15774,18 @@
             "state" : "translated",
             "value" : "블록(깜박임)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "方块（闪烁）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "方塊（閃爍）"
+          }
         }
       }
     },
@@ -13481,6 +15795,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "블록(고정)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "方块（常亮）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "方塊（常亮）"
           }
         }
       }
@@ -14382,7 +16708,20 @@
       }
     },
     "Browse the Marketplace" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浏览扩展市场"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "瀏覽擴展市場"
+          }
+        }
+      }
     },
     "Built-in" : {
       "comment" : "A label indicating that an animation is a built-in one.",
@@ -15650,6 +17989,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Caps Lock 指示器"
+          }
+        }
+      }
+    },
+    "Captured sp_dc cookie. Validating…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已获取 sp_dc Cookie，正在验证…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已獲取 sp_dc Cookie，正在驗證…"
           }
         }
       }
@@ -17303,11 +19658,36 @@
             "state" : "translated",
             "value" : "Cider"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cider"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cider"
+          }
         }
       }
     },
     "Cider's own local API, which needs the app token entered below." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 Cider 自身的本地 API，需要在下方填写应用令牌。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 Cider 自身的本地 API，需要在下方填寫應用權杖。"
+          }
+        }
+      }
     },
     "Circle" : {
       "localizations" : {
@@ -17646,6 +20026,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Claude"
@@ -18588,6 +20974,18 @@
             "state" : "translated",
             "value" : "클라이언트 ID"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "客户端 ID"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用戶端 ID"
+          }
         }
       }
     },
@@ -18597,6 +20995,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "클라이언트 ID가 저장되었습니다. Spotify 계정을 연결하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "客户端 ID 已保存，请连接 Spotify 账户。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用戶端 ID 已保存，請連接 Spotify 帳號。"
           }
         }
       }
@@ -19222,6 +21632,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Codex"
@@ -20265,6 +22681,7 @@
       }
     },
     "Compact" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -20891,6 +23308,18 @@
             "state" : "translated",
             "value" : "Spotify 계정 연결"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接 Spotify 账户"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "連接 Spotify 帳號"
+          }
         }
       }
     },
@@ -20951,6 +23380,18 @@
             "state" : "translated",
             "value" : "연결됨 — 좋아요 버튼을 사용할 수 있습니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已连接，喜欢按钮已就绪。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已連接，喜歡按鈕已就緒。"
+          }
         }
       }
     },
@@ -20960,6 +23401,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "연결 중…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在连接…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在連接…"
           }
         }
       }
@@ -21578,6 +24031,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "이미지 변환…"
+          }
+        }
+      }
+    },
+    "Cookie pasted. Validate it once to enable Canvas lookup." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cookie 已粘贴，验证一次即可启用 Canvas 查询。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cookie 已粘貼，驗證一次即可啓用 Canvas 查詢。"
+          }
+        }
+      }
+    },
+    "Cookie saved. The access token will refresh automatically." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cookie 已保存，访问令牌将自动刷新。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cookie 已保存，訪問權杖將自動刷新。"
           }
         }
       }
@@ -22339,6 +24824,18 @@
             "state" : "translated",
             "value" : "충돌 보고서 '%@'을(를) 클립보드에 복사했습니다"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "崩溃报告“%@”已复制到剪贴板"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "崩潰報告“%@”已複製到剪貼簿"
+          }
         }
       }
     },
@@ -22348,6 +24845,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "충돌 보고서 복사됨"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "崩溃报告已复制"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "崩潰報告已複製"
           }
         }
       }
@@ -22510,6 +25019,7 @@
     },
     "Current" : {
       "comment" : "Pinned lyrics setting in Media settings.",
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -24909,6 +27419,18 @@
             "state" : "translated",
             "value" : "디버그"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调试"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調試"
+          }
         }
       }
     },
@@ -25145,7 +27667,20 @@
       }
     },
     "Default duration" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认时长"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預設時長"
+          }
+        }
+      }
     },
     "Default uses the expanded recording HUD. Inline keeps the stop control inside the notch height." : {
       "localizations" : {
@@ -25153,6 +27688,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "'기본'은 확장된 녹화 HUD를 사용합니다. '인라인'은 정지 제어기를 노치 높이 안에 유지합니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认模式使用展开的录制提示面板；内嵌模式将停止控件保持在刘海高度范围内。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預設模式使用展開的錄制提示面板；內嵌模式將停止控制項保持在劉海高度範圍內。"
           }
         }
       }
@@ -25320,7 +27867,20 @@
       }
     },
     "Delete %@" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除 %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除 %@"
+          }
+        }
+      }
     },
     "Delete All Notes?" : {
       "localizations" : {
@@ -25493,10 +28053,36 @@
       }
     },
     "Delete New API account" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除 New API 账户"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除 New API 帳號"
+          }
+        }
+      }
     },
     "Delete New API account?" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除 New API 账户？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除 New API 帳號？"
+          }
+        }
+      }
     },
     "Delete this item" : {
       "localizations" : {
@@ -25942,6 +28528,18 @@
             "state" : "translated",
             "value" : "개발"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开发版"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開發版"
+          }
         }
       }
     },
@@ -26151,6 +28749,7 @@
     },
     "Digital" : {
       "comment" : "The display name for the \"Digital\" reminder presentation style.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -26432,6 +29031,18 @@
             "state" : "translated",
             "value" : "가사를 표시하려면 '미니멀리즘 UI'를 비활성화하세요."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭极简界面后即可显示歌词。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉極簡界面後即可顯示歌詞。"
+          }
         }
       }
     },
@@ -26441,6 +29052,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "가사를 사용하려면 '미니멀리즘 UI'를 비활성화하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭极简界面后即可使用歌词功能。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉極簡界面後即可使用歌詞功能。"
           }
         }
       }
@@ -26625,6 +29248,18 @@
             "state" : "translated",
             "value" : "'외부 디스플레이 연동'에서 '외부 음량 제어 감지 활성화'가 켜져 있는 동안에는 사용할 수 없습니다. 해당 앱이 음량 키를 제어합니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“外接显示器集成”中的“启用外部音量控制监听”开启时不可用，因为音量键由该应用接管。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“外接顯示器集成”中的“啓用外部音量控制監聽”開啓時不可用，因為音量鍵由該應用接管。"
+          }
         }
       }
     },
@@ -26728,6 +29363,18 @@
             "state" : "translated",
             "value" : "외부 디스플레이 연동이 켜져 있는 동안에는 사용할 수 없습니다. 해당 앱이 밝기 키를 제어합니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "外接显示器集成开启时不可用，因为亮度键由该应用接管。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "外接顯示器集成開啓時不可用，因為亮度鍵由該應用接管。"
+          }
         }
       }
     },
@@ -26783,6 +29430,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "연결 해제"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "断开连接"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "斷開連接"
           }
         }
       }
@@ -27569,6 +30228,18 @@
             "state" : "translated",
             "value" : "문서"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文档"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文檔"
+          }
         }
       }
     },
@@ -28152,6 +30823,18 @@
             "state" : "translated",
             "value" : "다운로드 중…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在下载…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在下載…"
+          }
         }
       }
     },
@@ -28438,7 +31121,20 @@
       }
     },
     "Drag the previews to adjust vertical placement. Positive values lift the panel; negative values lower it. Use the width sliders below to size the media and timer widgets — the media panel can go wider than its default as well as narrower, while the timer stops at its default width. Changes apply instantly while the widgets are visible." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拖动预览可调整垂直位置，正值向上、负值向下。使用下方宽度滑块调整媒体和计时器小组件：媒体面板可比默认宽度更宽或更窄，计时器最大为默认宽度。小组件显示时，调整会立即生效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拖動預覽可調整垂直位置，正值向上、負值向下。使用下方寬度滑塊調整媒體和計時器小工具：媒體面板可比預設寬度更寬或更窄，計時器最大為預設寬度。小工具顯示時，調整會立即生效。"
+          }
+        }
+      }
     },
     "Drop a PNG, JPEG, TIFF, or ICNS file to add it to your icon library." : {
       "localizations" : {
@@ -28932,6 +31628,18 @@
             "state" : "translated",
             "value" : "초기 테스트 빌드로, 문제가 있을 수 있습니다"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "早期测试版本，可能存在问题"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "早期測試版本，可能存在問題"
+          }
         }
       }
     },
@@ -29283,10 +31991,36 @@
       }
     },
     "Edit New API account" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑 New API 账户"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編輯 New API 帳號"
+          }
+        }
+      }
     },
     "Edit New API Account" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑 New API 账户"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編輯 New API 帳號"
+          }
+        }
+      }
     },
     "Email address" : {
       "extractionState" : "stale",
@@ -30514,6 +33248,18 @@
             "state" : "translated",
             "value" : "가사를 표시하려면 다이나믹 아일랜드 미디어 제어기를 활성화하세요."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开启灵动岛媒体控件后即可显示歌词。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啓靈動島媒體控制項後即可顯示歌詞。"
+          }
         }
       }
     },
@@ -30523,6 +33269,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "가사를 사용하려면 다이나믹 아일랜드 미디어 제어기를 활성화하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开启灵动岛媒体控件后即可使用歌词功能。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啓靈動島媒體控制項後即可使用歌詞功能。"
           }
         }
       }
@@ -31308,7 +34066,20 @@
       }
     },
     "Enable Keep Awake" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用保持唤醒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啓用保持喚醒"
+          }
+        }
+      }
     },
     "Enable LLM Usage Monitor" : {
       "localizations" : {
@@ -31840,7 +34611,20 @@
       }
     },
     "Enable per-app volume" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用独立应用音量"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啓用獨立應用音量"
+          }
+        }
+      }
     },
     "Enable real-time waveform" : {
       "localizations" : {
@@ -32493,6 +35277,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "날씨 캡슐을 활성화하고 제공업체, 단위, 선택적 AQI 표시기를 설정합니다. 레이아웃은 '외관'의 '위젯 레이아웃'에서 설정되며 상태 위젯 전체에 적용됩니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用天气胶囊，并设置服务提供方、单位和可选的空气质量指数。布局由“外观”中的“小组件布局”控制，对整个状态小组件生效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啓用天氣膠囊，並設置服務提供方、單位和可選的空氣質量指數。佈局由“外觀”中的“小工具佈局”控制，對整個狀態小工具生效。"
           }
         }
       }
@@ -34244,6 +37040,18 @@
             "state" : "translated",
             "value" : "압축 해제 중…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在解压…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在解壓…"
+          }
         }
       }
     },
@@ -34324,6 +37132,18 @@
             "state" : "translated",
             "value" : "충돌 보고서를 읽지 못했습니다: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "读取崩溃报告失败：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "讀取崩潰報告失敗：%@"
+          }
         }
       }
     },
@@ -34384,13 +37204,52 @@
       }
     },
     "Favorite" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏"
+          }
+        }
+      }
     },
     "Favorite Song" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏歌曲"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏歌曲"
+          }
+        }
+      }
     },
     "Favorite Song in Cider" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 Cider 中收藏歌曲"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 Cider 中收藏歌曲"
+          }
+        }
+      }
     },
     "Favorites" : {
       "comment" : "Localized name of the \"Favorites\" tab in the clipboard.",
@@ -34441,7 +37300,20 @@
       }
     },
     "Favouriting uses the Spotify account connected in settings; Spotify's own app offers no local way to do it." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏功能使用设置中连接的 Spotify 账户；Spotify 应用本身不提供本地收藏接口。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "收藏功能使用設置中連接的 Spotify 帳號；Spotify 應用本身不提供本地收藏接口。"
+          }
+        }
+      }
     },
     "File" : {
       "comment" : "Display name for a \"File\" clipboard item type.",
@@ -34492,11 +37364,24 @@
       }
     },
     "File Sharing" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "파일 공유"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文件共享"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文件共享"
           }
         }
       }
@@ -35215,7 +38100,20 @@
       }
     },
     "Follows whichever app is playing, so it can do whatever that app can." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跟随当前播放的应用，可用功能取决于该应用。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跟隨當前播放的應用，可用功能取決於該應用。"
+          }
+        }
+      }
     },
     "Font family" : {
       "comment" : "merge:ko:alt='서체'",
@@ -35789,11 +38687,24 @@
       }
     },
     "Full Calendar" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "전체 캘린더"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整日历"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整日曆"
           }
         }
       }
@@ -36168,6 +39079,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemini"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gemini"
@@ -36642,7 +39559,20 @@
       }
     },
     "Get Extensions" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取扩展"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "獲取擴展"
+          }
+        }
+      }
     },
     "Get started" : {
       "localizations" : {
@@ -36869,7 +39799,20 @@
       }
     },
     "getatoll.app/marketplace" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "getatoll.app/marketplace"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "getatoll.app/marketplace"
+          }
+        }
+      }
     },
     "GitHub" : {
       "localizations" : {
@@ -36991,7 +39934,20 @@
       "shouldTranslate" : false
     },
     "Gives each app its own volume and mute, independent of the system volume. macOS will ask for audio recording permission the first time an app's level is changed: routing an app's audio through Atoll is the only way it can be adjusted, and nothing is ever recorded or written to disk. Apps left at 100% and unmuted keep their normal, untouched path to the speakers." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为每个应用独立控制音量和静音，不影响系统音量。首次调整应用音量时，macOS 会请求音频录制权限，因为必须将该应用的音频经由 Atoll 才能调整；此功能不会录音或将音频写入磁盘。音量保持 100% 且未静音的应用仍直接输出到扬声器。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "為每個應用獨立控制音量和靜音，不影響系統音量。首次調整應用音量時，macOS 會請求音頻錄制權限，因為必須將該應用的音頻經由 Atoll 才能調整；此功能不會錄音或將音頻寫入磁盤。音量保持 100% 且未靜音的應用仍直接輸出到揚聲器。"
+          }
+        }
+      }
     },
     "Glass" : {
       "comment" : "Name of the timer surface mode that uses a glass effect. | Name of the timer surface mode that uses a glass effect. | merge:ko:alt='Glass'",
@@ -37158,12 +40114,41 @@
         }
       }
     },
+    "Google blocks in-app sign-in. Use email & password, Apple, or tap “Open in Browser” to sign in there and paste sp_dc in Settings." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google 不允许在应用内登录。请使用邮箱和密码、Apple，或点击“在浏览器中打开”完成登录，再将 sp_dc 粘贴到设置中。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google 不允許在應用內登錄。請使用郵箱和密碼、Apple，或點擊“在瀏覽器中打開”完成登錄，再將 sp_dc 粘貼到設置中。"
+          }
+        }
+      }
+    },
     "Google's Gemini AI with multimodal capabilities" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "멀티모달 기능을 갖춘 Google의 Gemini AI"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google 的 Gemini AI，支持多模态"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google 的 Gemini AI，支持多模態"
           }
         }
       }
@@ -37616,6 +40601,7 @@
     },
     "Green" : {
       "comment" : "Display name for the green caps lock indicator tint mode.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -37663,11 +40649,24 @@
       }
     },
     "Groq's fast inference for OpenAI-compatible models" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OpenAI 호환 모델을 위한 Groq의 고속 추론"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通过 Groq 快速运行兼容 OpenAI 接口的模型"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通過 Groq 快速運行兼容 OpenAI 接口的模型"
           }
         }
       }
@@ -38703,11 +41702,24 @@
       }
     },
     "High Performance" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "고성능"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高性能"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高性能"
           }
         }
       }
@@ -38771,6 +41783,18 @@
             "state" : "translated",
             "value" : "속도를 높이면 Siri가 실행될 때 위젯이 거의 즉시 숨겨지지만, 배터리로 구동할 때 배터리 사용 시간에 영향을 줄 수 있습니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更高的检测速度可在唤起 Siri 时几乎立即隐藏小组件，但使用电池供电时可能影响续航。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更高的檢測速度可在喚起 Siri 時幾乎立即隱藏小工具，但使用電池供電時可能影響續航。"
+          }
         }
       }
     },
@@ -38780,6 +41804,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "하이라이트"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高亮样式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高亮樣式"
           }
         }
       }
@@ -38891,7 +41927,20 @@
       }
     },
     "Holds a power assertion so the Mac will not sleep, the way the caffeinate command does. Turning this off also ends a session that is already running. With the display option off, the screen can still sleep while the system stays up." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通过系统电源断言阻止 Mac 休眠，作用与 caffeinate 命令相同。关闭此功能也会结束当前的保持唤醒会话。关闭屏幕常亮选项后，屏幕仍可休眠，系统则继续运行。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通過系統電源斷言阻止 Mac 休眠，作用與 caffeinate 命令相同。關閉此功能也會結束當前的保持喚醒會話。關閉屏幕常亮選項後，屏幕仍可休眠，系統則繼續運行。"
+          }
+        }
+      }
     },
     "Horizontal:" : {
       "extractionState" : "stale",
@@ -40141,7 +43190,20 @@
       }
     },
     "In Cider, open Settings > Connectivity > Manage External Application Access, switch the API on, and paste the token it generates here. If you turn its authentication off instead, leave this empty." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 Cider 中打开 Settings → Connectivity → Manage External Application Access，启用 API，并将生成的令牌粘贴到此处。如果关闭了 API 身份验证，此处留空即可。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 Cider 中打開 Settings → Connectivity → Manage External Application Access，啓用 API，並將生成的權杖粘貼到此處。如果關閉了 API 身份驗證，此處留空即可。"
+          }
+        }
+      }
     },
     "In progress" : {
       "extractionState" : "stale",
@@ -40321,11 +43383,24 @@
       }
     },
     "Indicator only" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "표시기만"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅显示指示器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅顯示指示器"
           }
         }
       }
@@ -40337,6 +43412,18 @@
             "state" : "translated",
             "value" : "'표시기만'은 녹화 실시간 활동을 수동적으로 유지합니다. '정지 버튼 포함'은 기본 녹화 제어기를 활성화합니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“仅显示指示器”只显示录制状态；“显示停止按钮”则提供系统录制控制。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“僅顯示指示器”只顯示錄制狀態；“顯示停止按鈕”則提供系統錄制控制。"
+          }
         }
       }
     },
@@ -40346,6 +43433,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "정보"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "信息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "資訊"
           }
         }
       }
@@ -40705,6 +43804,18 @@
             "state" : "translated",
             "value" : "설치됨"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安装"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安裝"
+          }
         }
       }
     },
@@ -40834,6 +43945,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "설치 중…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在安装…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在安裝…"
           }
         }
       }
@@ -41277,13 +44400,52 @@
       }
     },
     "Keep Awake" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持唤醒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持喚醒"
+          }
+        }
+      }
     },
     "Keep Awake is disabled" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持唤醒已禁用"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持喚醒已禁用"
+          }
+        }
+      }
     },
     "Keep lyrics under the closed notch" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刘海收起时仍在下方显示歌词"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "劉海收起時仍在下方顯示歌詞"
+          }
+        }
+      }
     },
     "Keep showing lyrics under the closed notch" : {
 
@@ -41335,10 +44497,36 @@
       }
     },
     "Keeps a volume slider under the playback controls on the lock screen, instead of leaving it behind the output button. The volume keys move it while the Mac is locked, where the notch cannot draw." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在锁屏播放控件下方常驻显示音量滑块，无需点击输出按钮展开。Mac 锁定时刘海界面无法显示，此时仍可通过音量键调整滑块。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在鎖定畫面播放控制項下方常駐顯示音量滑塊，無需點擊輸出按鈕展開。Mac 鎖定時劉海界面無法顯示，此時仍可通過音量鍵調整滑塊。"
+          }
+        }
+      }
     },
     "Keeps a volume slider under the playback controls on the lock screen, instead of leaving it behind the output button. The volume keys move it while the Mac is locked, where the notch cannot draw. Also on the Lock Screen tab." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在锁屏播放控件下方常驻显示音量滑块，无需点击输出按钮展开。Mac 锁定时刘海界面无法显示，此时仍可通过音量键调整滑块。“锁屏”设置中也可调整此选项。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在鎖定畫面播放控制項下方常駐顯示音量滑塊，無需點擊輸出按鈕展開。Mac 鎖定時劉海界面無法顯示，此時仍可通過音量鍵調整滑塊。“鎖定畫面”設置中也可調整此選項。"
+          }
+        }
+      }
     },
     "Keeps the current popover button beside the notch instead of adding a tab." : {
       "localizations" : {
@@ -41346,6 +44534,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "탭을 추가하는 대신 현재 팝오버 버튼을 노치 옆에 유지합니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保留刘海旁的弹出按钮，不添加独立标签页。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保留劉海旁的彈出按鈕，不添加獨立標籤頁。"
           }
         }
       }
@@ -42824,6 +46024,18 @@
             "state" : "translated",
             "value" : "실시간 활동 아이콘"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "实时活动图标"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "實時活動圖標"
+          }
         }
       }
     },
@@ -43289,6 +46501,22 @@
         }
       }
     },
+    "Load failed: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加载失败：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加載失敗：%@"
+          }
+        }
+      }
+    },
     "Loading..." : {
       "comment" : "A placeholder text displayed while loading the wallpaper.",
       "isCommentAutoGenerated" : true,
@@ -43338,11 +46566,24 @@
       }
     },
     "Local AI model (Ollama or similar)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "로컬 AI 모델(Ollama 등)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本地 AI 模型（Ollama 等）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本地 AI 模型（Ollama 等）"
           }
         }
       }
@@ -43353,6 +46594,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xcode에서 빌드한 로컬 개발 버전"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通过 Xcode 构建的本地开发版本"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通過 Xcode 構建的本地開發版本"
           }
         }
       }
@@ -43891,7 +47144,20 @@
       }
     },
     "Lock screen settings section" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "锁屏设置分区"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鎖定畫面設置分區"
+          }
+        }
+      }
     },
     "Lock Screen Widgets" : {
       "comment" : "A toggle that enables or disables the use of lock screen widgets by the extension.",
@@ -43943,6 +47209,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "鎖定畫面小工具"
+          }
+        }
+      }
+    },
+    "Logged in. Finishing capture…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已登录，正在完成 Cookie 获取…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已登錄，正在完成 Cookie 獲取…"
           }
         }
       }
@@ -44855,6 +48137,18 @@
             "state" : "translated",
             "value" : "가사도 켜져 있어 둘이 노치를 나눠 쓰며, 가사는 아티스트 이름 아래 한 줄로 표시됩니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌词也已开启，两者将共享刘海空间，歌词以单行显示在歌手名称下方。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌詞也已開啓，兩者將共享劉海空間，歌詞以單行顯示在歌手名稱下方。"
+          }
         }
       }
     },
@@ -44864,6 +48158,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "가사가 플레이어 옆에 별도 패널로 표시됩니다. 캘린더를 켜면 아티스트 이름 아래로 옮겨집니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌词显示在播放器旁的独立面板中。开启日历后，歌词会移至歌手名称下方。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌詞顯示在播放器旁的獨立面板中。開啓日曆後，歌詞會移至歌手名稱下方。"
           }
         }
       }
@@ -44897,6 +48203,18 @@
             "state" : "translated",
             "value" : "캘린더가 노치의 나머지를 사용하고 있어 가사는 아티스트 이름 아래 한 줄로 표시됩니다. 캘린더를 끄면 플레이어 옆에 전체 패널로 표시됩니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日历占用了刘海的其余空间，因此歌词以单行显示在歌手名称下方。关闭日历后，歌词会显示在播放器旁的独立面板中。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日曆佔用了劉海的其餘空間，因此歌詞以單行顯示在歌手名稱下方。關閉日曆後，歌詞會顯示在播放器旁的獨立面板中。"
+          }
         }
       }
     },
@@ -44912,6 +48230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "歌词同步调整"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌詞同步調整"
           }
         }
       }
@@ -46547,11 +49871,24 @@
       }
     },
     "Media Output" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "미디어 출력"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "媒体输出"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "媒體輸出"
           }
         }
       }
@@ -48250,11 +51587,24 @@
       }
     },
     "Mini View" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "미니 보기"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "迷你视图"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "迷你視圖"
           }
         }
       }
@@ -48928,10 +52278,36 @@
       }
     },
     "Monitor clipboard changes and keep a history of recent copies. Press %@ to open clipboard history." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "监控剪贴板变化并保留最近的复制记录。按 %@ 打开剪贴板历史。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "監控剪貼簿變化並保留最近的複製記錄。按 %@ 打開剪貼簿歷史。"
+          }
+        }
+      }
     },
     "Monitor clipboard changes and keep a history of recent copies. Set a shortcut under Shortcuts to open clipboard history." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "监控剪贴板变化并保留最近的复制记录。可在“快捷键”中设置打开剪贴板历史的快捷键。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "監控剪貼簿變化並保留最近的複製記錄。可在“快捷鍵”中設置打開剪貼簿歷史的快捷鍵。"
+          }
+        }
+      }
     },
     "Monitor clipboard changes and keep a history of recent copies. Use Cmd+Shift+V to quickly access clipboard history." : {
       "extractionState" : "stale",
@@ -50111,10 +53487,36 @@
       }
     },
     "Needs the \"Change Media Output\" control above, which the lock screen panel takes its volume slider from." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要先开启上方的“更改媒体输出”控件，锁屏面板的音量滑块依赖此控件。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要先開啓上方的“更改媒體輸出”控制項，鎖定畫面面板的音量滑塊依賴此控制項。"
+          }
+        }
+      }
     },
     "Needs the \"Show Change Media Output control\" setting on the Media tab, which the lock screen panel takes its volume slider from." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要先在“媒体”设置中开启“显示更改媒体输出控件”，锁屏面板的音量滑块依赖此控件。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要先在“媒體”設置中開啓“顯示更改媒體輸出控制項”，鎖定畫面面板的音量滑塊依賴此控制項。"
+          }
+        }
+      }
     },
     "Network" : {
       "comment" : "Title for the \"Network\" section in the stats view.",
@@ -50491,13 +53893,52 @@
       }
     },
     "New API" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API"
+          }
+        }
+      }
     },
     "New API Account Error" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 账户错误"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 帳號錯誤"
+          }
+        }
+      }
     },
     "New API Accounts" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 账户"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 帳號"
+          }
+        }
+      }
     },
     "Next Track" : {
       "localizations" : {
@@ -50552,11 +53993,36 @@
             "state" : "translated",
             "value" : "나이틀리"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每日构建版"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每日構建版"
+          }
         }
       }
     },
     "No" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "否"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "否"
+          }
+        }
+      }
     },
     "No active interfaces detected yet." : {
       "comment" : "A message displayed when there are no active network interfaces to display.",
@@ -51068,6 +54534,18 @@
             "state" : "translated",
             "value" : "충돌 보고서 없음"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到崩溃报告"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到崩潰報告"
+          }
         }
       }
     },
@@ -51077,6 +54555,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "DynamicIsland의 충돌 보고서를 찾을 수 없습니다"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到 DynamicIsland 的崩溃报告"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到 DynamicIsland 的崩潰報告"
           }
         }
       }
@@ -51930,6 +55420,18 @@
             "state" : "translated",
             "value" : "로그 없음"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不记录日志"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不記錄日誌"
+          }
         }
       }
     },
@@ -52263,6 +55765,22 @@
         }
       }
     },
+    "No valid Spotify TOTP secret was found." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到有效的 Spotify TOTP 密钥。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到有效的 Spotify TOTP 密鑰。"
+          }
+        }
+      }
+    },
     "Noise Cancellation" : {
       "localizations" : {
         "ko" : {
@@ -52509,7 +56027,20 @@
       }
     },
     "Not available" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不支持"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不支持"
+          }
+        }
+      }
     },
     "Not charging" : {
       "comment" : "Text displayed in the status text when the battery is not charging.",
@@ -52565,6 +56096,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "연결되지 않음."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未连接。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未連接。"
           }
         }
       }
@@ -53236,11 +56779,24 @@
       }
     },
     "Notch Tab" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "노치 탭"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刘海标签页"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "劉海標籤頁"
           }
         }
       }
@@ -53251,6 +56807,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "노치 탭 모드는 노치 안의 별도 탭에 클립보드를 표시합니다. 텍스트, 이미지 또는 단일 파일 항목을 Finder나 다른 앱으로 바로 드래그할 수 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刘海标签页模式将剪贴板显示在刘海内的独立标签页中。可将文本、图片或单个文件直接拖到访达或其他应用。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "劉海標籤頁模式將剪貼簿顯示在劉海內的獨立標籤頁中。可將文本、圖片或單個文件直接拖到訪達或其他應用。"
           }
         }
       }
@@ -54331,6 +57899,18 @@
             "state" : "translated",
             "value" : "개발자 대시보드 열기"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开开发者控制台"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打開開發者控制台"
+          }
         }
       }
     },
@@ -54727,6 +58307,22 @@
         }
       }
     },
+    "Open Spotify shouldn't load here — capture should fire before this. Falling back." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未能及时获取 Cookie，正在切换备用方式。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未能及時獲取 Cookie，正在切換備用方式。"
+          }
+        }
+      }
+    },
     "Open Spotify Web Player" : {
       "comment" : "A link to open Spotify.",
       "isCommentAutoGenerated" : true,
@@ -54838,11 +58434,24 @@
       }
     },
     "OpenAI's GPT models with advanced reasoning" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "고급 추론 능력을 갖춘 OpenAI의 GPT 모델"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OpenAI 的 GPT 模型，具备高级推理能力"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OpenAI 的 GPT 模型，具備高級推理能力"
           }
         }
       }
@@ -54946,7 +58555,20 @@
       }
     },
     "Opens the clipboard history panel, currently %@. Only works when clipboard feature is enabled." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开剪贴板历史面板，当前快捷键为 %@。仅在启用剪贴板功能时生效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打開剪貼簿歷史面板，當前快捷鍵為 %@。僅在啓用剪貼簿功能時生效。"
+          }
+        }
+      }
     },
     "Opens the clipboard history panel. Default is Cmd+Shift+V (similar to Windows+V on PC). Only works when clipboard feature is enabled." : {
       "extractionState" : "stale",
@@ -55002,7 +58624,20 @@
       }
     },
     "Opens the clipboard history panel. No shortcut is set. Only works when clipboard feature is enabled." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开剪贴板历史面板。尚未设置快捷键，仅在启用剪贴板功能时生效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打開剪貼簿歷史面板。尚未設置快捷鍵，僅在啓用剪貼簿功能時生效。"
+          }
+        }
+      }
     },
     "Opens the color picker panel for screen color capture. Default is Cmd+Shift+P. Only works when color picker feature is enabled." : {
       "localizations" : {
@@ -55195,6 +58830,7 @@
       }
     },
     "Original lyrics" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -55436,6 +59072,7 @@
     },
     "Panel" : {
       "comment" : "Display name for the clipboard display mode \"Panel\".",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -55741,6 +59378,34 @@
             "state" : "translated",
             "value" : "먼저 Spotify 개발자 앱의 클라이언트 ID를 붙여넣으세요."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请先粘贴 Spotify 开发者应用的客户端 ID。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請先粘貼 Spotify 開發者應用的用戶端 ID。"
+          }
+        }
+      }
+    },
+    "Paste the Spotify sp_dc cookie first." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请先粘贴 Spotify 的 sp_dc Cookie。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請先粘貼 Spotify 的 sp_dc Cookie。"
+          }
         }
       }
     },
@@ -55793,6 +59458,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "타이머가 실행되는 동안 노치 안에 일시 정지 및 정지 버튼이 인라인으로 표시됩니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计时器运行时，在刘海内嵌显示暂停和停止按钮。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "計時器運行時，在劉海內嵌顯示暫停和停止按鈕。"
           }
         }
       }
@@ -57037,7 +60714,20 @@
       }
     },
     "Playback needs none of this. The Favorite Song control does, because favouriting is not something macOS Now Playing can carry -- Atoll has to ask Cider itself." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正常播放无需配置此项。只有“收藏歌曲”控件需要，因为 macOS 的“正在播放”接口无法执行收藏，Atoll 必须直接向 Cider 发起请求。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正常播放無需配置此項。只有“收藏歌曲”控制項需要，因為 macOS 的“正在播放”接口無法執行收藏，Atoll 必須直接向 Cider 發起請求。"
+          }
+        }
+      }
     },
     "Plays the supplied feedback clip whenever you press the hardware volume keys." : {
       "comment" : "A help text describing the audio feedback feature.",
@@ -57558,11 +61248,24 @@
       }
     },
     "Power Saver" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "절전"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "节能"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "節能"
           }
         }
       }
@@ -57573,6 +61276,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "대체로 안정적인 사전 릴리스 빌드"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "预发布版本，基本稳定"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預發佈版本，基本穩定"
           }
         }
       }
@@ -58096,7 +61811,20 @@
       }
     },
     "Privacy" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐私"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隱私"
+          }
+        }
+      }
     },
     "Privacy Indicators" : {
       "comment" : "A heading for the section that lists privacy indicators.",
@@ -58259,6 +61987,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "충분히 검증된 정식 릴리스"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "经过充分测试的正式版本"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "經過充分測試的正式版本"
           }
         }
       }
@@ -59357,7 +63097,20 @@
       }
     },
     "Read only" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只读"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只讀"
+          }
+        }
+      }
     },
     "Ready" : {
       "localizations" : {
@@ -59423,6 +63176,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "설치 준비됨"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "准备安装"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備安裝"
           }
         }
       }
@@ -59796,6 +63561,18 @@
             "state" : "translated",
             "value" : "녹화 제어기"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "录制控件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "錄制控制項"
+          }
         }
       }
     },
@@ -59867,6 +63644,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "녹화 포인터 올리기 스타일"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "录制悬停样式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "錄制懸停樣式"
           }
         }
       }
@@ -59956,6 +63745,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "리디렉션 URI:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重定向 URI："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新導向 URI："
           }
         }
       }
@@ -61224,7 +65025,20 @@
       }
     },
     "Requires the reminder live activity, which is off in the section above." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要启用提醒事项实时活动，该功能目前已在上方区域关闭。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要啓用提醒事項實時活動，該功能目前已在上方區域關閉。"
+          }
+        }
+      }
     },
     "Reset" : {
       "localizations" : {
@@ -61343,7 +65157,20 @@
       }
     },
     "Reset all app volumes" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置所有应用音量"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置所有應用音量"
+          }
+        }
+      }
     },
     "Reset Context" : {
       "comment" : "A button label that resets the conversation context.",
@@ -62059,6 +65886,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "오늘 남은 시간"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天剩余时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天剩餘時間"
           }
         }
       }
@@ -63000,6 +66839,7 @@
     },
     "Ring" : {
       "comment" : "The name of the timer progress style that shows a ring shape.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -63526,7 +67366,20 @@
       }
     },
     "Save History Across Restarts" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重启后保留历史记录"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重啓後保留歷史記錄"
+          }
+        }
+      }
     },
     "Scale Down" : {
       "localizations" : {
@@ -64864,6 +68717,12 @@
             "state" : "translated",
             "value" : "单位为秒：+ 提前歌词，− 延后歌词。对所有歌曲生效。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "單位為秒：+ 提前歌詞，− 延後歌詞。對所有歌曲生效。"
+          }
         }
       }
     },
@@ -65197,6 +69056,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "자물쇠, 지문 또는 두 아이콘을 모두 선택합니다. 지문을 선택하면 잠금 해제 애니메이션이 끝날 때까지 실시간 활동이 열려 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择锁、指纹或同时显示两种图标。选择指纹时，实时活动会保持展开，直到解锁动画播放完毕。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇鎖、指紋或同時顯示兩種圖標。選擇指紋時，實時活動會保持展開，直到解鎖動畫播放完畢。"
           }
         }
       }
@@ -65680,6 +69551,7 @@
     },
     "Separate Tab" : {
       "comment" : "Display name for the clipboard display mode option to open the clipboard in a separate tab.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -65888,6 +69760,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "工作階段平均"
+          }
+        }
+      }
+    },
+    "Session cleared. Sign in again to capture the cookie." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "会话已清除，请重新登录以获取 Cookie。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "會話已清除，請重新登錄以獲取 Cookie。"
           }
         }
       }
@@ -66700,7 +70588,20 @@
       }
     },
     "Show app volume icon in the notch" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海中显示应用音量图标"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在劉海中顯示應用音量圖標"
+          }
+        }
+      }
     },
     "Show AQI widget" : {
       "localizations" : {
@@ -67872,7 +71773,20 @@
       }
     },
     "Show download speed" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示下载速度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示下載速度"
+          }
+        }
+      }
     },
     "Show event after it starts" : {
       "localizations" : {
@@ -68444,7 +72358,20 @@
       }
     },
     "Show Keep Awake icon in the notch" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海中显示保持唤醒图标"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在劉海中顯示保持喚醒圖標"
+          }
+        }
+      }
     },
     "Show live canvas in Dynamic Island" : {
       "localizations" : {
@@ -68774,6 +72701,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "가사 표시"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示歌词"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示歌詞"
           }
         }
       }
@@ -69263,6 +73202,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "노치에 일시 정지/정지 제어기 표시"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海中显示暂停／停止控件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在劉海中顯示暫停／停止控制項"
           }
         }
       }
@@ -70164,21 +74115,47 @@
       }
     },
     "Shows color picker as a dropdown attached to the color picker button" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "색상 선택기 버튼에 붙은 드롭다운으로 색상 선택기를 표시합니다"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在取色器按钮旁以下拉面板显示取色器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在取色器按鈕旁以下拉麵板顯示取色器"
+          }
         }
       }
     },
     "Shows color picker in a floating panel near the notch" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "노치 근처에 떠 있는 패널로 색상 선택기를 표시합니다"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海附近的悬浮面板中显示取色器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在劉海附近的懸浮面板中顯示取色器"
           }
         }
       }
@@ -70237,6 +74214,7 @@
     },
     "Shows screen assistant as a dropdown attached to the AI button" : {
       "comment" : "Description of the screen assistant display mode option that shows the screen assistant as a dropdown attached to the AI button.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -70285,6 +74263,7 @@
     },
     "Shows screen assistant in a floating panel near the notch" : {
       "comment" : "Description of the screen assistant display mode option that shows the screen assistant in a floating panel near the notch.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -70332,7 +74311,20 @@
       }
     },
     "Shows state, cannot change it" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅显示状态，无法修改"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅顯示狀態，無法修改"
+          }
+        }
+      }
     },
     "Shows the model's reasoning process before the final answer" : {
       "localizations" : {
@@ -70570,6 +74562,18 @@
             "state" : "translated",
             "value" : "열린 노치 안에 타이머 제어기를 전용 탭으로 표시합니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在展开的刘海内以独立标签页显示计时器控件。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在展開的劉海內以獨立標籤頁顯示計時器控制項。"
+          }
         }
       }
     },
@@ -70672,6 +74676,18 @@
             "state" : "translated",
             "value" : "사이드 가사 가로 오프셋"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "侧边歌词水平偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "側邊歌詞水平偏移"
+          }
         }
       }
     },
@@ -70681,6 +74697,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "사이드 가사 너비"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "侧边歌词宽度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "側邊歌詞寬度"
           }
         }
       }
@@ -70729,6 +74757,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "登入 Spotify 以自動捕獲 `sp_dc` cookie，或者在下面貼上。"
+          }
+        }
+      }
+    },
+    "Sign in to your Spotify account." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请登录 Spotify 账户。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請登錄 Spotify 帳號。"
+          }
+        }
+      }
+    },
+    "Sign in with email & password, Apple, or Facebook. Google blocks in-app sign-in — use “Open in Browser” for Google accounts." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请使用邮箱和密码、Apple 或 Facebook 登录。Google 不允许在应用内登录，请使用“在浏览器中打开”登录 Google 账户。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請使用郵箱和密碼、Apple 或 Facebook 登錄。Google 不允許在應用內登錄，請使用“在瀏覽器中打開”登錄 Google 帳號。"
           }
         }
       }
@@ -70828,6 +74888,7 @@
       }
     },
     "Simplified Chinese" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -70856,6 +74917,18 @@
             "state" : "translated",
             "value" : "Siri 감지"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri 检测"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri 檢測"
+          }
         }
       }
     },
@@ -70865,6 +74938,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri 감지 속도"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri 检测速度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri 檢測速度"
           }
         }
       }
@@ -70981,6 +75066,18 @@
             "state" : "translated",
             "value" : "건너뛰기 버튼 동작"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切歌按钮行为"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切歌按鈕行為"
+          }
         }
       }
     },
@@ -71040,6 +75137,7 @@
     },
     "Skip forward or backward by ten seconds" : {
       "comment" : "Description of a music skip behavior option.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -71241,11 +75339,24 @@
       }
     },
     "Slower detection (4Hz) to maximize battery life." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "배터리 사용 시간을 최대화하는 느린 감지(4Hz)입니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "较慢的检测频率（4 Hz），以尽量延长电池续航。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "較慢的檢測頻率（4 Hz），以盡量延長電池續航。"
           }
         }
       }
@@ -71866,11 +75977,24 @@
       }
     },
     "Solid" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "단색"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "純色"
           }
         }
       }
@@ -71929,7 +76053,20 @@
       }
     },
     "Source" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "来源"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "來源"
+          }
+        }
+      }
     },
     "sp_dc cookie" : {
       "comment" : "A label for the Spotify `sp_dc` cookie.",
@@ -72256,12 +76393,72 @@
         }
       }
     },
+    "Spotify Canvas session ready." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify Canvas 会话已就绪。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify Canvas 會話已就緒。"
+          }
+        }
+      }
+    },
+    "Spotify cookie not configured." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚未配置 Spotify Cookie。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚未配置 Spotify Cookie。"
+          }
+        }
+      }
+    },
+    "Spotify did not return a usable access token." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 未返回可用的访问令牌。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 未返回可用的訪問權杖。"
+          }
+        }
+      }
+    },
     "Spotify did not return an authorization code." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spotify가 인증 코드를 반환하지 않았습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 未返回授权码。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 未返回授權碼。"
           }
         }
       }
@@ -72273,6 +76470,18 @@
             "state" : "translated",
             "value" : "Spotify 좋아요 버튼"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 喜欢按钮"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 喜歡按鈕"
+          }
         }
       }
     },
@@ -72282,6 +76491,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spotify 로그인 실패: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 登录失败：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 登錄失敗：%@"
           }
         }
       }
@@ -72334,12 +76555,72 @@
         }
       }
     },
+    "Spotify rejected the sp_dc cookie." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 拒绝了该 sp_dc Cookie。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 拒絕了該 sp_dc Cookie。"
+          }
+        }
+      }
+    },
+    "Spotify returned an invalid response." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 返回了无效响应。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 返回了無效響應。"
+          }
+        }
+      }
+    },
     "Spotify revoked access. Connect your account again." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spotify가 접근 권한을 취소했습니다. 계정을 다시 연결하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 已撤销访问权限，请重新连接账户。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 已撤銷訪問權限，請重新連接帳號。"
+          }
+        }
+      }
+    },
+    "Spotify token request failed with HTTP %lld." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 令牌请求失败，HTTP 状态码：%lld。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotify 權杖請求失敗，HTTP 狀態碼：%lld。"
           }
         }
       }
@@ -72516,6 +76797,18 @@
             "state" : "translated",
             "value" : "안정"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "稳定版"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "穩定版"
+          }
         }
       }
     },
@@ -72566,11 +76859,24 @@
       }
     },
     "Standard detection (16Hz) for smooth responsiveness." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "부드러운 반응성을 위한 표준 감지(16Hz)입니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标准检测频率（16 Hz），提供流畅响应。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "標準檢測頻率（16 Hz），提供流暢響應。"
           }
         }
       }
@@ -72717,6 +77023,7 @@
     },
     "Standard previous/next track controls" : {
       "comment" : "Description of the music skip behavior option to use standard previous/next track controls.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -73366,7 +77673,20 @@
       }
     },
     "Starts the default duration set in General, or ends a running session." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按“通用”中设置的默认时长开始保持唤醒，或结束正在运行的会话。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按“通用”中設置的預設時長開始保持喚醒，或結束正在運行的會話。"
+          }
+        }
+      }
     },
     "Stats" : {
       "localizations" : {
@@ -74715,7 +79035,20 @@
       }
     },
     "Supported" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持"
+          }
+        }
+      }
     },
     "Supports reasoning mode" : {
       "localizations" : {
@@ -74885,11 +79218,24 @@
       }
     },
     "Sweep" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "스윕"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "逐字高亮"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "逐字高亮"
           }
         }
       }
@@ -75989,35 +80335,86 @@
             "state" : "translated",
             "value" : "원형 레이아웃에는 위치 레이블이나 일출 시간을 표시할 공간이 없으며, 배터리 게이지는 고리 형태로 그려집니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圆形布局不显示位置标签和日出时间，电池电量以圆环显示。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圓形佈局不顯示位置標籤和日出時間，電池電量以圓環顯示。"
+          }
         }
       }
     },
     "The current line is lit by one fixed gradient that does not move, the way lyrics were marked before the sweep." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "현재 줄이 움직이지 않는 고정 그레이디언트 하나로 표시됩니다. 스윕이 도입되기 전의 가사 표시 방식입니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用固定渐变色高亮当前行，颜色不会移动，与引入逐字高亮前的效果一致。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用固定漸變色高亮當前行，顏色不會移動，與引入逐字高亮前的效果一致。"
+          }
         }
       }
     },
     "The current line is lit in one flat colour, with nothing crossing it." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "현재 줄이 단일 색상으로 표시되며 지나가는 효과가 없습니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用单一纯色高亮当前行，不显示扫过动画。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用單一純色高亮當前行，不顯示掃過動畫。"
+          }
         }
       }
     },
     "The highlight travels across the line word by word, in reading order." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "하이라이트가 읽는 순서대로 단어마다 줄을 따라 이동합니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高亮按阅读顺序逐字扫过当前行。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高亮按閱讀順序逐字掃過當前行。"
           }
         }
       }
@@ -76029,6 +80426,18 @@
             "state" : "translated",
             "value" : "좋아요 버튼에는 별도의 Spotify 앱 등록이 필요합니다(Canvas 쿠키 세션으로는 보관함을 변경할 수 없습니다). developer.spotify.com에서 무료 앱을 생성하고 아래 리디렉션 URI를 추가한 다음, 해당 앱의 클라이언트 ID를 여기에 붙여넣으세요."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "喜欢按钮需要单独注册 Spotify 开发者应用（Canvas 的 Cookie 会话无法修改音乐库）。请在 developer.spotify.com 免费创建应用，添加下方的重定向 URI，再将应用的客户端 ID 粘贴到此处。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "喜歡按鈕需要單獨註冊 Spotify 開發者應用（Canvas 的 Cookie 會話無法修改音樂庫）。請在 developer.spotify.com 免費創建應用，添加下方的重新導向 URI，再將應用的用戶端 ID 粘貼到此處。"
+          }
         }
       }
     },
@@ -76038,6 +80447,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "잠금 화면 미리 알림은 미리 알림 실시간 활동에서 생성되는데, 위에서 꺼져 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "锁屏提醒由提醒事项实时活动提供，该功能目前已在上方关闭。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鎖定畫面提醒由提醒事項實時活動提供，該功能目前已在上方關閉。"
           }
         }
       }
@@ -76049,11 +80470,52 @@
             "state" : "translated",
             "value" : "잠금 화면 미리 알림은 미리 알림 실시간 활동에서 생성되는데, '실시간 활동' 설정에서 꺼져 있습니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "锁屏提醒由提醒事项实时活动提供，该功能目前已在“实时活动”设置中关闭。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鎖定畫面提醒由提醒事項實時活動提供，該功能目前已在“實時活動”設置中關閉。"
+          }
+        }
+      }
+    },
+    "The Spotify TOTP secret could not be decoded." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法解码 Spotify TOTP 密钥。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法解碼 Spotify TOTP 密鑰。"
+          }
         }
       }
     },
     "The th-ch desktop app's local API server, which Atoll is already authenticated with." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 th-ch 桌面客户端的本地 API 服务，Atoll 已完成身份验证。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 th-ch 桌面用戶端的本地 API 服務，Atoll 已完成身份驗證。"
+          }
+        }
+      }
     },
     "TheDynamicIsland" : {
       "localizations" : {
@@ -76102,6 +80564,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "이 제어기는 캘린더가 비활성화되어 있을 때 적용됩니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这些控件仅在关闭日历时生效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "這些控制項僅在關閉日曆時生效。"
           }
         }
       }
@@ -76562,7 +81036,20 @@
       }
     },
     "This removes %@ and its stored API key from Atoll." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这将从 Atoll 中删除 %@ 及其保存的 API 密钥。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "這將從 Atoll 中刪除 %@ 及其保存的 API 密鑰。"
+          }
+        }
+      }
     },
     "This removes every saved clipboard item from the notch tab." : {
       "comment" : "A message displayed when they clear their clipboard history.",
@@ -76625,11 +81112,36 @@
             "state" : "translated",
             "value" : "TIDAL"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TIDAL"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TIDAL"
+          }
         }
       }
     },
     "TIDAL exposes no way to set a favourite, so the heart shows the state but cannot be clicked. Shuffle and repeat go through the Playback menu." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TIDAL 不提供收藏接口，因此爱心仅显示收藏状态，无法点击。随机播放和循环播放通过 Playback 菜单控制。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TIDAL 不提供收藏接口，因此愛心僅顯示收藏狀態，無法點擊。隨機播放和循環播放通過 Playback 菜單控制。"
+          }
+        }
+      }
     },
     "Tiler" : {
       "localizations" : {
@@ -77667,7 +82179,20 @@
       }
     },
     "Toggle Keep Awake:" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换保持唤醒："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切換保持喚醒："
+          }
+        }
+      }
     },
     "Toggle Notch Open:" : {
       "localizations" : {
@@ -78014,6 +82539,18 @@
             "state" : "translated",
             "value" : "토큰 교환 실패: %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "令牌交换失败：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "權杖交換失敗：%@"
+          }
         }
       }
     },
@@ -78176,6 +82713,7 @@
     },
     "Track Skip" : {
       "comment" : "Display name for the \"Track Skip\" music skip behavior.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -78223,6 +82761,7 @@
       }
     },
     "Traditional Chinese" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -78903,11 +83442,40 @@
       }
     },
     "Ultra-fast detection (30Hz) for near-instant hiding." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "거의 즉시 숨기기 위한 초고속 감지(30Hz)입니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "超快检测频率（30 Hz），几乎可立即隐藏。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "超快檢測頻率（30 Hz），幾乎可立即隱藏。"
+          }
+        }
+      }
+    },
+    "Unable to build the Spotify token request." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法构建 Spotify 令牌请求。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法構建 Spotify 權杖請求。"
           }
         }
       }
@@ -78918,6 +83486,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "로그인에 필요한 보안 난수 데이터를 생성할 수 없습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法生成登录所需的安全随机数据。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法生成登錄所需的安全隨機數據。"
           }
         }
       }
@@ -78939,6 +83519,18 @@
             "state" : "translated",
             "value" : "밑줄(깜박임)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下划线（闪烁）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下划線（閃爍）"
+          }
         }
       }
     },
@@ -78948,6 +83540,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "밑줄(고정)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下划线（常亮）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下划線（常亮）"
           }
         }
       }
@@ -79428,9 +84032,6 @@
         }
       }
     },
-    "Until turned off" : {
-
-    },
     "Untitled Note" : {
       "comment" : "Default title for a note that has not been renamed.",
       "isCommentAutoGenerated" : true,
@@ -79526,6 +84127,18 @@
             "state" : "translated",
             "value" : "최신 상태"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已是最新版本"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已是最新版本"
+          }
         }
       }
     },
@@ -79535,6 +84148,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "업데이트 사용 가능"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "有可用更新"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "有可用更新"
           }
         }
       }
@@ -81243,6 +85868,18 @@
             "state" : "translated",
             "value" : "TIDAL 앱이 활성 미디어 소스일 때 macOS의 '재생 중'을 사용합니다. 재생 제어는 시스템 '재생 중' 대상을 따릅니다. TIDAL이 해당 원격 명령을 지원하지 않으면 탐색, 임의 재생, 반복이 동작하지 않을 수 있습니다."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TIDAL 为当前媒体源时，使用 macOS 的“正在播放”接口。播放控件跟随系统当前的播放目标。如果 TIDAL 不支持相应的远程指令，拖动进度、随机播放或循环播放可能无法使用。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TIDAL 為目前媒體來源時，使用 macOS 的「正在播放」介面。播放控制項跟隨系統目前的播放目標。如果 TIDAL 不支援相應的遠端指令，拖動進度、隨機播放或循環播放可能無法使用。"
+          }
         }
       }
     },
@@ -81252,6 +85889,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spotify 공식 Web API(OAuth)를 사용하며, 접근 범위는 좋아요 표시한 곡을 읽고 변경하는 것으로 제한됩니다. 버튼을 표시하려면 미디어 슬롯에 '노래 좋아요' 제어기를 추가하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 Spotify 官方 Web API（OAuth），权限仅限读取和修改“喜欢的歌曲”。将“收藏歌曲”控件添加到媒体控件槽位后即可显示按钮。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 Spotify 官方 Web API（OAuth），權限僅限讀取和修改“喜歡的歌曲”。將“收藏歌曲”控制項添加到媒體控制項槽位後即可顯示按鈕。"
           }
         }
       }
@@ -83069,7 +87718,20 @@
       }
     },
     "What each source supports" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各媒体源支持的功能"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各媒體源支持的功能"
+          }
+        }
+      }
     },
     "What's New" : {
       "localizations" : {
@@ -83667,7 +88329,20 @@
       }
     },
     "When off, clipboard history is kept in memory for this session only and is never written to disk. Turning it off also erases history that was already saved. Pinned items are kept either way." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭后，剪贴板历史仅保存在本次运行的内存中，不会写入磁盘。关闭此选项也会清除已保存的历史记录。已固定的项目始终保留。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉後，剪貼簿歷史僅保存在本次運行的內存中，不會寫入磁盤。關閉此選項也會清除已保存的歷史記錄。已固定的項目始終保留。"
+          }
+        }
+      }
     },
     "White" : {
       "localizations" : {
@@ -83810,6 +88485,18 @@
             "state" : "translated",
             "value" : "위젯 레이아웃"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小组件布局"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小工具佈局"
+          }
         }
       }
     },
@@ -83868,7 +88555,20 @@
       }
     },
     "Widgets" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小组件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小工具"
+          }
+        }
+      }
     },
     "Width adjustments apply only to the standard notch layout. Disable Minimalistic UI to edit this value." : {
       "extractionState" : "stale",
@@ -84138,11 +88838,24 @@
       }
     },
     "With stop button" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "정지 버튼 포함"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示停止按钮"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示停止按鈕"
           }
         }
       }
@@ -84348,7 +89061,20 @@
       }
     },
     "Yes" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是"
+          }
+        }
+      }
     },
     "You" : {
       "localizations" : {
@@ -84844,6 +89570,7 @@
     },
     "Youtube Music" : {
       "comment" : "Spotify music service.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -84891,7 +89618,20 @@
       }
     },
     "YouTube Music" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YouTube Music"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YouTube Music"
+          }
+        }
+      }
     },
     "YouTube Music requires this third-party app to be installed: " : {
       "comment" : "merge:ko:alt='Youtube Music을 사용하려면 이 타사 앱을 설치해야 합니다:'",

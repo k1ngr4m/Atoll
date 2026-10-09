@@ -31,7 +31,7 @@ final class SpotifyAuthManager: ObservableObject {
     @Published private(set) var isAuthenticated = false
     @Published private(set) var isAuthorizing = false
     @Published private(set) var authErrorMessage: String?
-    @Published private(set) var sessionStatusText = "Spotify cookie not configured."
+    @Published private(set) var sessionStatusText = String(localized: "Spotify cookie not configured.")
 
     private let secretsURL = URL(string: "https://raw.githubusercontent.com/xyloflake/spot-secrets-go/main/secrets/secretDict.json")!
     private let tokenURL = URL(string: "https://open.spotify.com/api/token")!
@@ -58,7 +58,7 @@ final class SpotifyAuthManager: ObservableObject {
         restorePersistedState()
 
         guard !sanitizedCookie.isEmpty else {
-            authErrorMessage = "Paste the Spotify sp_dc cookie first."
+            authErrorMessage = String(localized: "Paste the Spotify sp_dc cookie first.")
             return
         }
 
@@ -70,7 +70,7 @@ final class SpotifyAuthManager: ObservableObject {
 
         guard await validAccessToken(forceRefresh: true) != nil else {
             if authErrorMessage == nil {
-                authErrorMessage = "Spotify rejected the sp_dc cookie."
+                authErrorMessage = String(localized: "Spotify rejected the sp_dc cookie.")
             }
             return
         }
@@ -211,13 +211,13 @@ final class SpotifyAuthManager: ObservableObject {
         isAuthenticated = !cookie.isEmpty && (hasToken || hasValidatedCookie)
 
         if cookie.isEmpty {
-            sessionStatusText = "Spotify cookie not configured."
+            sessionStatusText = String(localized: "Spotify cookie not configured.")
         } else if hasToken {
-            sessionStatusText = "Spotify Canvas session ready."
+            sessionStatusText = String(localized: "Spotify Canvas session ready.")
         } else if hasValidatedCookie {
-            sessionStatusText = "Cookie saved. The access token will refresh automatically."
+            sessionStatusText = String(localized: "Cookie saved. The access token will refresh automatically.")
         } else {
-            sessionStatusText = "Cookie pasted. Validate it once to enable Canvas lookup."
+            sessionStatusText = String(localized: "Cookie pasted. Validate it once to enable Canvas lookup.")
         }
     }
 
@@ -325,17 +325,17 @@ private enum SpotifyAuthError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidRequest:
-            return "Unable to build the Spotify token request."
+            return String(localized: "Unable to build the Spotify token request.")
         case .invalidServerResponse:
-            return "Spotify returned an invalid response."
+            return String(localized: "Spotify returned an invalid response.")
         case .invalidTokenResponse:
-            return "Spotify did not return a usable access token."
+            return String(localized: "Spotify did not return a usable access token.")
         case .invalidSecretMaterial:
-            return "The Spotify TOTP secret could not be decoded."
+            return String(localized: "The Spotify TOTP secret could not be decoded.")
         case .missingSecrets:
-            return "No valid Spotify TOTP secret was found."
+            return String(localized: "No valid Spotify TOTP secret was found.")
         case let .httpFailure(statusCode):
-            return "Spotify token request failed with HTTP \(statusCode)."
+            return String(localized: "Spotify token request failed with HTTP \(statusCode).")
         case let .serverError(message):
             return message
         }

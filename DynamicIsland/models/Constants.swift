@@ -322,10 +322,10 @@ enum ClipboardDisplayMode: String, CaseIterable, Codable, Defaults.Serializable 
     
     var description: String {
         switch self {
-        case .popover: return "Shows clipboard as a dropdown attached to the clipboard button"
-        case .panel: return "Shows clipboard in a floating panel near the notch"
-        case .separateTab: return "Shows copied items in a separate tab within the Dynamic Island (merges with Notes if enabled)"
-        case .notchTab: return "Shows copied items in a dedicated clipboard tab inside the notch; drag items straight out to other apps"
+        case .popover: return String(localized: "Shows clipboard as a dropdown attached to the clipboard button")
+        case .panel: return String(localized: "Shows clipboard in a floating panel near the notch")
+        case .separateTab: return String(localized: "Shows copied items in a separate tab within the Dynamic Island (merges with Notes if enabled)")
+        case .notchTab: return String(localized: "Shows copied items in a dedicated clipboard tab inside the notch; drag items straight out to other apps")
         }
     }
 }
@@ -757,9 +757,9 @@ enum FocusMonitoringMode: String, CaseIterable, Identifiable, Defaults.Serializa
     var displayName: String {
         switch self {
         case .withoutDevTools:
-            return "Use without DevTools"
+            return String(localized: "Use without DevTools")
         case .useDevTools:
-            return "Use DevTools"
+            return String(localized: "Use DevTools")
         }
     }
 }

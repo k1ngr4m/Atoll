@@ -185,11 +185,11 @@ struct UpdateProgressView: View {
 
     private var phaseLabel: String {
         switch state.phase {
-        case .downloading:    return "Downloading Update…"
-        case .extracting:     return "Extracting Update…"
-        case .readyToInstall: return "Ready to Install"
-        case .installing:     return "Installing…"
-        case .installed:      return "Update Installed!"
+        case .downloading:    return String(localized: "Downloading Update…")
+        case .extracting:     return String(localized: "Extracting Update…")
+        case .readyToInstall: return String(localized: "Ready to Install")
+        case .installing:     return String(localized: "Installing…")
+        case .installed:      return String(localized: "Update Installed!")
         default:              return state.phase.displayName
         }
     }
@@ -202,7 +202,7 @@ struct UpdateProgressView: View {
                 .foregroundStyle(isComplete || isActive ? channelColor : Color.secondary.opacity(0.5))
                 .symbolEffect(.pulse, isActive: isActive)
 
-            Text(label)
+            Text(LocalizedStringKey(label))
                 .font(.caption2)
                 .foregroundStyle(isActive || isComplete ? Color.primary : Color.secondary.opacity(0.5))
         }

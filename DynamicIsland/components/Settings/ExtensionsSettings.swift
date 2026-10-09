@@ -307,7 +307,7 @@ private struct ExtensionEntryRow: View {
                     Text("Status:")
                         .font(.caption.weight(.semibold))
                         .foregroundStyle(.secondary)
-                    Text(entry.status.rawValue.capitalized)
+                    Text(LocalizedStringKey(entry.status.rawValue.capitalized))
                         .font(.caption)
                         .padding(.horizontal, 8)
                         .padding(.vertical, 2)
@@ -541,7 +541,7 @@ private struct ExtensionEntryRow: View {
     
     private func infoRow(label: String, value: String) -> some View {
         HStack {
-            Text("\(label):")
+            (Text(LocalizedStringKey(label)) + Text(":"))
                 .font(.caption)
                 .foregroundStyle(.secondary)
             Text(value)

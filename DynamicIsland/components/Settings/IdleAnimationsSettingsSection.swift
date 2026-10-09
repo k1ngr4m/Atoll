@@ -209,7 +209,7 @@ struct IdleAnimationsSettingsSection: View {
         .alert("Import Error", isPresented: $showingError) {
             Button("OK") { }
         } message: {
-            Text(importError ?? "Unknown error occurred")
+            Text(importError ?? String(localized: "Unknown error occurred"))
         }
     }
     
@@ -240,7 +240,7 @@ struct IdleAnimationsSettingsSection: View {
     
     private func handleURLImport() {
         guard let url = URL(string: urlInput), !nameInput.isEmpty else {
-            importError = "Please provide both a valid URL and name"
+            importError = String(localized: "Please provide both a valid URL and name")
             showingError = true
             return
         }

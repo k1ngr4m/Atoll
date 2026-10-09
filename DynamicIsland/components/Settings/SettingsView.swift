@@ -1005,6 +1005,7 @@ struct SettingsView: View {
             .filter { availableTabs.contains($0.tab) }
             .filter { entry in
                 entry.title.localizedCaseInsensitiveContains(trimmed) ||
+                NSLocalizedString(entry.title, comment: "").localizedCaseInsensitiveContains(trimmed) ||
                 entry.keywords.contains { $0.localizedCaseInsensitiveContains(trimmed) }
             }
     }
@@ -1818,7 +1819,7 @@ struct Downloads: View {
                     }
                 }
 
-                Text(style.rawValue)
+                Text(LocalizedStringKey(style.rawValue))
                     .font(.caption)
                     .fontWeight(.medium)
                     .lineLimit(2)
@@ -2267,7 +2268,7 @@ private struct HUDAndOSDSettingsView: View {
                         Toggle("Interactive (Drag to Change)", isOn: $verticalHUDInteractive)
                         Picker("Material", selection: $verticalHUDMaterial) {
                             ForEach(availableVerticalMaterials, id: \.self) { material in
-                                Text(material.rawValue).tag(material)
+                                Text(LocalizedStringKey(material.rawValue)).tag(material)
                             }
                         }
 
@@ -2472,14 +2473,14 @@ private struct ExternalDisplayIntegrationsSection: View {
     private var providerStatusText: String {
         switch thirdPartyDDCProvider {
         case .betterDisplay:
-            if ddcProviderRunning { return "Running" }
-            if betterDisplayManager.isDetected { return "Not running" }
-            return "Not detected"
+            if ddcProviderRunning { return String(localized: "Running") }
+            if betterDisplayManager.isDetected { return String(localized: "Not running") }
+            return String(localized: "Not detected")
         case .lunar:
-            if lunarManager.isConnected { return "Connected" }
-            if ddcProviderRunning { return "Running" }
-            if lunarManager.isDetected { return "Not running" }
-            return "Not detected"
+            if lunarManager.isConnected { return String(localized: "Connected") }
+            if ddcProviderRunning { return String(localized: "Running") }
+            if lunarManager.isDetected { return String(localized: "Not running") }
+            return String(localized: "Not detected")
         }
     }
 
@@ -2501,23 +2502,23 @@ private struct ExternalDisplayIntegrationsSection: View {
         switch thirdPartyDDCProvider {
         case .betterDisplay:
             if !betterDisplayManager.isDetected {
-                return "Install [BetterDisplay](https://betterdisplay.pro) to control external display brightness (and optional volume) through Atoll's HUD."
+                return String(localized: "Install [BetterDisplay](https://betterdisplay.pro) to control external display brightness (and optional volume) through Atoll's HUD.")
             }
             if !ddcProviderRunning {
-                return "BetterDisplay is installed but not currently running. Launch BetterDisplay to enable integration."
+                return String(localized: "BetterDisplay is installed but not currently running. Launch BetterDisplay to enable integration.")
             }
-            return "BetterDisplay OSD events will be routed through Atoll's active HUD style. Brightness is always routed; volume is routed when external volume control listener is enabled below. Make sure BetterDisplay's OSD integration is enabled in Settings › Application › Integration."
+            return String(localized: "BetterDisplay OSD events will be routed through Atoll's active HUD style. Brightness is always routed; volume is routed when external volume control listener is enabled below. Make sure BetterDisplay's OSD integration is enabled in Settings › Application › Integration.")
         case .lunar:
             if !lunarManager.isDetected {
-                return "Install [Lunar](https://lunar.fyi) to control external display brightness, contrast, and optional volume through Atoll's HUD via DDC."
+                return String(localized: "Install [Lunar](https://lunar.fyi) to control external display brightness, contrast, and optional volume through Atoll's HUD via DDC.")
             }
             if !ddcProviderRunning {
-                return "Lunar is installed but not currently running. Launch Lunar to enable integration."
+                return String(localized: "Lunar is installed but not currently running. Launch Lunar to enable integration.")
             }
             if lunarManager.isConnected {
-                return "Connected to Lunar's DDC socket. Brightness and contrast adjustments are shown through Atoll's HUD; volume follows when external volume control listener is enabled below."
+                return String(localized: "Connected to Lunar's DDC socket. Brightness and contrast adjustments are shown through Atoll's HUD; volume follows when external volume control listener is enabled below.")
             }
-            return "Lunar is running but the socket connection is not yet established. It will connect automatically."
+            return String(localized: "Lunar is running but the socket connection is not yet established. It will connect automatically.")
         }
     }
 
@@ -4769,7 +4770,7 @@ struct LiveActivitiesSettings: View {
                                 Circle()
                                     .fill(Color.purple)
                                     .frame(width: 8, height: 8)
-                                Text(doNotDisturbManager.currentFocusModeName.isEmpty ? "Focus Enabled" : doNotDisturbManager.currentFocusModeName)
+                                Text(doNotDisturbManager.currentFocusModeName.isEmpty ? String(localized: "Focus Enabled") : doNotDisturbManager.currentFocusModeName)
                                     .foregroundColor(.purple)
                             }
                         } else {
@@ -5323,7 +5324,7 @@ struct Appearance: View {
             case .success(let url):
                 importCustomIcon(from: url)
             case .failure:
-                iconImportError = "Icon import was canceled or failed."
+                iconImportError = String(localized: "Icon import was canceled or failed.")
             }
         }
         .navigationTitle("Appearance")
@@ -5397,7 +5398,7 @@ struct Appearance: View {
 
     private func importCustomIcon(from url: URL) {
         guard let image = NSImage(contentsOf: url) else {
-            iconImportError = "That file could not be loaded as an image."
+            iconImportError = String(localized: "That file could not be loaded as an image.")
             return
         }
         let name = url.deletingPathExtension().lastPathComponent
@@ -5410,7 +5411,7 @@ struct Appearance: View {
             let data = try Data(contentsOf: url)
             try data.write(to: destination, options: [.atomic])
         } catch {
-            iconImportError = "Unable to save the icon file."
+            iconImportError = String(localized: "Unable to save the icon file.")
             return
         }
 
@@ -6488,7 +6489,7 @@ extension LockScreenSettings {
     ) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack {
-                Text(title)
+                Text(LocalizedStringKey(title))
                 Spacer()
                 Text("v\(currentValue)")
                     .font(.caption)
@@ -6532,7 +6533,7 @@ private struct LockScreenIconStyleCard: View {
                 }
                 .frame(width: 72, height: 50)
 
-                Text(title)
+                Text(LocalizedStringKey(title))
                     .font(.caption)
                     .fontWeight(.medium)
             }
@@ -6544,7 +6545,7 @@ private struct LockScreenIconStyleCard: View {
                 isHovering = hovering
             }
         }
-        .accessibilityLabel(title)
+        .accessibilityLabel(Text(LocalizedStringKey(title)))
         .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
@@ -7805,7 +7806,7 @@ struct TimerSettings: View {
 
     private func selectCustomTimerSound() {
         let panel = NSOpenPanel()
-        panel.title = "Select Timer Sound"
+        panel.title = String(localized: "Select Timer Sound")
         panel.allowedContentTypes = [.audio]
         panel.allowsMultipleSelection = false
         panel.canChooseDirectories = false
@@ -8040,11 +8041,11 @@ struct StatsSettings: View {
     private var formattedUpdateInterval: String {
         let seconds = Int(statsUpdateInterval.rounded())
         if seconds >= 60 {
-            return "60 s (1 min)"
+            return String(localized: "60 s (1 min)")
         } else if seconds == 1 {
-            return "1 s"
+            return String(localized: "1 s")
         } else {
-            return "\(seconds) s"
+            return String(localized: "\(seconds) s")
         }
     }
 
@@ -8400,7 +8401,7 @@ struct StatsSettings: View {
                     LLMUsageManager.shared.refreshAll(force: true)
                     accountPendingDeletion = nil
                 } catch {
-                    newAPIAccountErrorMessage = "Failed to delete \(account.name): \(error.localizedDescription)"
+                    newAPIAccountErrorMessage = String(localized: "Failed to delete \(account.name): \(error.localizedDescription)")
                 }
             }
             Button("Cancel", role: .cancel) {
@@ -8415,7 +8416,7 @@ struct StatsSettings: View {
         )) {
             Button("OK", role: .cancel) { newAPIAccountErrorMessage = nil }
         } message: {
-            Text(newAPIAccountErrorMessage ?? "An unknown error occurred.")
+            Text(newAPIAccountErrorMessage ?? String(localized: "An unknown error occurred."))
         }
     }
 }
@@ -8673,16 +8674,16 @@ struct ClipboardSettings: View {
         let interval = Date().timeIntervalSince(date)
 
         if interval < 60 {
-            return "Just now"
+            return String(localized: "Just now")
         } else if interval < 3600 {
             let minutes = Int(interval / 60)
-            return "\(minutes)m ago"
+            return String(localized: "\(minutes)m ago")
         } else if interval < 86400 {
             let hours = Int(interval / 3600)
-            return "\(hours)h ago"
+            return String(localized: "\(hours)h ago")
         } else {
             let days = Int(interval / 86400)
-            return "\(days)d ago"
+            return String(localized: "\(days)d ago")
         }
     }
 }
@@ -8851,16 +8852,16 @@ struct ScreenAssistantSettings: View {
         let interval = Date().timeIntervalSince(date)
 
         if interval < 60 {
-            return "Just now"
+            return String(localized: "Just now")
         } else if interval < 3600 {
             let minutes = Int(interval / 60)
-            return "\(minutes)m ago"
+            return String(localized: "\(minutes)m ago")
         } else if interval < 86400 {
             let hours = Int(interval / 3600)
-            return "\(hours)h ago"
+            return String(localized: "\(hours)h ago")
         } else {
             let days = Int(interval / 86400)
-            return "\(days)d ago"
+            return String(localized: "\(days)d ago")
         }
     }
 }
@@ -9068,7 +9069,7 @@ struct CustomOSDSettings: View {
                 Section {
                     Picker("Material", selection: $osdMaterial) {
                         ForEach(availableOSDMaterials, id: \.self) { material in
-                            Text(material.rawValue).tag(material)
+                            Text(LocalizedStringKey(material.rawValue)).tag(material)
                         }
                     }
                     .settingsHighlight(id: highlightID("Material"))
@@ -9105,7 +9106,7 @@ struct CustomOSDSettings: View {
 
                     Picker("Icon & Progress Color", selection: $osdIconColorStyle) {
                         ForEach(OSDIconColorStyle.allCases, id: \.self) { style in
-                            Text(style.rawValue).tag(style)
+                            Text(LocalizedStringKey(style.rawValue)).tag(style)
                         }
                     }
                     .settingsHighlight(id: highlightID("Icon & Progress Color"))
@@ -9376,7 +9377,7 @@ struct TerminalSettings: View {
     }
 
     private var formattedMaxHeight: String {
-        "\(Int(terminalMaxHeightFraction * 100))% of screen"
+        String(localized: "\(Int(terminalMaxHeightFraction * 100))% of screen")
     }
 
     /// All monospaced font families available on the system.
@@ -9391,7 +9392,7 @@ struct TerminalSettings: View {
 
     /// Display name for the font picker — shows "System Monospaced" when no custom font is set.
     private var fontDisplayName: String {
-        terminalFontFamily.isEmpty ? "System Monospaced" : terminalFontFamily
+        terminalFontFamily.isEmpty ? String(localized: "System Monospaced") : terminalFontFamily
     }
 
     private var cursorStyleBinding: Binding<TerminalCursorStyleOption> {

@@ -275,7 +275,7 @@ struct AnimationEditorView: View {
                                 .fontWeight(.medium)
                             Picker("Loop Mode", selection: $loopMode) {
                                 ForEach(AnimationLoopMode.allCases, id: \.self) { mode in
-                                    Text(mode.rawValue).tag(mode)
+                                    Text(LocalizedStringKey(mode.rawValue)).tag(mode)
                                 }
                             }
                             .pickerStyle(.segmented)
@@ -533,10 +533,10 @@ private struct EditorSectionCard<Content: View>: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             VStack(alignment: .leading, spacing: 4) {
-                Text(title)
+                Text(LocalizedStringKey(title))
                     .font(.headline)
                 if let subtitle, !subtitle.isEmpty {
-                    Text(subtitle)
+                    Text(LocalizedStringKey(subtitle))
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
@@ -567,7 +567,7 @@ private struct ParameterSliderRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack {
-                Text(title)
+                Text(LocalizedStringKey(title))
                     .fontWeight(.medium)
                 Spacer()
                 Text(formatter(value))
@@ -578,7 +578,7 @@ private struct ParameterSliderRow: View {
             HStack(spacing: 10) {
                 slider
                 if let resetLabel, let resetValue {
-                    Button(resetLabel) {
+                    Button(LocalizedStringKey(resetLabel)) {
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.85)) {
                             value = resetValue
                         }
@@ -611,7 +611,7 @@ private struct PreviewStatChip: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(title)
+            Text(LocalizedStringKey(title))
                 .font(.caption2)
                 .foregroundStyle(.secondary)
             Text(value)

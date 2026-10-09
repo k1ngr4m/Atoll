@@ -173,7 +173,7 @@ struct UpdateFoundView: View {
     @ViewBuilder
     private func versionBadge(label: String, version: String, highlighted: Bool = false) -> some View {
         VStack(spacing: 2) {
-            Text(label)
+            Text(LocalizedStringKey(label))
                 .font(.caption2)
                 .foregroundStyle(.secondary)
             Text(version)

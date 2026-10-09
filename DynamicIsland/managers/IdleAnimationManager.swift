@@ -308,11 +308,11 @@ enum AnimationImportError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidFileType:
-            return "Only .json files are supported"
+            return String(localized: "Only .json files are supported")
         case .invalidJSON:
-            return "Invalid Lottie JSON format"
+            return String(localized: "Invalid Lottie JSON format")
         case .downloadFailed:
-            return "Failed to download animation"
+            return String(localized: "Failed to download animation")
         }
     }
 }

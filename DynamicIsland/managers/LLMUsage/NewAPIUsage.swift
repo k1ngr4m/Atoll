@@ -86,7 +86,7 @@ enum NewAPIKeychain {
 
 struct NewAPIKeychainError: LocalizedError {
     let status: OSStatus
-    var errorDescription: String? { "Unable to store the New API key (Keychain status \(status))." }
+    var errorDescription: String? { String(localized: "Unable to store the New API key (Keychain status \(status)).") }
 }
 
 struct NewAPIAccountStore: NewAPIAccountProviding {
@@ -139,9 +139,9 @@ enum NewAPIStoreError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .invalidName: return "Enter a name for this account."
-        case .missingAPIKey: return "Enter an API key for this account."
-        case .invalidBaseURL: return "Enter a valid New API URL, including http:// or https://."
+        case .invalidName: return String(localized: "Enter a name for this account.")
+        case .missingAPIKey: return String(localized: "Enter an API key for this account.")
+        case .invalidBaseURL: return String(localized: "Enter a valid New API URL, including http:// or https://.")
         }
     }
 }
@@ -356,11 +356,11 @@ enum NewAPIClientError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .invalidBaseURL: return "Invalid New API URL"
-        case .invalidURL: return "Invalid New API request URL"
-        case .httpFailure: return "New API request failed"
-        case .apiRequestFailed: return "New API returned an unsuccessful response"
-        case .invalidResponse: return "New API returned an invalid response"
+        case .invalidBaseURL: return String(localized: "Invalid New API URL")
+        case .invalidURL: return String(localized: "Invalid New API request URL")
+        case .httpFailure: return String(localized: "New API request failed")
+        case .apiRequestFailed: return String(localized: "New API returned an unsuccessful response")
+        case .invalidResponse: return String(localized: "New API returned an invalid response")
         }
     }
 }

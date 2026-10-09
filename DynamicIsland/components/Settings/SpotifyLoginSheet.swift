@@ -44,7 +44,7 @@ struct SpotifyLoginSheet: View {
     let onCapture: (String) -> Void
 
     @State private var statusText: String =
-        "Sign in with email & password, Apple, or Facebook. Google blocks in-app sign-in — use “Open in Browser” for Google accounts."
+        String(localized: "Sign in with email & password, Apple, or Facebook. Google blocks in-app sign-in — use “Open in Browser” for Google accounts.")
     @State private var didCapture = false
 
     var body: some View {
@@ -66,7 +66,7 @@ struct SpotifyLoginSheet: View {
                 .help("Spotify often blocks in-app logins. Sign in via your normal browser, then paste sp_dc in Settings.")
                 Button("Reset Session") {
                     NotificationCenter.default.post(name: .spotifyLoginSheetReset, object: nil)
-                    statusText = "Session cleared. Sign in again to capture the cookie."
+                    statusText = String(localized: "Session cleared. Sign in again to capture the cookie.")
                 }
                 Button("Cancel") { dismiss() }
                     .keyboardShortcut(.cancelAction)
@@ -76,7 +76,7 @@ struct SpotifyLoginSheet: View {
             SpotifyLoginWebView { value in
                 guard !didCapture else { return }
                 didCapture = true
-                statusText = "Captured sp_dc cookie. Validating…"
+                statusText = String(localized: "Captured sp_dc cookie. Validating…")
                 onCapture(value)
                 dismiss()
             } onStatus: { message in
@@ -196,7 +196,7 @@ struct SpotifyLoginWebView: NSViewRepresentable {
                     "Blocked embedded OAuth navigation to host=\(url.host ?? "", privacy: .public)"
                 )
                 onStatus(
-                    "Google blocks in-app sign-in. Use email & password, Apple, or tap “Open in Browser” to sign in there and paste sp_dc in Settings."
+                    String(localized: "Google blocks in-app sign-in. Use email & password, Apple, or tap “Open in Browser” to sign in there and paste sp_dc in Settings.")
                 )
                 webView.load(URLRequest(url: SpotifyLoginConstants.googleSignInRedirectURL))
                 return
@@ -213,11 +213,11 @@ struct SpotifyLoginWebView: NSViewRepresentable {
             let host = webView.url?.host ?? ""
             spotifyLoginLogger.debug("didFinish host=\(host, privacy: .public)")
             if host.contains("accounts.spotify.com") {
-                onStatus("Sign in to your Spotify account.")
+                onStatus(String(localized: "Sign in to your Spotify account."))
             } else if host.contains("open.spotify.com") {
-                onStatus("Open Spotify shouldn't load here — capture should fire before this. Falling back.")
+                onStatus(String(localized: "Open Spotify shouldn't load here — capture should fire before this. Falling back."))
             } else if host.contains("www.spotify.com") || host.contains("spotify.com") {
-                onStatus("Logged in. Finishing capture…")
+                onStatus(String(localized: "Logged in. Finishing capture…"))
             }
             webView.configuration.websiteDataStore.httpCookieStore.getAllCookies { [weak self] cookies in
                 let names = cookies
@@ -232,11 +232,11 @@ struct SpotifyLoginWebView: NSViewRepresentable {
         }
 
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-            onStatus("Load failed: \(error.localizedDescription)")
+            onStatus(String(localized: "Load failed: \(error.localizedDescription)"))
         }
 
         func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-            onStatus("Load failed: \(error.localizedDescription)")
+            onStatus(String(localized: "Load failed: \(error.localizedDescription)"))
         }
 
         // Allow pop-ups (e.g. SSO providers) to load inline in the same webview.
@@ -249,7 +249,7 @@ struct SpotifyLoginWebView: NSViewRepresentable {
             if navigationAction.targetFrame == nil, let url = navigationAction.request.url {
                 if Self.isBlockedOAuthHost(url.host) {
                     onStatus(
-                        "Google blocks in-app sign-in. Use email & password, Apple, or tap “Open in Browser” to sign in there and paste sp_dc in Settings."
+                        String(localized: "Google blocks in-app sign-in. Use email & password, Apple, or tap “Open in Browser” to sign in there and paste sp_dc in Settings.")
                     )
                     return nil
                 }
