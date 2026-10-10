@@ -43608,6 +43608,38 @@
     "Keep showing lyrics under the closed notch" : {
 
     },
+    "Keep expanded" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持展开"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持展開"
+          }
+        }
+      }
+    },
+    "Keeps the panel expanded after opening, even when the pointer leaves. You can still close it manually." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "面板展开后，鼠标移开也不会自动收起。仍可手动收起。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "面板展開後，游標移開也不會自動收合。仍可手動收合。"
+          }
+        }
+      }
+    },
     "Keep terminal open until clicked outside" : {
       "localizations" : {
         "ko" : {

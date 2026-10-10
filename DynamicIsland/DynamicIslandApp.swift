@@ -1066,6 +1066,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 viewModel.open()
 
                 let workItem = DispatchWorkItem { [weak viewModel] in
+                    guard !Defaults[.keepNotchExpanded] else { return }
                     viewModel?.close()
                 }
                 self.closeNotchWorkItem = workItem
