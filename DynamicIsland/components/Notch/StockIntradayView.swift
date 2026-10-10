@@ -99,19 +99,17 @@ struct ClosedStockView: View {
             .font(.caption.weight(.medium))
             .frame(width: 126)
             Color.clear.frame(width: max(centerWidth, 96))
-            VStack(spacing: 0) {
-                HStack(spacing: 4) {
-                    Text(quote?.price.map { String(format: "%.2f", $0) } ?? "—")
-                    Text(quote?.percent.map { String(format: "%+.2f%%", $0) } ?? "—")
-                }.font(.caption.weight(.semibold)).foregroundStyle(color)
-                Text(manager.error != nil || manager.missingCodes.contains(code)
-                     ? String(localized: "Quote update failed") : (quote?.tradeTime ?? "—"))
-                    .font(.system(size: 8)).foregroundStyle(.secondary).lineLimit(1)
+            HStack(spacing: 4) {
+                Text(quote?.price.map { String(format: "%.2f", $0) } ?? "—")
+                Text(quote?.percent.map { String(format: "%+.2f%%", $0) } ?? "—")
             }
+            .font(.caption.weight(.semibold)).foregroundStyle(color)
             .monospacedDigit().frame(width: 126)
         }
         .frame(height: max(height, 24))
-        .help(quote?.tradeTime ?? String(localized: "No new quote"))
+        .help(manager.error != nil || manager.missingCodes.contains(code)
+              ? String(localized: "Quote update failed")
+              : (quote?.tradeTime ?? String(localized: "No new quote")))
         .task(id: code) {
             while !Task.isCancelled {
                 await manager.refresh(force: false)

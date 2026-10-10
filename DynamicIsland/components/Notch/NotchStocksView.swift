@@ -120,12 +120,13 @@ struct NotchStocksView: View {
                     Text(time).font(.caption2).foregroundStyle(.secondary)
                 }
             }
-            Button { pinnedCode = symbol } label: {
-                Image(systemName: (watchlist.contains(pinnedCode) ? pinnedCode : watchlist.first) == symbol ? "pin.fill" : "pin")
+            Button { pinnedCode = pinnedCode == symbol ? "" : symbol } label: {
+                Image(systemName: pinnedCode == symbol ? "pin.fill" : "pin")
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(Text("Pin \(symbol) on closed notch"))
+            .accessibilityLabel(pinnedCode == symbol ? Text("Unpin \(symbol)") : Text("Pin \(symbol) on closed notch"))
             Button {
+                if pinnedCode == symbol { pinnedCode = "" }
                 watchlist.removeAll { $0 == symbol }
             } label: { Image(systemName: "minus.circle") }
             .buttonStyle(.plain)
@@ -154,7 +155,7 @@ struct StocksSettingsSection: View {
             if enabled {
                 Defaults.Toggle(key: .stockShowWhenClosed) { Text("Show stock price when closed") }
                 Picker("Pinned stock", selection: $pinnedCode) {
-                    Text("First stock in watchlist").tag("")
+                    Text("No pinned stock").tag("")
                     ForEach(watchlist, id: \.self) { Text($0).tag($0) }
                 }
                 .onChange(of: watchlist) { _, codes in

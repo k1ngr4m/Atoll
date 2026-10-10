@@ -335,7 +335,7 @@ struct ContentView: View {
     }
 
     private var closedStockCode: String? {
-        stockWatchlist.contains(stockPinnedCode) ? stockPinnedCode : stockWatchlist.first
+        stockWatchlist.contains(stockPinnedCode) ? stockPinnedCode : nil
     }
 
     private var showClosedStock: Bool {
