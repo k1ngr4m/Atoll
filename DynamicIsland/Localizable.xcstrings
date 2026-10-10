@@ -1,1830 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "New" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新功能"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新功能"
-          }
-        }
-      }
-    },
-    "Last Activity" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "上次活动"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "上次活動"
-          }
-        }
-      }
-    },
-    "Granted" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "授权时间"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "授權時間"
-          }
-        }
-      }
-    },
-    "Auto Reverse" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "往返播放"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "往返播放"
-          }
-        }
-      }
-    },
-    "Play Once" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "播放一次"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "播放一次"
-          }
-        }
-      }
-    },
-    "Loop" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "循环播放"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "循環播放"
-          }
-        }
-      }
-    },
-    "Auto (Transparent)" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自动（半透明）"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自動（半透明）"
-          }
-        }
-      }
-    },
-    "Auto" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自动"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自動"
-          }
-        }
-      }
-    },
-    "Black (Transparent)" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "黑色（半透明）"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "黑色（半透明）"
-          }
-        }
-      }
-    },
-    "Black" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "黑色"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "黑色"
-          }
-        }
-      }
-    },
-    "Dark Gray" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "深灰色"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "深灰色"
-          }
-        }
-      }
-    },
-    "Light Gray" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "浅灰色"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "淺灰色"
-          }
-        }
-      }
-    },
-    "White (Transparent)" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "白色（半透明）"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "白色（半透明）"
-          }
-        }
-      }
-    },
-    "Solid Auto" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "纯色自动"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "純色自動"
-          }
-        }
-      }
-    },
-    "Solid Light" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "纯色浅色"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "純色淺色"
-          }
-        }
-      }
-    },
-    "Solid Dark" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "纯色深色"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "純色深色"
-          }
-        }
-      }
-    },
-    "New API returned an invalid response" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 返回了无效响应"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 返回了無效響應"
-          }
-        }
-      }
-    },
-    "New API returned an unsuccessful response" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 返回了失败响应"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 返回了失敗響應"
-          }
-        }
-      }
-    },
-    "New API request failed" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 请求失败"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 請求失敗"
-          }
-        }
-      }
-    },
-    "Invalid New API request URL" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 请求 URL 无效"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 請求 URL 無效"
-          }
-        }
-      }
-    },
-    "Invalid New API URL" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API URL 无效"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API URL 無效"
-          }
-        }
-      }
-    },
-    "Unable to store the New API key (Keychain status %d)." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "无法保存 New API 密钥（钥匙串状态码：%d）。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "無法保存 New API 密鑰（鑰匙串狀態碼：%d）。"
-          }
-        }
-      }
-    },
-    "Enter a valid New API URL, including http:// or https://." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请输入有效的 New API URL，包含 http:// 或 https://。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "請輸入有效的 New API URL，包含 http:// 或 https://。"
-          }
-        }
-      }
-    },
-    "Enter an API key for this account." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请输入此账户的 API 密钥。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "請輸入此帳號的 API 密鑰。"
-          }
-        }
-      }
-    },
-    "Enter a name for this account." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请输入账户名称。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "請輸入帳號名稱。"
-          }
-        }
-      }
-    },
-    "Unable to save the icon file." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "无法保存图标文件。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "無法保存圖標文件。"
-          }
-        }
-      }
-    },
-    "That file could not be loaded as an image." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "无法将该文件加载为图片。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "無法將該文件加載為圖片。"
-          }
-        }
-      }
-    },
-    "Icon import was canceled or failed." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "图标导入已取消或失败。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "圖標導入已取消或失敗。"
-          }
-        }
-      }
-    },
-    "Revoked" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已撤销"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已撤銷"
-          }
-        }
-      }
-    },
-    "Failed to delete %@: %@" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "删除 %@ 失败：%@"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "刪除 %@ 失敗：%@"
-          }
-        }
-      }
-    },
-    "%lld%% of screen" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "屏幕的 %lld%%"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "屏幕的 %lld%%"
-          }
-        }
-      }
-    },
-    "Failed to download animation" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "动画下载失败"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "動畫下載失敗"
-          }
-        }
-      }
-    },
-    "Invalid Lottie JSON format" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lottie JSON 格式无效"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lottie JSON 格式無效"
-          }
-        }
-      }
-    },
-    "Only .json files are supported" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "仅支持 .json 文件"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "僅支持 .json 文件"
-          }
-        }
-      }
-    },
-    "Visible Width" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "可见宽度"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "可見寬度"
-          }
-        }
-      }
-    },
-    "Visible Height" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "可见高度"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "可見高度"
-          }
-        }
-      }
-    },
-    "Vertical Offset" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "垂直偏移"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "垂直偏移"
-          }
-        }
-      }
-    },
-    "Use 3D Bluetooth HUD icon" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "使用 3D 蓝牙提示图标"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "使用 3D 藍牙提示圖標"
-          }
-        }
-      }
-    },
-    "Update Installed!" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更新已安装！"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更新已安裝！"
-          }
-        }
-      }
-    },
-    "Until turned off" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "直到手动关闭"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "直到手動關閉"
-          }
-        }
-      }
-    },
-    "Unknown error occurred" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "发生未知错误"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "發生未知錯誤"
-          }
-        }
-      }
-    },
-    "Transform & Display" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "变换与显示"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "變換與顯示"
-          }
-        }
-      }
-    },
-    "Third-party DDC provider" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "第三方 DDC 服务"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "第三方 DDC 服務"
-          }
-        }
-      }
-    },
-    "Third-party DDC app integration" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "第三方 DDC 应用集成"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "第三方 DDC 應用集成"
-          }
-        }
-      }
-    },
-    "Start from a popular layout and tweak from there." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "选择常用布局作为起点，再按需微调。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "選擇常用佈局作為起點，再按需微調。"
-          }
-        }
-      }
-    },
-    "Size & Crop" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "尺寸与裁剪"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "尺寸與裁剪"
-          }
-        }
-      }
-    },
-    "Shows copied items in a separate tab within the Dynamic Island (merges with Notes if enabled)" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在灵动岛的独立标签页中显示复制内容（启用备忘录时会合并显示）"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在靈動島的獨立標籤頁中顯示複製內容（啓用備忘錄時會合併顯示）"
-          }
-        }
-      }
-    },
-    "Shows copied items in a dedicated clipboard tab inside the notch; drag items straight out to other apps" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在刘海内的独立剪贴板标签页中显示复制内容，可直接将项目拖到其他应用"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在劉海內的獨立剪貼簿標籤頁中顯示複製內容，可直接將項目拖到其他應用"
-          }
-        }
-      }
-    },
-    "Shows clipboard in a floating panel near the notch" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在刘海附近的悬浮面板中显示剪贴板"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在劉海附近的懸浮面板中顯示剪貼簿"
-          }
-        }
-      }
-    },
-    "Shows clipboard as a dropdown attached to the clipboard button" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在剪贴板按钮旁以下拉面板显示剪贴板"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在剪貼簿按鈕旁以下拉麵板顯示剪貼簿"
-          }
-        }
-      }
-    },
-    "Show Change Media Output control" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "显示更改媒体输出控件"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "顯示更改媒體輸出控制項"
-          }
-        }
-      }
-    },
-    "Select Timer Sound" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "选择计时器提示音"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "選擇計時器提示音"
-          }
-        }
-      }
-    },
-    "Scale" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "缩放"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "縮放"
-          }
-        }
-      }
-    },
-    "Rotation" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "旋转"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "旋轉"
-          }
-        }
-      }
-    },
-    "Reverse scroll gestures" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "反转滚动手势"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "反轉滾動手勢"
-          }
-        }
-      }
-    },
-    "Reminder vertical offset" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提醒垂直偏移"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提醒垂直偏移"
-          }
-        }
-      }
-    },
-    "Reminder alignment" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提醒对齐方式"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提醒對齊方式"
-          }
-        }
-      }
-    },
-    "Recording Hover Style" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "录制悬停样式"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "錄制懸停樣式"
-          }
-        }
-      }
-    },
-    "Recording Controls" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "录制控件"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "錄制控制項"
-          }
-        }
-      }
-    },
-    "Quick Presets" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "快速预设"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "快速預設"
-          }
-        }
-      }
-    },
-    "Position & Padding" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "位置与留白"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "位置與留白"
-          }
-        }
-      }
-    },
-    "Please provide both a valid URL and name" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请提供有效的 URL 和名称"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "請提供有效的 URL 和名稱"
-          }
-        }
-      }
-    },
-    "Playback Speed" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "播放速度"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "播放速度"
-          }
-        }
-      }
-    },
-    "Output" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "输出"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "輸出"
-          }
-        }
-      }
-    },
-    "Option as Meta" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "将 Option 用作 Meta 键"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "將 Option 用作 Meta 鍵"
-          }
-        }
-      }
-    },
-    "Opacity" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不透明度"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不透明度"
-          }
-        }
-      }
-    },
-    "Offset" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "偏移"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "偏移"
-          }
-        }
-      }
-    },
-    "Nudge the animation inside the notch." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "微调动画在刘海内的位置。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "微調動畫在劉海內的位置。"
-          }
-        }
-      }
-    },
-    "Not running" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "未运行"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "未運行"
-          }
-        }
-      }
-    },
-    "Not detected" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "未检测到"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "未檢測到"
-          }
-        }
-      }
-    },
-    "New API Provider" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 服务"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New API 服務"
-          }
-        }
-      }
-    },
-    "Mouse reporting" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "鼠标事件报告"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "鼠標事件報告"
-          }
-        }
-      }
-    },
-    "Match the notch footprint or intentionally exceed it." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "调整为与刘海尺寸一致，或按需超出刘海范围。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "調整為與劉海尺寸一致，或按需超出劉海範圍。"
-          }
-        }
-      }
-    },
-    "Manage app permissions" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "管理应用权限"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "管理應用權限"
-          }
-        }
-      }
-    },
-    "Lyric highlight" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "歌词高亮"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "歌詞高亮"
-          }
-        }
-      }
-    },
-    "Lunar is running but the socket connection is not yet established. It will connect automatically." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lunar 正在运行，但尚未建立套接字连接，稍后会自动连接。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lunar 正在運行，但尚未建立套接字連接，稍後會自動連接。"
-          }
-        }
-      }
-    },
-    "Lunar is installed but not currently running. Launch Lunar to enable integration." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已安装 Lunar，但尚未运行。启动 Lunar 即可启用集成。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已安裝 Lunar，但尚未運行。啓動 Lunar 即可啓用集成。"
-          }
-        }
-      }
-    },
-    "Lock" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "锁"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "鎖"
-          }
-        }
-      }
-    },
-    "LocalSend Device Picker Style" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "LocalSend 设备选择器样式"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "LocalSend 設備選擇器樣式"
-          }
-        }
-      }
-    },
-    "Install [Lunar](https://lunar.fyi) to control external display brightness, contrast, and optional volume through Atoll's HUD via DDC." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "安装 [Lunar](https://lunar.fyi)，即可通过 DDC 和 Atoll 的提示面板控制外接显示器的亮度、对比度和可选的音量。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "安裝 [Lunar](https://lunar.fyi)，即可通過 DDC 和 Atoll 的提示面板控制外接顯示器的亮度、對比度和可選的音量。"
-          }
-        }
-      }
-    },
-    "Install [BetterDisplay](https://betterdisplay.pro) to control external display brightness (and optional volume) through Atoll's HUD." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "安装 [BetterDisplay](https://betterdisplay.pro)，即可通过 Atoll 的提示面板控制外接显示器的亮度和可选的音量。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "安裝 [BetterDisplay](https://betterdisplay.pro)，即可通過 Atoll 的提示面板控制外接顯示器的亮度和可選的音量。"
-          }
-        }
-      }
-    },
-    "Horizontal Offset" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "水平偏移"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "水平偏移"
-          }
-        }
-      }
-    },
-    "Hide until hovered" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "悬停时才显示"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "懸停時才顯示"
-          }
-        }
-      }
-    },
-    "Give it a friendly name and control playback speed." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "设置易于识别的名称，并调整播放速度。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "設置易於識別的名稱，並調整播放速度。"
-          }
-        }
-      }
-    },
-    "Full Disk Access for global mode" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "全局模式需要完全磁盘访问权限"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "全局模式需要完全磁盤訪問權限"
-          }
-        }
-      }
-    },
-    "Foreground color" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "前景颜色"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "前景顏色"
-          }
-        }
-      }
-    },
-    "Focus Enabled" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "专注模式已开启"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "專注模式已開啓"
-          }
-        }
-      }
-    },
-    "Fingerprint" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "指纹"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "指紋"
-          }
-        }
-      }
-    },
-    "Extracting Update…" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "正在解压更新…"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "正在解壓更新…"
-          }
-        }
-      }
-    },
-    "Enable Custom OSD" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "启用自定义屏幕提示"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "啓用自定義屏幕提示"
-          }
-        }
-      }
-    },
-    "Downloading Update…" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "正在下载更新…"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "正在下載更新…"
-          }
-        }
-      }
-    },
-    "Dial in the final polish." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "微调动画的最终效果。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "微調動畫的最終效果。"
-          }
-        }
-      }
-    },
-    "Cursor color" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "光标颜色"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "游標顏色"
-          }
-        }
-      }
-    },
-    "Cursor Provider" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cursor 服务"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cursor 服務"
-          }
-        }
-      }
-    },
-    "Connected to Lunar's DDC socket. Brightness and contrast adjustments are shown through Atoll's HUD; volume follows when external volume control listener is enabled below." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已连接到 Lunar 的 DDC 套接字。亮度和对比度调整将通过 Atoll 的提示面板显示；启用下方的外部音量控制监听后，也会显示音量调整。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已連接到 Lunar 的 DDC 套接字。亮度和對比度調整將通過 Atoll 的提示面板顯示；啓用下方的外部音量控制監聽後，也會顯示音量調整。"
-          }
-        }
-      }
-    },
-    "Codex Provider" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Codex 服务"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Codex 服務"
-          }
-        }
-      }
-    },
-    "Claude Provider" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Claude 服务"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Claude 服務"
-          }
-        }
-      }
-    },
-    "Bottom Padding" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "底部留白"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "底部留白"
-          }
-        }
-      }
-    },
-    "Bold as bright" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "以亮色显示粗体"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "以亮色顯示粗體"
-          }
-        }
-      }
-    },
-    "BetterDisplay is installed but not currently running. Launch BetterDisplay to enable integration." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已安装 BetterDisplay，但尚未运行。启动 BetterDisplay 即可启用集成。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已安裝 BetterDisplay，但尚未運行。啓動 BetterDisplay 即可啓用集成。"
-          }
-        }
-      }
-    },
-    "BetterDisplay OSD events will be routed through Atoll's active HUD style. Brightness is always routed; volume is routed when external volume control listener is enabled below. Make sure BetterDisplay's OSD integration is enabled in Settings › Application › Integration." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "BetterDisplay 的屏幕提示将使用 Atoll 当前的提示样式显示。亮度提示始终转发；音量提示仅在下方启用外部音量控制监听后转发。请确保已在 BetterDisplay 的 Settings → Application → Integration 中开启 OSD 集成。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "BetterDisplay 的屏幕提示將使用 Atoll 當前的提示樣式顯示。亮度提示始終轉發；音量提示僅在下方啓用外部音量控制監聽後轉發。請確保已在 BetterDisplay 的 Settings → Application → Integration 中開啓 OSD 集成。"
-          }
-        }
-      }
-    },
-    "Background color" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "背景颜色"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "背景顏色"
-          }
-        }
-      }
-    },
-    "Atoll Update" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Atoll 更新"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Atoll 更新"
-          }
-        }
-      }
-    },
-    "Atoll Settings" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Atoll 设置"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Atoll 設置"
-          }
-        }
-      }
-    },
-    "Antigravity Provider" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Antigravity 服务"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Antigravity 服務"
-          }
-        }
-      }
-    },
-    "Animation Details" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "动画详情"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "動畫詳情"
-          }
-        }
-      }
-    },
-    "An unknown error occurred." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "发生未知错误。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "發生未知錯誤。"
-          }
-        }
-      }
-    },
-    "An unknown error occurred while updating Atoll." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更新 Atoll 时发生未知错误。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更新 Atoll 時發生未知錯誤。"
-          }
-        }
-      }
-    },
-    "Additional folder access required" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "需要额外的文件夹访问权限"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "需要額外的資料夾訪問權限"
-          }
-        }
-      }
-    },
-    "60 s (1 min)" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "60 秒（1 分钟）"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "60 秒（1 分鐘）"
-          }
-        }
-      }
-    },
-    "4 hours" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "4 小时"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "4 小時"
-          }
-        }
-      }
-    },
-    "30 minutes" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 分钟"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "30 分鐘"
-          }
-        }
-      }
-    },
-    "15 minutes" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "15 分钟"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "15 分鐘"
-          }
-        }
-      }
-    },
-    "1 s" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1 秒"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1 秒"
-          }
-        }
-      }
-    },
     "" : {
       "localizations" : {
         "ar" : {
@@ -3214,6 +1390,7 @@
     },
     "%@:" : {
       "comment" : "A row of text with a label and its corresponding value. The argument is the label text, and the second is the value text.",
+      "extractionState" : "stale",
       "isCommentAutoGenerated" : true,
       "localizations" : {
         "ko" : {
@@ -4389,6 +2566,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "剩餘 %lld%%"
+          }
+        }
+      }
+    },
+    "%lld%% of screen" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏幕的 %lld%%"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏幕的 %lld%%"
           }
         }
       }
@@ -5950,6 +4143,22 @@
         }
       }
     },
+    "1 s" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 秒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 秒"
+          }
+        }
+      }
+    },
     "1. Open Spotify in a browser and log in" : {
       "comment" : "A step in the process of getting the Spotify cookie.",
       "isCommentAutoGenerated" : true,
@@ -6504,6 +4713,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "4"
+          }
+        }
+      }
+    },
+    "4 hours" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4 小时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4 小時"
           }
         }
       }
@@ -7266,6 +5492,23 @@
         }
       }
     },
+    "15 minutes" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 分鐘"
+          }
+        }
+      }
+    },
     "15m" : {
       "localizations" : {
         "ko" : {
@@ -7513,6 +5756,23 @@
         }
       }
     },
+    "30 minutes" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 分鐘"
+          }
+        }
+      }
+    },
     "45 mins" : {
       "localizations" : {
         "ko" : {
@@ -7555,6 +5815,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "45 分鐘"
+          }
+        }
+      }
+    },
+    "60 s (1 min)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "60 秒（1 分钟）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "60 秒（1 分鐘）"
           }
         }
       }
@@ -9717,6 +7993,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "其他功能"
+          }
+        }
+      }
+    },
+    "Additional folder access required" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要额外的文件夹访问权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要額外的資料夾訪問權限"
           }
         }
       }
@@ -11977,6 +10270,38 @@
         }
       }
     },
+    "An unknown error occurred while updating Atoll." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新 Atoll 时发生未知错误。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新 Atoll 時發生未知錯誤。"
+          }
+        }
+      }
+    },
+    "An unknown error occurred." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发生未知错误。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "發生未知錯誤。"
+          }
+        }
+      }
+    },
     "Animation" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -12032,6 +10357,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "動畫"
+          }
+        }
+      }
+    },
+    "Animation Details" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动画详情"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動畫詳情"
           }
         }
       }
@@ -12167,6 +10509,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Antigravity"
+          }
+        }
+      }
+    },
+    "Antigravity Provider" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigravity 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigravity 服務"
           }
         }
       }
@@ -13538,6 +11897,38 @@
         }
       }
     },
+    "Atoll Settings" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll 设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll 設置"
+          }
+        }
+      }
+    },
+    "Atoll Update" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll 更新"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atoll 更新"
+          }
+        }
+      }
+    },
     "Atoll uses the local `sp_dc` cookie only to request Spotify's internal web-player token and fetch the matching Canvas for the current track." : {
       "comment" : "A description of how the Spotify cookie is used.",
       "isCommentAutoGenerated" : true,
@@ -13908,6 +12299,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已授權"
+          }
+        }
+      }
+    },
+    "Auto" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動"
+          }
+        }
+      }
+    },
+    "Auto (Transparent)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动（半透明）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動（半透明）"
+          }
+        }
+      }
+    },
+    "Auto Reverse" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "往返播放"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "往返播放"
           }
         }
       }
@@ -14487,6 +12929,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "背景"
+          }
+        }
+      }
+    },
+    "Background color" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "背景顏色"
           }
         }
       }
@@ -15745,6 +14204,72 @@
       },
       "shouldTranslate" : false
     },
+    "BetterDisplay is installed but not currently running. Launch BetterDisplay to enable integration." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安装 BetterDisplay，但尚未运行。启动 BetterDisplay 即可启用集成。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安裝 BetterDisplay，但尚未運行。啓動 BetterDisplay 即可啓用集成。"
+          }
+        }
+      }
+    },
+    "BetterDisplay OSD events will be routed through Atoll's active HUD style. Brightness is always routed; volume is routed when external volume control listener is enabled below. Make sure BetterDisplay's OSD integration is enabled in Settings › Application › Integration." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BetterDisplay 的屏幕提示将使用 Atoll 当前的提示样式显示。亮度提示始终转发；音量提示仅在下方启用外部音量控制监听后转发。请确保已在 BetterDisplay 的 Settings → Application → Integration 中开启 OSD 集成。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BetterDisplay 的屏幕提示將使用 Atoll 當前的提示樣式顯示。亮度提示始終轉發；音量提示僅在下方啓用外部音量控制監聽後轉發。請確保已在 BetterDisplay 的 Settings → Application → Integration 中開啓 OSD 集成。"
+          }
+        }
+      }
+    },
+    "Black" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色"
+          }
+        }
+      }
+    },
+    "Black (Transparent)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色（半透明）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黑色（半透明）"
+          }
+        }
+      }
+    },
     "Bleeding edge, built daily from dev" : {
       "localizations" : {
         "ko" : {
@@ -16053,6 +14578,23 @@
         }
       }
     },
+    "Bold as bright" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "以亮色显示粗体"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "以亮色顯示粗體"
+          }
+        }
+      }
+    },
     "Bold text as bright colors" : {
       "localizations" : {
         "ko" : {
@@ -16331,6 +14873,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "兩者皆使用中"
+          }
+        }
+      }
+    },
+    "Bottom Padding" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "底部留白"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "底部留白"
           }
         }
       }
@@ -20039,6 +18598,23 @@
         }
       }
     },
+    "Claude Provider" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude 服務"
+          }
+        }
+      }
+    },
     "Clear" : {
       "localizations" : {
         "fr" : {
@@ -21641,6 +20217,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Codex"
+          }
+        }
+      }
+    },
+    "Codex Provider" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codex 服務"
           }
         }
       }
@@ -23327,7 +21920,6 @@
 
     },
     "Connected" : {
-      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -23391,6 +21983,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已連接，喜歡按鈕已就緒。"
+          }
+        }
+      }
+    },
+    "Connected to Lunar's DDC socket. Brightness and contrast adjustments are shown through Atoll's HUD; volume follows when external volume control listener is enabled below." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已连接到 Lunar 的 DDC 套接字。亮度和对比度调整将通过 Atoll 的提示面板显示；启用下方的外部音量控制监听后，也会显示音量调整。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已連接到 Lunar 的 DDC 套接字。亮度和對比度調整將通過 Atoll 的提示面板顯示；啓用下方的外部音量控制監聽後，也會顯示音量調整。"
           }
         }
       }
@@ -25664,6 +24272,40 @@
         }
       }
     },
+    "Cursor color" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "光标颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "游標顏色"
+          }
+        }
+      }
+    },
+    "Cursor Provider" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cursor 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cursor 服務"
+          }
+        }
+      }
+    },
     "Cursor style" : {
       "localizations" : {
         "ko" : {
@@ -27358,6 +26000,23 @@
         }
       }
     },
+    "Dark Gray" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深灰色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深灰色"
+          }
+        }
+      }
+    },
     "Dash outline equals the exact notch bounds." : {
       "comment" : "A description under the live preview section of the animation editor.",
       "isCommentAutoGenerated" : true,
@@ -28743,6 +27402,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "診斷"
+          }
+        }
+      }
+    },
+    "Dial in the final polish." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微调动画的最终效果。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微調動畫的最終效果。"
           }
         }
       }
@@ -30812,6 +29488,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已下載"
+          }
+        }
+      }
+    },
+    "Downloading Update…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在下载更新…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在下載更新…"
           }
         }
       }
@@ -33080,6 +31772,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "啟用從剪貼簿建立"
+          }
+        }
+      }
+    },
+    "Enable Custom OSD" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用自定义屏幕提示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啓用自定義屏幕提示"
           }
         }
       }
@@ -36027,6 +34736,54 @@
         }
       }
     },
+    "Enter a name for this account." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入账户名称。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入帳號名稱。"
+          }
+        }
+      }
+    },
+    "Enter a valid New API URL, including http:// or https://." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入有效的 New API URL，包含 http:// 或 https://。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入有效的 New API URL，包含 http:// 或 https://。"
+          }
+        }
+      }
+    },
+    "Enter an API key for this account." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入此账户的 API 密钥。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入此帳號的 API 密鑰。"
+          }
+        }
+      }
+    },
     "Enter your Gemini API Key" : {
       "localizations" : {
         "fr" : {
@@ -37033,6 +35790,22 @@
         }
       }
     },
+    "Extracting Update…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在解压更新…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在解壓更新…"
+          }
+        }
+      }
+    },
     "Extracting…" : {
       "localizations" : {
         "ko" : {
@@ -37111,6 +35884,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "실패"
+          }
+        }
+      }
+    },
+    "Failed to delete %@: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除 %@ 失败：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除 %@ 失敗：%@"
+          }
+        }
+      }
+    },
+    "Failed to download animation" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动画下载失败"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動畫下載失敗"
           }
         }
       }
@@ -37588,6 +36393,23 @@
         }
       }
     },
+    "Fingerprint" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "指纹"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "指紋"
+          }
+        }
+      }
+    },
     "Fingerprint unlock" : {
       "localizations" : {
         "ko" : {
@@ -37973,6 +36795,22 @@
         }
       }
     },
+    "Focus Enabled" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "专注模式已开启"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "專注模式已開啓"
+          }
+        }
+      }
+    },
     "Focus Status" : {
       "localizations" : {
         "ko" : {
@@ -38252,6 +37090,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "前景"
+          }
+        }
+      }
+    },
+    "Foreground color" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前景颜色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前景顏色"
           }
         }
       }
@@ -38799,6 +37654,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "滿電閾值"
+          }
+        }
+      }
+    },
+    "Full Disk Access for global mode" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全局模式需要完全磁盘访问权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全局模式需要完全磁盤訪問權限"
           }
         }
       }
@@ -39933,6 +38805,23 @@
       },
       "shouldTranslate" : false
     },
+    "Give it a friendly name and control playback speed." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置易于识别的名称，并调整播放速度。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設置易於識別的名稱，並調整播放速度。"
+          }
+        }
+      }
+    },
     "Gives each app its own volume and mute, independent of the system volume. macOS will ask for audio recording permission the first time an app's level is changed: routing an app's audio through Atoll is the only way it can be adjusted, and nothing is ever recorded or written to disk. Apps left at 100% and unmuted keep their normal, untouched path to the speakers." : {
       "localizations" : {
         "zh-Hans" : {
@@ -40537,6 +39426,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "漸變"
+          }
+        }
+      }
+    },
+    "Granted" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授权时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授權時間"
           }
         }
       }
@@ -41418,6 +40324,23 @@
         }
       }
     },
+    "Hide until hovered" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "悬停时才显示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "懸停時才顯示"
+          }
+        }
+      }
+    },
     "Hide until hovered on non-notch displays" : {
       "localizations" : {
         "ko" : {
@@ -41938,6 +40861,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "通過系統電源斷言阻止 Mac 休眠，作用與 caffeinate 命令相同。關閉此功能也會結束當前的保持喚醒會話。關閉屏幕常亮選項後，屏幕仍可休眠，系統則繼續運行。"
+          }
+        }
+      }
+    },
+    "Horizontal Offset" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "水平偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "水平偏移"
           }
         }
       }
@@ -42687,6 +41627,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "圖示和進度顏色"
+          }
+        }
+      }
+    },
+    "Icon import was canceled or failed." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图标导入已取消或失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圖標導入已取消或失敗。"
           }
         }
       }
@@ -43665,6 +42621,38 @@
         }
       }
     },
+    "Install [BetterDisplay](https://betterdisplay.pro) to control external display brightness (and optional volume) through Atoll's HUD." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安装 [BetterDisplay](https://betterdisplay.pro)，即可通过 Atoll 的提示面板控制外接显示器的亮度和可选的音量。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安裝 [BetterDisplay](https://betterdisplay.pro)，即可通過 Atoll 的提示面板控制外接顯示器的亮度和可選的音量。"
+          }
+        }
+      }
+    },
+    "Install [Lunar](https://lunar.fyi) to control external display brightness, contrast, and optional volume through Atoll's HUD via DDC." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安装 [Lunar](https://lunar.fyi)，即可通过 DDC 和 Atoll 的提示面板控制外接显示器的亮度、对比度和可选的音量。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安裝 [Lunar](https://lunar.fyi)，即可通過 DDC 和 Atoll 的提示面板控制外接顯示器的亮度、對比度和可選的音量。"
+          }
+        }
+      }
+    },
     "Install & Relaunch" : {
       "comment" : "A button that installs an update and relaunches the app.",
       "isCommentAutoGenerated" : true,
@@ -44103,6 +43091,54 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "網路介面"
+          }
+        }
+      }
+    },
+    "Invalid Lottie JSON format" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lottie JSON 格式无效"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lottie JSON 格式無效"
+          }
+        }
+      }
+    },
+    "Invalid New API request URL" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 请求 URL 无效"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 請求 URL 無效"
+          }
+        }
+      }
+    },
+    "Invalid New API URL" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API URL 无效"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API URL 無效"
           }
         }
       }
@@ -44796,6 +43832,23 @@
         }
       }
     },
+    "Last Activity" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上次活动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上次活動"
+          }
+        }
+      }
+    },
     "Last Denied Reason:" : {
       "comment" : "A label for the \"Last Denied Reason\" section in the extensions settings view.",
       "isCommentAutoGenerated" : true,
@@ -45485,6 +44538,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "淺色"
+          }
+        }
+      }
+    },
+    "Light Gray" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浅灰色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "淺灰色"
           }
         }
       }
@@ -46658,6 +45728,40 @@
         }
       }
     },
+    "LocalSend Device Picker Style" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocalSend 设备选择器样式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocalSend 設備選擇器樣式"
+          }
+        }
+      }
+    },
+    "Lock" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "锁"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鎖"
+          }
+        }
+      }
+    },
     "Lock Screen" : {
       "localizations" : {
         "fr" : {
@@ -47337,6 +46441,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "正在尋找 Atoll 新版本"
+          }
+        }
+      }
+    },
+    "Loop" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "循环播放"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "循環播放"
           }
         }
       }
@@ -48084,6 +47205,55 @@
         }
       }
     },
+    "Lunar is installed but not currently running. Launch Lunar to enable integration." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安装 Lunar，但尚未运行。启动 Lunar 即可启用集成。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已安裝 Lunar，但尚未運行。啓動 Lunar 即可啓用集成。"
+          }
+        }
+      }
+    },
+    "Lunar is running but the socket connection is not yet established. It will connect automatically." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lunar 正在运行，但尚未建立套接字连接，稍后会自动连接。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lunar 正在運行，但尚未建立套接字連接，稍後會自動連接。"
+          }
+        }
+      }
+    },
+    "Lyric highlight" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌词高亮"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歌詞高亮"
+          }
+        }
+      }
+    },
     "Lyrics" : {
       "localizations" : {
         "ko" : {
@@ -48491,6 +47661,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請確保 LocalSend 在其他裝置上執行"
+          }
+        }
+      }
+    },
+    "Manage app permissions" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理应用权限"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理應用權限"
           }
         }
       }
@@ -48971,6 +48158,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "匹配Notch真實大小"
+          }
+        }
+      }
+    },
+    "Match the notch footprint or intentionally exceed it." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调整为与刘海尺寸一致，或按需超出刘海范围。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調整為與劉海尺寸一致，或按需超出劉海範圍。"
           }
         }
       }
@@ -52643,6 +51847,23 @@
         }
       }
     },
+    "Mouse reporting" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鼠标事件报告"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鼠標事件報告"
+          }
+        }
+      }
+    },
     "Move Down" : {
       "comment" : "A button label that says \"Move Down\".",
       "isCommentAutoGenerated" : true,
@@ -53892,6 +53113,23 @@
         }
       }
     },
+    "New" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新功能"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新功能"
+          }
+        }
+      }
+    },
     "New API" : {
       "localizations" : {
         "zh-Hans" : {
@@ -53936,6 +53174,71 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "New API 帳號"
+          }
+        }
+      }
+    },
+    "New API Provider" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 服務"
+          }
+        }
+      }
+    },
+    "New API request failed" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 请求失败"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 請求失敗"
+          }
+        }
+      }
+    },
+    "New API returned an invalid response" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 返回了无效响应"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 返回了無效響應"
+          }
+        }
+      }
+    },
+    "New API returned an unsuccessful response" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 返回了失败响应"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New API 返回了失敗響應"
           }
         }
       }
@@ -56112,6 +55415,22 @@
         }
       }
     },
+    "Not detected" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未检测到"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未檢測到"
+          }
+        }
+      }
+    },
     "Not Determined" : {
       "localizations" : {
         "ko" : {
@@ -56325,6 +55644,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未錄製"
+          }
+        }
+      }
+    },
+    "Not running" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未运行"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未運行"
           }
         }
       }
@@ -57213,6 +56548,23 @@
         }
       }
     },
+    "Nudge the animation inside the notch." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微调动画在刘海内的位置。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微調動畫在劉海內的位置。"
+          }
+        }
+      }
+    },
     "Number of lines kept in the scrollback buffer. Higher values use more memory." : {
       "localizations" : {
         "ko" : {
@@ -57339,6 +56691,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關"
+          }
+        }
+      }
+    },
+    "Offset" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "偏移"
           }
         }
       }
@@ -57678,6 +57047,22 @@
         }
       }
     },
+    "Only .json files are supported" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅支持 .json 文件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅支持 .json 文件"
+          }
+        }
+      }
+    },
     "Only app icon" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -57888,6 +57273,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "僅下載圖示"
+          }
+        }
+      }
+    },
+    "Opacity" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不透明度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不透明度"
           }
         }
       }
@@ -58737,6 +58139,23 @@
         }
       }
     },
+    "Option as Meta" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将 Option 用作 Meta 键"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將 Option 用作 Meta 鍵"
+          }
+        }
+      }
+    },
     "Option as Meta key" : {
       "localizations" : {
         "ko" : {
@@ -58904,6 +58323,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "기타…"
+          }
+        }
+      }
+    },
+    "Output" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输出"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輸出"
           }
         }
       }
@@ -60713,6 +60149,23 @@
         }
       }
     },
+    "Play Once" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放一次"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放一次"
+          }
+        }
+      }
+    },
     "Playback needs none of this. The Favorite Song control does, because favouriting is not something macOS Now Playing can carry -- Atoll has to ask Cider itself." : {
       "localizations" : {
         "zh-Hans" : {
@@ -60725,6 +60178,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "正常播放無需配置此項。只有“收藏歌曲”控制項需要，因為 macOS 的“正在播放”接口無法執行收藏，Atoll 必須直接向 Cider 發起請求。"
+          }
+        }
+      }
+    },
+    "Playback Speed" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放速度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放速度"
           }
         }
       }
@@ -60851,6 +60321,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請在模型設定中為所選的 AI 提供商配置你的 API 金鑰。"
+          }
+        }
+      }
+    },
+    "Please provide both a valid URL and name" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请提供有效的 URL 和名称"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請提供有效的 URL 和名稱"
           }
         }
       }
@@ -61243,6 +60729,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "位置"
+          }
+        }
+      }
+    },
+    "Position & Padding" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "位置与留白"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "位置與留白"
           }
         }
       }
@@ -62436,6 +61939,23 @@
         }
       }
     },
+    "Quick Presets" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速预设"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速預設"
+          }
+        }
+      }
+    },
     "Quick Share" : {
       "comment" : "A section header that says \"Quick Share\".",
       "isCommentAutoGenerated" : true,
@@ -63576,6 +63096,23 @@
         }
       }
     },
+    "Recording Controls" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "录制控件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "錄制控制項"
+          }
+        }
+      }
+    },
     "Recording Detected" : {
       "comment" : "A text description of a red dot displayed in the Atoll header when screen recording is active.",
       "isCommentAutoGenerated" : true,
@@ -63646,6 +63183,23 @@
             "value" : "녹화 포인터 올리기 스타일"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "录制悬停样式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "錄制懸停樣式"
+          }
+        }
+      }
+    },
+    "Recording Hover Style" : {
+      "extractionState" : "stale",
+      "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -64175,6 +63729,23 @@
         }
       }
     },
+    "Reminder alignment" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒对齐方式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒對齊方式"
+          }
+        }
+      }
+    },
     "Reminder Live Activity" : {
       "comment" : "A section header that lists the options related to live activity notifications for reminders.",
       "isCommentAutoGenerated" : true,
@@ -64225,6 +63796,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "提醒即時動態"
+          }
+        }
+      }
+    },
+    "Reminder vertical offset" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒垂直偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒垂直偏移"
           }
         }
       }
@@ -66545,6 +66133,23 @@
         }
       }
     },
+    "Reverse scroll gestures" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "反转滚动手势"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "反轉滾動手勢"
+          }
+        }
+      }
+    },
     "Reverse swipe gestures" : {
       "localizations" : {
         "ko" : {
@@ -66641,6 +66246,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "撤銷存取"
+          }
+        }
+      }
+    },
+    "Revoked" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已撤销"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已撤銷"
           }
         }
       }
@@ -66882,6 +66504,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "圓環"
+          }
+        }
+      }
+    },
+    "Rotation" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旋转"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旋轉"
           }
         }
       }
@@ -67377,6 +67016,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "重啓後保留歷史記錄"
+          }
+        }
+      }
+    },
+    "Scale" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "缩放"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "縮放"
           }
         }
       }
@@ -69186,6 +68842,22 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "選擇你想要使用的音樂源。你可以稍後在 App 設定中更改此項。"
+          }
+        }
+      }
+    },
+    "Select Timer Sound" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择计时器提示音"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇計時器提示音"
           }
         }
       }
@@ -71133,6 +70805,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "顯示 Caps Lock 標籤"
+          }
+        }
+      }
+    },
+    "Show Change Media Output control" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示更改媒体输出控件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示更改媒體輸出控制項"
           }
         }
       }
@@ -74114,6 +73803,40 @@
         }
       }
     },
+    "Shows clipboard as a dropdown attached to the clipboard button" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在剪贴板按钮旁以下拉面板显示剪贴板"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在剪貼簿按鈕旁以下拉麵板顯示剪貼簿"
+          }
+        }
+      }
+    },
+    "Shows clipboard in a floating panel near the notch" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海附近的悬浮面板中显示剪贴板"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在劉海附近的懸浮面板中顯示剪貼簿"
+          }
+        }
+      }
+    },
     "Shows color picker as a dropdown attached to the color picker button" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -74156,6 +73879,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在劉海附近的懸浮面板中顯示取色器"
+          }
+        }
+      }
+    },
+    "Shows copied items in a dedicated clipboard tab inside the notch; drag items straight out to other apps" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在刘海内的独立剪贴板标签页中显示复制内容，可直接将项目拖到其他应用"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在劉海內的獨立剪貼簿標籤頁中顯示複製內容，可直接將項目拖到其他應用"
+          }
+        }
+      }
+    },
+    "Shows copied items in a separate tab within the Dynamic Island (merges with Notes if enabled)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在灵动岛的独立标签页中显示复制内容（启用备忘录时会合并显示）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在靈動島的獨立標籤頁中顯示複製內容（啓用備忘錄時會合併顯示）"
           }
         }
       }
@@ -74950,6 +74707,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri 檢測速度"
+          }
+        }
+      }
+    },
+    "Size & Crop" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尺寸与裁剪"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尺寸與裁剪"
           }
         }
       }
@@ -75999,6 +75773,23 @@
         }
       }
     },
+    "Solid Auto" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯色自动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "純色自動"
+          }
+        }
+      }
+    },
     "Solid colour" : {
       "comment" : "merge:ko:alt='단색'",
       "localizations" : {
@@ -76048,6 +75839,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "純色"
+          }
+        }
+      }
+    },
+    "Solid Dark" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯色深色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "純色深色"
+          }
+        }
+      }
+    },
+    "Solid Light" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯色浅色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "純色淺色"
           }
         }
       }
@@ -77352,6 +77177,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "啟動演示計時器："
+          }
+        }
+      }
+    },
+    "Start from a popular layout and tweak from there." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择常用布局作为起点，再按需微调。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇常用佈局作為起點，再按需微調。"
           }
         }
       }
@@ -80312,6 +80154,22 @@
         }
       }
     },
+    "That file could not be loaded as an image." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法将该文件加载为图片。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法將該文件加載為圖片。"
+          }
+        }
+      }
+    },
     "The app is currently using %@ MB, which exceeds the safe limit of %@ MB. Restart now to free memory?" : {
       "localizations" : {
         "en" : {
@@ -80873,6 +80731,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "第三方行事曆整合"
+          }
+        }
+      }
+    },
+    "Third-party DDC app integration" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三方 DDC 应用集成"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三方 DDC 應用集成"
+          }
+        }
+      }
+    },
+    "Third-party DDC provider" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三方 DDC 服务"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三方 DDC 服務"
           }
         }
       }
@@ -82836,6 +82728,23 @@
         }
       }
     },
+    "Transform & Display" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "变换与显示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "變換與顯示"
+          }
+        }
+      }
+    },
     "Transform your notch truly yours" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -83502,12 +83411,44 @@
         }
       }
     },
+    "Unable to save the icon file." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法保存图标文件。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法保存圖標文件。"
+          }
+        }
+      }
+    },
     "Unable to stop recording. Use Command-Control-Escape or the macOS recording menu." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "녹화를 중지할 수 없습니다. Command-Control-Esc 또는 macOS 녹화 메뉴를 사용하세요."
+          }
+        }
+      }
+    },
+    "Unable to store the New API key (Keychain status %d)." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法保存 New API 密钥（钥匙串状态码：%d）。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法保存 New API 密鑰（鑰匙串狀態碼：%d）。"
           }
         }
       }
@@ -83730,6 +83671,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未知"
+          }
+        }
+      }
+    },
+    "Unknown error occurred" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发生未知错误"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "發生未知錯誤"
           }
         }
       }
@@ -84032,6 +83989,23 @@
         }
       }
     },
+    "Until turned off" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直到手动关闭"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直到手動關閉"
+          }
+        }
+      }
+    },
     "Untitled Note" : {
       "comment" : "Default title for a note that has not been renamed.",
       "isCommentAutoGenerated" : true,
@@ -84232,6 +84206,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更新失敗"
+          }
+        }
+      }
+    },
+    "Update Installed!" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新已安装！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新已安裝！"
           }
         }
       }
@@ -84776,6 +84766,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "使用詳情"
+          }
+        }
+      }
+    },
+    "Use 3D Bluetooth HUD icon" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 3D 蓝牙提示图标"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 3D 藍牙提示圖標"
           }
         }
       }
@@ -86586,6 +86593,23 @@
         }
       }
     },
+    "Vertical Offset" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "垂直偏移"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "垂直偏移"
+          }
+        }
+      }
+    },
     "Vertical:" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -86866,6 +86890,40 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "在 GitHub 上檢視：th-ch/youtube-music"
+          }
+        }
+      }
+    },
+    "Visible Height" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可见高度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可見高度"
+          }
+        }
+      }
+    },
+    "Visible Width" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可见宽度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可見寬度"
           }
         }
       }
@@ -88386,6 +88444,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "白色"
+          }
+        }
+      }
+    },
+    "White (Transparent)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "白色（半透明）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "白色（半透明）"
           }
         }
       }
