@@ -28,6 +28,20 @@ import XCTest
 /// past an unrelated track.
 final class LyricsMetadataTests: XCTestCase {
 
+    func testSelectableLyricsKeepsVersionsAndRejectsUnrelatedOrEmptyResults() {
+        let rows: [[String: Any]] = [
+            ["id": 1, "trackName": "Song", "artistName": "Artist", "albumName": "First", "syncedLyrics": "[00:01]Hello"],
+            ["id": 2, "trackName": "Song", "artistName": "Artist", "albumName": "Second", "plainLyrics": "Hello"],
+            ["id": 3, "trackName": "Song", "artistName": "Other", "plainLyrics": "Wrong"],
+            ["id": 4, "trackName": "Song", "artistName": "Artist", "instrumental": true],
+            ["id": 5, "trackName": "Song", "artistName": "Artist"]
+        ]
+        let candidates = LyricsCandidate.lrclib(rows, title: "SONG", artist: "ARTIST")
+        XCTAssertEqual(candidates.map(\.id), ["lrclib-1", "lrclib-2"])
+        XCTAssertEqual(candidates.map { $0.resolution.availability }, [.timed, .untimed])
+        XCTAssertTrue(candidates[1].label.contains("Second"))
+    }
+
     // MARK: - Metadata that names nothing
 
     func testUnknownArtistNamesNoParticularTrack() {

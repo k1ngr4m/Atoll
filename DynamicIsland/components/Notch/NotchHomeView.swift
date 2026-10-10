@@ -240,6 +240,11 @@ struct LyricsSidePanelView: View {
     @ObservedObject private var musicManager = MusicManager.shared
     @EnvironmentObject private var vm: DynamicIslandViewModel
     @Default(.pinLyricsWhenClosed) private var pinLyricsWhenClosed
+    @State private var showingLyricsPicker = false
+    @State private var lyricsCandidates: [LyricsCandidate] = []
+    @State private var candidatesKey: LyricsLookupKey?
+    @State private var loadingCandidates = false
+    @State private var candidatesFailed = false
     @State private var suppressionToken = UUID()
     @State private var isSuppressing = false
     private var artistLineColor: Color {
@@ -266,6 +271,7 @@ struct LyricsSidePanelView: View {
                     .font(.headline)
                     .foregroundStyle(artistLineColor)
                 Spacer()
+                lyricsPickerButton
                 pinButton
             }
             .padding(.horizontal, 12)
@@ -280,8 +286,81 @@ struct LyricsSidePanelView: View {
         .onHover { hovering in
             updateSuppression(for: hovering)
         }
+        .onChange(of: showingLyricsPicker) { _, isPresented in
+            vm.setMediaOutputPopoverActive(isPresented, token: suppressionToken)
+        }
         .onDisappear {
             updateSuppression(for: false)
+            vm.setMediaOutputPopoverActive(false, token: suppressionToken)
+        }
+    }
+
+    private var lyricsPickerButton: some View {
+        Button {
+            showingLyricsPicker.toggle()
+        } label: {
+            Image(systemName: "list.bullet")
+                .font(.system(size: 11, weight: .semibold))
+                .foregroundStyle(showingLyricsPicker ? artistLineColor : Color.white.opacity(0.5))
+                .frame(width: 20, height: 20)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .help("Choose lyrics")
+        .accessibilityLabel("Choose lyrics")
+        .popover(isPresented: $showingLyricsPicker, arrowEdge: .bottom) {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Choose lyrics").font(.headline)
+                if loadingCandidates {
+                    ProgressView("Searching lyrics…")
+                } else {
+                    if candidatesFailed {
+                        Text("Some lyrics sources could not be loaded. Reopen to retry.")
+                            .font(.caption).foregroundStyle(.secondary)
+                    }
+                    if lyricsCandidates.isEmpty {
+                        Text("No alternative lyrics found").foregroundStyle(.secondary)
+                    } else {
+                        ScrollView {
+                            VStack(alignment: .leading, spacing: 4) {
+                                ForEach(lyricsCandidates) { candidate in
+                                    Button {
+                                        musicManager.selectLyrics(candidate, for: candidatesKey)
+                                        showingLyricsPicker = false
+                                    } label: {
+                                        HStack(alignment: .top, spacing: 8) {
+                                            Image(systemName: musicManager.isSelectedLyrics(candidate) ? "checkmark.circle.fill" : "circle")
+                                            VStack(alignment: .leading, spacing: 3) {
+                                                Text(candidate.label).font(.callout)
+                                                Text(candidate.resolution.availability == .timed ? "Synced lyrics" : "Plain lyrics")
+                                                    .font(.caption).foregroundStyle(.secondary)
+                                            }
+                                            Spacer(minLength: 0)
+                                        }
+                                        .padding(8)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .contentShape(Rectangle())
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                            }
+                        }
+                        .frame(maxHeight: 260)
+                    }
+                }
+            }
+            .padding(14)
+            .frame(width: 360)
+            .task(id: musicManager.lyricsSelectionKey) {
+                candidatesKey = musicManager.lyricsSelectionKey
+                lyricsCandidates = []
+                loadingCandidates = true
+                let result = await musicManager.lyricsCandidates()
+                guard !Task.isCancelled else { return }
+                lyricsCandidates = result.items
+                candidatesFailed = result.failed
+                loadingCandidates = false
+            }
         }
     }
 

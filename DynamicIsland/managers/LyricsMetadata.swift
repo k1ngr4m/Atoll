@@ -347,3 +347,34 @@ enum LyricTextSemantics {
         return true
     }
 }
+
+/// A selectable provider result. Keep provider IDs separate from lyric line IDs.
+struct LyricsCandidate: Identifiable {
+    let id: String
+    let label: String
+    let resolution: LyricsResolution
+
+    static func lrclibResults(title: String, artist: String) async throws -> [[String: Any]] {
+        var url = URLComponents(string: "https://lrclib.net/api/search")!
+        url.queryItems = [URLQueryItem(name: "track_name", value: title),
+                          URLQueryItem(name: "artist_name", value: artist)]
+        let (data, response) = try await URLSession.shared.data(from: url.url!)
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
+        return try JSONSerialization.jsonObject(with: data) as? [[String: Any]] ?? []
+    }
+
+    static func lrclib(_ results: [[String: Any]], title: String, artist: String) -> [LyricsCandidate] {
+        results.compactMap { result in
+            guard let id = result["id"] as? Int,
+                  LyricsSearchResults.agreesOnTitleAndArtist(result,
+                    artist: LyricsSearchResults.normalizedForMatching(artist),
+                    title: LyricsSearchResults.normalizedForMatching(title)) else { return nil }
+            let resolution = LyricsResolution.lrclib(result)
+            guard resolution.availability == .timed || resolution.availability == .untimed else { return nil }
+            let details = [result["trackName"] as? String, result["artistName"] as? String,
+                           result["albumName"] as? String].compactMap { $0 }.filter { !$0.isEmpty }
+            return LyricsCandidate(id: "lrclib-\(id)",
+                label: "LRCLIB · " + details.joined(separator: " · ") + " · #\(id)", resolution: resolution)
+        }
+    }
+}

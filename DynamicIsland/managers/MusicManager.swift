@@ -1787,6 +1787,36 @@ class MusicManager: ObservableObject {
     }
 
     // MARK: - Lyrics Methods
+    var lyricsSelectionKey: LyricsLookupKey? { activeLyricsKey }
+
+    func isSelectedLyrics(_ candidate: LyricsCandidate) -> Bool {
+        originalLyrics?.lines == candidate.resolution.lines
+    }
+
+    @MainActor
+    func lyricsCandidates() async -> (items: [LyricsCandidate], failed: Bool) {
+        guard let lookup = currentLyricsLookupContext(), activeLyricsKey == lookup.key,
+              Defaults[.enableLyrics], !isAdvertisement else { return ([], false) }
+        let duration = songDuration
+        async let primary = try? LyricsCandidate.lrclibResults(title: lookup.requestTitle, artist: lookup.requestArtist)
+        async let secondary = try? NetEaseLyrics.candidates(title: lookup.requestTitle, artist: lookup.requestArtist, duration: duration)
+        let (rows, netease) = await (primary, secondary)
+        guard !Task.isCancelled, activeLyricsKey == lookup.key else { return ([], false) }
+        return (LyricsCandidate.lrclib(rows ?? [], title: lookup.requestTitle, artist: lookup.requestArtist)
+                + (netease ?? []), rows == nil || netease == nil)
+    }
+
+    @MainActor
+    func selectLyrics(_ candidate: LyricsCandidate, for key: LyricsLookupKey?) {
+        guard let key, key == activeLyricsKey, Defaults[.enableLyrics] else { return }
+        lyricsFetchTask?.cancel()
+        lyricsFetchTask = nil
+        lyricsFetchKey = nil
+        lyricsFetchID = nil
+        storeLyricsInCache(candidate.resolution, for: key)
+        applyLyricsToDisplay(candidate.resolution)
+    }
+
     func fetchLyrics() {
         prepareLyricsForCurrentTrack(forceFetch: true, prioritizeVisibleResult: Defaults[.enableLyrics])
     }
@@ -1924,32 +1954,20 @@ class MusicManager: ObservableObject {
         let cleanArtist = artist.folding(options: .diacriticInsensitive, locale: .current)
         let cleanTitle = title.folding(options: .diacriticInsensitive, locale: .current)
         let cleanAlbum = album.folding(options: .diacriticInsensitive, locale: .current)
-        guard let encodedArtist = cleanArtist.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
-              let encodedTitle = cleanTitle.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
-            return LyricsResolution()
-        }
-
-        // Use LRCLIB search endpoint which returns an array JSON with `plainLyrics` and/or `syncedLyrics`.
-        let urlString = "https://lrclib.net/api/search?track_name=\(encodedTitle)&artist_name=\(encodedArtist)"
-        guard let url = URL(string: urlString) else { return LyricsResolution() }
-
-        let (data, response) = try await URLSession.shared.data(from: url)
-        if let http = response as? HTTPURLResponse, http.statusCode == 200 {
-            // Metadata updates assign duration after preparing lyrics. Read it
-            // after the request, before trusting a whole-track instrumental flag.
-            let duration = await MainActor.run { self.songDuration }
-            // Try parse as array JSON (preferred)
-            if let jsonArray = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]],
-               let bestMatch = bestLyricsMatch(in: jsonArray, artist: cleanArtist, title: cleanTitle, album: cleanAlbum, duration: duration) {
-                let resolution = LyricsResolution.lrclib(bestMatch)
-                // Text-only instrumental placeholders need the same recording
-                // identity check as structured provider flags.
-                if resolution.availability == .instrumental,
-                   !LyricsSearchResults.isReliableInstrumentalMatch(bestMatch, title: cleanTitle, duration: duration) {
-                    return LyricsResolution()
-                }
-                return resolution
+        let jsonArray = try await LyricsCandidate.lrclibResults(title: cleanTitle, artist: cleanArtist)
+        // Metadata updates assign duration after preparing lyrics. Read it
+        // after the request, before trusting a whole-track instrumental flag.
+        let duration = await MainActor.run { self.songDuration }
+        // Try parse as array JSON (preferred)
+        if let bestMatch = bestLyricsMatch(in: jsonArray, artist: cleanArtist, title: cleanTitle, album: cleanAlbum, duration: duration) {
+            let resolution = LyricsResolution.lrclib(bestMatch)
+            // Text-only instrumental placeholders need the same recording
+            // identity check as structured provider flags.
+            if resolution.availability == .instrumental,
+               !LyricsSearchResults.isReliableInstrumentalMatch(bestMatch, title: cleanTitle, duration: duration) {
+                return LyricsResolution()
             }
+            return resolution
         }
         // A search response with no matching recording is not a plain lyric body.
         return LyricsResolution()

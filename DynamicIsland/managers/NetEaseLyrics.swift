@@ -73,6 +73,29 @@ enum NetEaseLyrics {
         return parseResolution(lyricData)
     }
 
+    static func candidates(title: String, artist: String, duration: TimeInterval) async throws -> [LyricsCandidate] {
+        guard let url = searchURL(title: title, artist: artist) else { return [] }
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
+        let songs = parseSearchResponse(data).filter {
+            agrees($0, title: LyricsSearchResults.normalizedForMatching(title),
+                   artist: LyricsSearchResults.normalizedForMatching(artist), duration: duration)
+        }
+        var candidates: [LyricsCandidate] = []
+        for song in songs {
+            try Task.checkCancellation()
+            guard let url = lyricURL(songID: song.id) else { continue }
+            let (data, response) = try await URLSession.shared.data(from: url)
+            guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
+            let resolution = parseResolution(data)
+            guard resolution.availability == .timed || resolution.availability == .untimed else { continue }
+            candidates.append(LyricsCandidate(id: "netease-\(song.id)",
+                label: "网易云 · \(song.name) · \(song.artists.joined(separator: "/")) · #\(song.id)",
+                resolution: resolution))
+        }
+        return candidates
+    }
+
     // MARK: - Requests
 
     /// Characters allowed unescaped in a query *value*. `urlQueryAllowed` keeps
