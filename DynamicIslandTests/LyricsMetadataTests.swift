@@ -28,6 +28,29 @@ import XCTest
 /// past an unrelated track.
 final class LyricsMetadataTests: XCTestCase {
 
+    func testIdenticalLyricsKeepDistinctProviderIdentities() {
+        let rows: [[String: Any]] = [1, 2].map {
+            ["id": $0, "trackName": "Song", "artistName": "Artist", "syncedLyrics": "[00:01]Hello"]
+        }
+        let candidates = LyricsCandidate.lrclib(rows, title: "Song", artist: "Artist")
+        XCTAssertEqual(candidates[0].resolution.lines, candidates[1].resolution.lines)
+        XCTAssertEqual(candidates.map { $0.resolution.candidateID }, ["lrclib-1", "lrclib-2"])
+        let current = LyricsResolution.lrclib(rows[1])
+        XCTAssertEqual(candidates.filter { $0.id == current.candidateID }.map(\.id), ["lrclib-2"])
+        let netease = NetEaseLyrics.parseResolution(Data(#"{"lrc":{"lyric":"[00:01]Hello"}}"#.utf8), songID: 2)
+        XCTAssertEqual(netease.candidateID, "netease-2")
+        XCTAssertNotEqual(netease.candidateID, current.candidateID)
+    }
+
+    func testLyricsPaginationHandlesEmptyFullAndPartialPages() {
+        XCTAssertEqual(LyricsSidePanelView.candidatePageRange(count: 0, page: 0), 0..<0)
+        XCTAssertEqual(LyricsSidePanelView.candidatePageRange(count: 10, page: 0), 0..<10)
+        let pages = (0..<3).map { LyricsSidePanelView.candidatePageRange(count: 23, page: $0) }
+        XCTAssertEqual(pages, [0..<10, 10..<20, 20..<23])
+        XCTAssertEqual(pages.flatMap { Array($0) }, Array(0..<23))
+        XCTAssertEqual(LyricsSidePanelView.candidatePageRange(count: 23, page: 3), 23..<23)
+    }
+
     func testSelectableLyricsKeepsVersionsAndRejectsUnrelatedOrEmptyResults() {
         let rows: [[String: Any]] = [
             ["id": 1, "trackName": "Song", "artistName": "Artist", "albumName": "First", "syncedLyrics": "[00:01]Hello"],

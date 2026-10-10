@@ -1790,7 +1790,7 @@ class MusicManager: ObservableObject {
     var lyricsSelectionKey: LyricsLookupKey? { activeLyricsKey }
 
     func isSelectedLyrics(_ candidate: LyricsCandidate) -> Bool {
-        originalLyrics?.lines == candidate.resolution.lines
+        originalLyrics?.candidateID == candidate.id
     }
 
     @MainActor
@@ -1800,10 +1800,11 @@ class MusicManager: ObservableObject {
         let duration = songDuration
         async let primary = try? LyricsCandidate.lrclibResults(title: lookup.requestTitle, artist: lookup.requestArtist)
         async let secondary = try? NetEaseLyrics.candidates(title: lookup.requestTitle, artist: lookup.requestArtist, duration: duration)
-        let (rows, netease) = await (primary, secondary)
+        async let qqMusic = try? QQMusicLyrics.candidates(title: lookup.requestTitle, artist: lookup.requestArtist)
+        let (rows, netease, qq) = await (primary, secondary, qqMusic)
         guard !Task.isCancelled, activeLyricsKey == lookup.key else { return ([], false) }
-        return (LyricsCandidate.lrclib(rows ?? [], title: lookup.requestTitle, artist: lookup.requestArtist)
-                + (netease ?? []), rows == nil || netease == nil)
+        return ((qq ?? []) + LyricsCandidate.lrclib(rows ?? [], title: lookup.requestTitle, artist: lookup.requestArtist)
+                + (netease ?? []), rows == nil || netease == nil || qq == nil)
     }
 
     @MainActor
@@ -1910,14 +1911,21 @@ class MusicManager: ObservableObject {
 
             let lyrics = await LyricsProviderFallback.resolve(
                 primary: {
-                    try await self.fetchLyricsFromAPI(
-                        artist: requestArtist,
-                        title: requestTitle,
-                        album: requestAlbum
-                    )
+                    try await QQMusicLyrics.fetch(title: requestTitle, artist: requestArtist)
                 },
                 fallback: {
-                    try await self.fetchLyricsFromNetEase(artist: requestArtist, title: requestTitle)
+                    await LyricsProviderFallback.resolve(
+                        primary: {
+                            try await self.fetchLyricsFromAPI(
+                                artist: requestArtist,
+                                title: requestTitle,
+                                album: requestAlbum
+                            )
+                        },
+                        fallback: {
+                            try await self.fetchLyricsFromNetEase(artist: requestArtist, title: requestTitle)
+                        }
+                    )
                 }
             )
             guard !Task.isCancelled else { return }

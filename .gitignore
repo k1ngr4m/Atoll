@@ -139,6 +139,7 @@ referenceimages
 PrivateWorks
 
 *.py
+!scripts/check_qqmusic_lyrics.py
 !tests/test_privacy_configuration.py
 !tests/test_timer_lifecycle.py
 !tests/test_settings_localization.py

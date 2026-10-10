@@ -261,8 +261,10 @@ enum LyricsAvailability: Equatable {
 struct LyricsResolution {
     let lines: [LyricLine]
     let availability: LyricsAvailability
+    let candidateID: String?
 
-    init(lines: [LyricLine] = [], instrumental: Bool = false) {
+    init(lines: [LyricLine] = [], instrumental: Bool = false, candidateID: String? = nil) {
+        self.candidateID = candidateID
         self.lines = lines
         let meaningful = lines.filter { LyricTextSemantics.isLyric($0.text) }
         if instrumental {
@@ -277,18 +279,19 @@ struct LyricsResolution {
     }
 
     static func lrclib(_ result: [String: Any]) -> LyricsResolution {
+        let candidateID = (result["id"] as? Int).map { "lrclib-\($0)" }
         if result["instrumental"] as? Bool == true {
-            return LyricsResolution(instrumental: true)
+            return LyricsResolution(instrumental: true, candidateID: candidateID)
         }
         let synced = (result["syncedLyrics"] as? String) ?? ""
         if !synced.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            return LyricsResolution(lines: LRCParser.parse(synced))
+            return LyricsResolution(lines: LRCParser.parse(synced), candidateID: candidateID)
         }
-        return LyricsResolution(lines: LyricLine.untimedLines(from: (result["plainLyrics"] as? String) ?? ""))
+        return LyricsResolution(lines: LyricLine.untimedLines(from: (result["plainLyrics"] as? String) ?? ""), candidateID: candidateID)
     }
 }
 
-/// LRCLIB is asked first. A thrown request there is the same as an empty
+/// A thrown primary request is treated the same as an empty
 /// catalogue: neither produced words, so the fallback still has to run.
 /// Folding both calls into one `do` meant a transport failure skipped the
 /// only provider that had the track, and the catch showed "No lyrics found".

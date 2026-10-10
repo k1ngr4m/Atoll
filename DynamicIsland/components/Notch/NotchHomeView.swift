@@ -245,6 +245,7 @@ struct LyricsSidePanelView: View {
     @State private var candidatesKey: LyricsLookupKey?
     @State private var loadingCandidates = false
     @State private var candidatesFailed = false
+    @State private var candidatesPage = 0
     @State private var suppressionToken = UUID()
     @State private var isSuppressing = false
     private var artistLineColor: Color {
@@ -295,6 +296,13 @@ struct LyricsSidePanelView: View {
         }
     }
 
+    private var candidatesPageCount: Int { max(1, (lyricsCandidates.count + 9) / 10) }
+
+    static func candidatePageRange(count: Int, page: Int) -> Range<Int> {
+        let start = min(max(0, page) * 10, count)
+        return start..<min(start + 10, count)
+    }
+
     private var lyricsPickerButton: some View {
         Button {
             showingLyricsPicker.toggle()
@@ -323,7 +331,7 @@ struct LyricsSidePanelView: View {
                     } else {
                         ScrollView {
                             VStack(alignment: .leading, spacing: 4) {
-                                ForEach(lyricsCandidates) { candidate in
+                                ForEach(lyricsCandidates[Self.candidatePageRange(count: lyricsCandidates.count, page: candidatesPage)]) { candidate in
                                     Button {
                                         musicManager.selectLyrics(candidate, for: candidatesKey)
                                         showingLyricsPicker = false
@@ -331,7 +339,10 @@ struct LyricsSidePanelView: View {
                                         HStack(alignment: .top, spacing: 8) {
                                             Image(systemName: musicManager.isSelectedLyrics(candidate) ? "checkmark.circle.fill" : "circle")
                                             VStack(alignment: .leading, spacing: 3) {
-                                                Text(candidate.label).font(.callout)
+                                                Text(candidate.label)
+                                                    .font(.callout)
+                                                    .lineLimit(2)
+                                                    .help(candidate.label)
                                                 Text(candidate.resolution.availability == .timed ? "Synced lyrics" : "Plain lyrics")
                                                     .font(.caption).foregroundStyle(.secondary)
                                             }
@@ -339,21 +350,36 @@ struct LyricsSidePanelView: View {
                                         }
                                         .padding(8)
                                         .frame(maxWidth: .infinity, alignment: .leading)
+                                        .frame(height: 64, alignment: .top)
                                         .contentShape(Rectangle())
                                     }
                                     .buttonStyle(.plain)
                                 }
                             }
                         }
-                        .frame(maxHeight: 260)
+                        .frame(height: CGFloat(Self.candidatePageRange(count: lyricsCandidates.count, page: candidatesPage).count) * 68 - 4)
+                        .id(candidatesPage)
+                        HStack {
+                            Button("Previous page") { candidatesPage -= 1 }
+                                .disabled(candidatesPage == 0)
+                            Spacer()
+                            Text("\(candidatesPage + 1) / \(candidatesPageCount)")
+                                .monospacedDigit()
+                                .foregroundStyle(.secondary)
+                            Spacer()
+                            Button("Next page") { candidatesPage += 1 }
+                                .disabled(candidatesPage + 1 >= candidatesPageCount)
+                        }
                     }
                 }
             }
             .padding(14)
             .frame(width: 360)
+            .fixedSize(horizontal: false, vertical: true)
             .task(id: musicManager.lyricsSelectionKey) {
                 candidatesKey = musicManager.lyricsSelectionKey
                 lyricsCandidates = []
+                candidatesPage = 0
                 loadingCandidates = true
                 let result = await musicManager.lyricsCandidates()
                 guard !Task.isCancelled else { return }

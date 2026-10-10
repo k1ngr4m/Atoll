@@ -70,7 +70,7 @@ enum NetEaseLyrics {
             return LyricsResolution()
         }
 
-        return parseResolution(lyricData)
+        return parseResolution(lyricData, songID: song.id)
     }
 
     static func candidates(title: String, artist: String, duration: TimeInterval) async throws -> [LyricsCandidate] {
@@ -87,7 +87,7 @@ enum NetEaseLyrics {
             guard let url = lyricURL(songID: song.id) else { continue }
             let (data, response) = try await URLSession.shared.data(from: url)
             guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
-            let resolution = parseResolution(data)
+            let resolution = parseResolution(data, songID: song.id)
             guard resolution.availability == .timed || resolution.availability == .untimed else { continue }
             candidates.append(LyricsCandidate(id: "netease-\(song.id)",
                 label: "网易云 · \(song.name) · \(song.artists.joined(separator: "/")) · #\(song.id)",
@@ -143,12 +143,13 @@ enum NetEaseLyrics {
     }
 
     /// Keep the explicit instrumental signal separate from unavailable lyrics.
-    static func parseResolution(_ data: Data) -> LyricsResolution {
+    static func parseResolution(_ data: Data, songID: Int? = nil) -> LyricsResolution {
+        let candidateID = songID.map { "netease-\($0)" }
         if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
            json["nolyric"] as? Bool == true {
-            return LyricsResolution(instrumental: true)
+            return LyricsResolution(instrumental: true, candidateID: candidateID)
         }
-        return LyricsResolution(lines: parseLyricResponse(data).map(LRCParser.parse) ?? [])
+        return LyricsResolution(lines: parseLyricResponse(data).map(LRCParser.parse) ?? [], candidateID: candidateID)
     }
 
     /// The LRC body, or nil when NetEase says there is none. The text is
