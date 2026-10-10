@@ -1303,6 +1303,10 @@ extension Defaults.Keys {
     
     // MARK: Stats Feature
     static let enableStatsFeature = Key<Bool>("enableStatsFeature", default: false)
+    static let enableStocksFeature = Key<Bool>("enableStocksFeature", default: false)
+    static let stockShowWhenClosed = Key<Bool>("stockShowWhenClosed", default: true)
+    static let stockPinnedCode = Key<String>("stockPinnedCode", default: "")
+    static let stockWatchlist = Key<[String]>("stockWatchlist", default: [])
     static let enableLLMUsageFeature = Key<Bool>("enableLLMUsageFeature", default: false)
     static let enableClaudeProvider = Key<Bool>("enableClaudeProvider", default: true)
     static let enableCodexProvider = Key<Bool>("enableCodexProvider", default: true)

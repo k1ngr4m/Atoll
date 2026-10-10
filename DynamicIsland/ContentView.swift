@@ -37,6 +37,10 @@ import UIKit
 @MainActor
 struct ContentView: View {
     @Default(.pinnedLyricContext) private var pinnedLyricContext
+    @Default(.enableStocksFeature) private var enableStocksFeature
+    @Default(.stockShowWhenClosed) private var stockShowWhenClosed
+    @Default(.stockPinnedCode) private var stockPinnedCode
+    @Default(.stockWatchlist) private var stockWatchlist
     @Default(.pinLyricsWhenClosed) private var pinLyricsWhenClosed
     @Default(.enableLyrics) private var enableLyrics
     @EnvironmentObject var vm: DynamicIslandViewModel
@@ -185,6 +189,10 @@ struct ContentView: View {
             }
         }
         
+        if coordinator.currentView == .stocks {
+            return CGSize(width: baseSize.width, height: 460)
+        }
+
         if coordinator.currentView == .timer {
             return CGSize(width: baseSize.width, height: 250) // Extra height for timer presets
         }
@@ -324,6 +332,25 @@ struct ContentView: View {
     
     private var standardMediaControlsActive: Bool {
         showStandardMediaControls && !enableMinimalisticUI
+    }
+
+    private var closedStockCode: String? {
+        stockWatchlist.contains(stockPinnedCode) ? stockPinnedCode : stockWatchlist.first
+    }
+
+    private var showClosedStock: Bool {
+        enableStocksFeature && stockShowWhenClosed && closedStockCode != nil
+            && vm.notchState == .closed && !vm.hideOnClosed && !lockScreenManager.isLocked
+            && !enableMinimalisticUI && !coordinator.firstLaunch
+            && !isCurrentScreenExpansionVisible && !isSneakPeekVisibleOnCurrentScreen
+            && !isConnectivityHUDVisible
+            && !(capsLockManager.isCapsLockActive && Defaults[.enableCapsLockIndicator])
+            && !(timerManager.isTimerActive && coordinator.timerLiveActivityEnabled)
+            && !(reminderManager.isActive && enableReminderLiveActivity)
+            && !(recordingManager.isRecording && Defaults[.enableScreenRecordingDetection] && Defaults[.showRecordingIndicator])
+            && !(privacyManager.hasAnyIndicator && (Defaults[.enableCameraDetection] || Defaults[.enableMicrophoneDetection]))
+            && !(downloadManager.isDownloading && Defaults[.enableDownloadListener])
+            && !localSendLiveActivityActive
     }
 
     private var closedMusicContentEnabled: Bool {
@@ -1132,6 +1159,10 @@ struct ContentView: View {
                       } else if vm.notchState == .closed && capsLockManager.isCapsLockActive && Defaults[.enableCapsLockIndicator] && !vm.hideOnClosed && !lockScreenManager.isLocked {
                           InlineHUD(type: .constant(.capsLock), value: .constant(1.0), icon: .constant(""), hoverAnimation: $isHovering, gestureProgress: $gestureProgress)
                               .transition(AnyTransition.move(edge: .trailing).combined(with: .opacity))
+                      } else if showClosedStock, let code = closedStockCode {
+                          ClosedStockView(code: code,
+                                          centerWidth: vm.closedNotchSize.width + (isHovering ? 8 : 0),
+                                          height: vm.effectiveClosedNotchHeight + (isHovering ? 8 : 0))
                       } else if canShowMusicDuringExpansion && musicPairingEligible {
                           MusicLiveActivity(secondary: musicSecondary)
                               .id("closed-music-live-activity")
@@ -1294,6 +1325,8 @@ struct ContentView: View {
                                   NotchTimerView()
                               case .stats:
                                   NotchStatsView()
+                              case .stocks:
+                                  NotchStocksView()
                               case .llmUsage:
                                   NotchLLMUsageView()
                               case .colorPicker:
@@ -2093,7 +2126,9 @@ struct ContentView: View {
 
     // MARK: - Private Methods
     private func openNotch() {
+        let opensStocks = showClosedStock
         vm.open()
+        if opensStocks { coordinator.currentView = .stocks }
     }
 
     private func shouldShowClosedMusicWaveformPlayPauseOverlay(for secondary: MusicSecondaryLiveActivity?) -> Bool {
@@ -2103,6 +2138,7 @@ struct ContentView: View {
 
     private var isClosedMusicGestureContext: Bool {
         vm.notchState == .closed
+            && !showClosedStock
             && coordinator.musicLiveActivityEnabled
             && closedMusicContentEnabled
             && !vm.hideOnClosed
@@ -2451,7 +2487,7 @@ struct ContentView: View {
         PinnedLyricsView.shouldReserve(
             lyricsEnabled: enableLyrics,
             pinEnabled: pinLyricsWhenClosed,
-            surfaceEligible: vm.notchState == .closed && !vm.hideOnClosed
+            surfaceEligible: vm.notchState == .closed && !showClosedStock && !vm.hideOnClosed
                 && !lockScreenManager.isLocked && musicManager.isPlaying,
             availability: musicManager.lyricsAvailability
         )

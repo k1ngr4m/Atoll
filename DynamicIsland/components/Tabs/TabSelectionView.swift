@@ -50,6 +50,7 @@ struct TabSelectionView: View {
     @Default(.quickShareProvider) private var quickShareProvider
     @State private var showQuickSharePopover = false
     @Default(.enableTimerFeature) var enableTimerFeature
+    @Default(.enableStocksFeature) private var enableStocksFeature
     @Default(.enableStatsFeature) var enableStatsFeature
     @Default(.enableColorPickerFeature) var enableColorPickerFeature
     @Default(.timerDisplayMode) var timerDisplayMode
@@ -80,6 +81,10 @@ struct TabSelectionView: View {
         // Stats tab only shown when stats feature is enabled
         if Defaults[.enableStatsFeature] {
             tabsArray.append(TabModel(label: "Stats", icon: "chart.xyaxis.line", view: .stats))
+        }
+
+        if enableStocksFeature {
+            tabsArray.append(TabModel(label: String(localized: "Stocks"), icon: "chart.line.uptrend.xyaxis", view: .stocks))
         }
 
         // Usage tab only shown when LLM usage feature is enabled
