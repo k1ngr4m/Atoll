@@ -41,7 +41,12 @@ final class LLMUsageManager: ObservableObject {
         await withTaskGroup(of: (ProviderID, UsageResult).self) { group in
             for provider in providers {
                 group.addTask {
-                    do { return (provider.id, .success(try await provider.fetchSnapshot(now: now))) }
+                    do {
+                        let snapshot = try await provider.fetchSnapshot(now: now) { snapshot in
+                            await MainActor.run { self.results[provider.id] = .success(snapshot) }
+                        }
+                        return (provider.id, .success(snapshot))
+                    }
                     catch { return (provider.id, .failure(error.localizedDescription)) }
                 }
             }

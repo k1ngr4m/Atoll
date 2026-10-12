@@ -5,7 +5,16 @@ import os
 struct CodexQuotaClient {
     private static let log = os.Logger(subsystem: "com.atoll.DynamicIsland", category: "CodexQuota")
     let session: URLSession
-    init(session: URLSession = URLSession(configuration: .ephemeral)) { self.session = session }
+    let loadCredentials: () -> (accessToken: String, accountId: String?)?
+
+    init(session: URLSession? = nil,
+         loadCredentials: @escaping () -> (accessToken: String, accountId: String?)? = Self.readCredentials) {
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.timeoutIntervalForRequest = 15
+        configuration.timeoutIntervalForResource = 20
+        self.session = session ?? URLSession(configuration: configuration)
+        self.loadCredentials = loadCredentials
+    }
 
     private struct AuthFile: Decodable {
         struct Tokens: Decodable {
@@ -81,7 +90,7 @@ struct CodexQuotaClient {
     }
 
     // auth.json ($CODEX_HOME, ~/.codex, ~/.config/codex), then Keychain "Codex Auth" holding the same JSON payload.
-    private func loadCredentials() -> (accessToken: String, accountId: String?)? {
+    static func readCredentials() -> (accessToken: String, accountId: String?)? {
         for path in authPaths() {
             if let data = try? Data(contentsOf: path), let creds = parseAuth(data) { return creds }
         }
@@ -90,7 +99,7 @@ struct CodexQuotaClient {
         return creds
     }
 
-    private func authPaths() -> [URL] {
+    private static func authPaths() -> [URL] {
         let home = FileManager.default.homeDirectoryForCurrentUser
         if let codexHome = ProcessInfo.processInfo.environment["CODEX_HOME"]?.trimmingCharacters(in: .whitespacesAndNewlines),
            !codexHome.isEmpty {
@@ -102,7 +111,7 @@ struct CodexQuotaClient {
         ]
     }
 
-    private func parseAuth(_ data: Data) -> (accessToken: String, accountId: String?)? {
+    private static func parseAuth(_ data: Data) -> (accessToken: String, accountId: String?)? {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         guard let parsed = try? decoder.decode(AuthFile.self, from: data) else { return nil }

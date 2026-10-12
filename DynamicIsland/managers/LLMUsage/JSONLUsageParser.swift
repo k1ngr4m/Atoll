@@ -1,4 +1,5 @@
 import Foundation
+import Darwin
 
 struct UsageRecord {
     let timestamp: Date
@@ -54,8 +55,11 @@ struct JSONLUsageParser {
     /// record in the same file; `token_count` records do not repeat it, so without
     /// this state every Codex record would be tagged with an unpriceable placeholder.
     static func parseLine(_ line: String, codexModel: inout String?) -> UsageRecord? {
-        guard let data = line.data(using: .utf8),
-              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else { return nil }
+        parseData(Data(line.utf8), codexModel: &codexModel)
+    }
+
+    private static func parseData(_ data: Data, codexModel: inout String?) -> UsageRecord? {
+        guard let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else { return nil }
 
         if obj["type"] as? String == "turn_context",
            let payload = obj["payload"] as? [String: Any],
@@ -169,49 +173,44 @@ struct JSONLUsageParser {
         }
 
         var codexModel: String? = nil
-        func processLine(_ line: String) {
-            guard !line.isEmpty, let rec = parseLine(line, codexModel: &codexModel) else { return }
+        func processLine(_ line: Data) {
+            guard !line.isEmpty, let rec = parseData(line, codexModel: &codexModel) else { return }
             processRecord(rec)
         }
 
         while true {
             let chunk = handle.readData(ofLength: chunkSize)
             if chunk.isEmpty { break }
-            buffer.append(chunk)
-
-            // Process complete lines from buffer
-            while let newlineRange = buffer.firstIndex(of: UInt8(ascii: "\n")) {
-                let lineData = buffer.subdata(in: buffer.startIndex..<newlineRange)
-                buffer.removeSubrange(buffer.startIndex...newlineRange)
-
-                if discardingOversized {
-                    // We were discarding an oversized record; this newline ends it.
-                    discardingOversized = false
-                    continue
+            // Scan only new bytes. memchr avoids Swift's per-byte Data subscripting;
+            // long records are never rescanned or shifted after each 64 KB read.
+            chunk.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) in
+                guard let base = bytes.baseAddress else { return }
+                var offset = 0
+                while offset < bytes.count {
+                    let newline = memchr(base.advanced(by: offset), 10, bytes.count - offset)
+                    let end = newline.map { base.distance(to: $0) } ?? bytes.count
+                    if !discardingOversized {
+                        if buffer.count + end - offset > maxRecordSize {
+                            discardingOversized = true
+                            buffer.removeAll(keepingCapacity: true)
+                        } else {
+                            buffer.append(base.advanced(by: offset).assumingMemoryBound(to: UInt8.self), count: end - offset)
+                        }
+                    }
+                    if newline != nil {
+                        if !discardingOversized { processLine(buffer) }
+                        buffer.removeAll(keepingCapacity: true)
+                        discardingOversized = false
+                    }
+                    offset = end + 1
                 }
-
-                // Skip oversized terminated records before decoding
-                if lineData.count > maxRecordSize {
-                    continue
-                }
-
-                guard let line = String(data: lineData, encoding: .utf8) else { continue }
-                processLine(line)
-            }
-
-            // Bound buffer growth: if buffer exceeds maxRecordSize without a newline,
-            // discard data up to the next newline when it arrives
-            if buffer.count > maxRecordSize {
-                discardingOversized = true
-                buffer.removeFirst(buffer.count - maxRecordSize)
             }
         }
 
         // Process any remaining data in buffer (last line without trailing newline)
         // but only if it's within the size limit and we're not discarding
-        if !buffer.isEmpty && buffer.count <= maxRecordSize && !discardingOversized,
-           let line = String(data: buffer, encoding: .utf8) {
-            processLine(line)
+        if !buffer.isEmpty && !discardingOversized {
+            processLine(buffer)
         }
     }
 

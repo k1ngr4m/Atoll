@@ -21,6 +21,67 @@ import XCTest
 
 final class JSONLUsageParserTests: XCTestCase {
 
+    func testChunkBoundariesAndRecordSizeLimit() throws {
+        let now = Date()
+        let timestamp = ISO8601DateFormatter().string(from: now)
+        let record = "{\"timestamp\":\"\(timestamp)\",\"model\":\"test\",\"usage\":{\"input_tokens\":7,\"output_tokens\":3},\"padding\":\"%@\"}"
+        // Exact chunk/record boundaries, UTF-8 across reads, oversized records,
+        // and a final record without a newline must preserve the same totals.
+        let sizes = [65_535, 65_536, 65_537, 1_048_576, 1_048_577, 3_000_000, 200]
+        let lines = sizes.map { size -> String in
+            let empty = String(format: record, "中")
+            return String(format: record, "中" + String(repeating: "x", count: size - empty.utf8.count))
+        }
+        let file = try makeTempFile(content: lines.joined(separator: "\n"))
+        defer { try? FileManager.default.removeItem(at: file) }
+        let snapshot = parseFile(file, now: now)
+        XCTAssertEqual(snapshot.today.totalTokens, 50)
+    }
+
+    func testCodexPublishesQuotaBeforeReadingLogs() async throws {
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [CodexQuotaStub.self]
+        let client = CodexQuotaClient(session: URLSession(configuration: configuration), loadCredentials: { ("test", nil) })
+        // Exercise protocol dispatch, as used by LLMUsageManager.
+        let provider: UsageProvider = CodexUsageProvider(root: directory, quotaClient: client)
+        let now = Date()
+        let timestamp = ISO8601DateFormatter().string(from: now)
+        let update = expectation(description: "Quota published before log scan")
+        let result = try await provider.fetchSnapshot(now: now) { snapshot in
+            XCTAssertTrue(snapshot.isLocalUsageLoading)
+            XCTAssertEqual(snapshot.sessionLimit?.used, 25)
+            XCTAssertEqual(snapshot.weekLimit?.used, 60)
+            update.fulfill()
+            // If scanning happens before this awaited update, the final totals fail.
+            let log = """
+            {"type":"turn_context","payload":{"model":"test-model"}}
+            {"type":"event_msg","timestamp":"\(timestamp)","payload":{"type":"token_count","info":{"last_token_usage":{"input_tokens":20,"output_tokens":5}}}}
+            """
+            try! Data(log.utf8).write(to: directory.appendingPathComponent("usage.jsonl"))
+        }
+        await fulfillment(of: [update], timeout: 1)
+        XCTAssertFalse(result.isLocalUsageLoading)
+        XCTAssertEqual(result.today.totalTokens, 25)
+        XCTAssertEqual(result.models.first?.model, "test-model")
+        XCTAssertEqual(result.sessionLimit?.used, 25)
+        XCTAssertNil(result.localUsageError)
+
+        let missing = CodexUsageProvider(root: directory.appendingPathComponent("missing"), quotaClient: client)
+        let quotaOnly = try await missing.fetchSnapshot(now: now)
+        XCTAssertFalse(quotaOnly.isLocalUsageLoading)
+        XCTAssertEqual(quotaOnly.sessionLimit?.used, 25)
+        XCTAssertNotNil(quotaOnly.localUsageError)
+
+        let offlineClient = CodexQuotaClient(loadCredentials: { nil })
+        XCTAssertEqual(offlineClient.session.configuration.timeoutIntervalForResource, 20)
+        let offline = try await CodexUsageProvider(root: directory, quotaClient: offlineClient).fetchSnapshot(now: now)
+        XCTAssertNil(offline.sessionLimit)
+        XCTAssertEqual(offline.today.totalTokens, 25)
+    }
+
     private func makeTempFile(content: String) throws -> URL {
         let tempDir = FileManager.default.temporaryDirectory
         let file = tempDir.appendingPathComponent("test_\(UUID().uuidString).jsonl")
@@ -165,4 +226,16 @@ final class JSONLUsageParserTests: XCTestCase {
         XCTAssertEqual(snapshot.session.outputTokens, 250)
         XCTAssertTrue(snapshot.models.contains { $0.model == "codex" })
     }
+}
+
+private final class CodexQuotaStub: URLProtocol {
+    override class func canInit(with request: URLRequest) -> Bool { true }
+    override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
+    override func startLoading() {
+        let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+        client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
+        client?.urlProtocol(self, didLoad: Data(#"{"rate_limit":{"primary_window":{"used_percent":25},"secondary_window":{"used_percent":60}}}"#.utf8))
+        client?.urlProtocolDidFinishLoading(self)
+    }
+    override func stopLoading() {}
 }

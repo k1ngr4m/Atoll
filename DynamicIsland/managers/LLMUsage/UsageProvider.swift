@@ -56,6 +56,8 @@ struct UsageLimit: Equatable {
 }
 
 struct UsageSnapshot: Equatable {
+    var isLocalUsageLoading = false
+    var localUsageError: String? = nil
     var session: UsageTotals = .init()
     var today: UsageTotals = .init()
     var week: UsageTotals = .init()
@@ -76,4 +78,11 @@ enum UsageResult {
 protocol UsageProvider {
     var id: ProviderID { get }
     func fetchSnapshot(now: Date) async throws -> UsageSnapshot
+    func fetchSnapshot(now: Date, onUpdate: @Sendable (UsageSnapshot) async -> Void) async throws -> UsageSnapshot
+}
+
+extension UsageProvider {
+    func fetchSnapshot(now: Date, onUpdate: @Sendable (UsageSnapshot) async -> Void) async throws -> UsageSnapshot {
+        try await fetchSnapshot(now: now)
+    }
 }

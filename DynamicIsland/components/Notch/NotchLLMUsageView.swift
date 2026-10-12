@@ -104,9 +104,7 @@ struct NotchLLMUsageView: View {
                 antigravitySuccess(snap)
             } else if snap.sessionLimit == nil && snap.weekLimit == nil {
                 if provider != .cursor {
-                    window("Today", snap.today, prominent: true)
-                    window("Week", snap.week)
-                    window("Session", snap.session)
+                    localUsage(snap, compact: false)
                 }
                 Text("quota unavailable").font(.caption2).foregroundStyle(.secondary.opacity(0.7))
             } else {
@@ -116,11 +114,23 @@ struct NotchLLMUsageView: View {
                 } else {
                     if let limit = snap.sessionLimit { quotaGauge("Session", limit) }
                     if let limit = snap.weekLimit { quotaGauge("Week", limit) }
-                    VStack(alignment: .leading, spacing: 2) {
-                        window("Today", snap.today, compact: true)
-                        window("Week", snap.week, compact: true)
-                    }
+                    localUsage(snap, compact: true)
                 }
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func localUsage(_ snap: UsageSnapshot, compact: Bool) -> some View {
+        if snap.isLocalUsageLoading {
+            Text("Loading local usage…").font(.caption2).foregroundStyle(.secondary)
+        } else if let error = snap.localUsageError {
+            Text(error).font(.caption2).foregroundStyle(.secondary)
+        } else {
+            VStack(alignment: .leading, spacing: compact ? 2 : 6) {
+                window("Today", snap.today, prominent: !compact, compact: compact)
+                window("Week", snap.week, compact: compact)
+                if !compact { window("Session", snap.session) }
             }
         }
     }
