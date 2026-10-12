@@ -28,6 +28,44 @@ import XCTest
 /// past an unrelated track.
 final class LyricsMetadataTests: XCTestCase {
 
+    func testCandidateDurationDisplay() {
+        let rows: [[String: Any]] = [[
+            "id": 1, "trackName": "Song", "artistName": "Artist", "duration": 272.9,
+            "syncedLyrics": "[00:01]First\n[04:18.99]Last\n[04:20]作词：Someone\n[04:22]纯音乐，请欣赏\n[04:30]"
+        ]]
+        var candidate = LyricsCandidate.lrclib(rows, title: "Song", artist: "Artist")[0]
+        XCTAssertEqual(candidate.duration, 272.9)
+        XCTAssertEqual(candidate.durationDisplay?.time, "04:32")
+        XCTAssertEqual(candidate.durationDisplay?.isLastLine, false)
+
+        for invalid: TimeInterval? in [nil, 0, -1, .nan, .infinity, -.infinity, Double(Int.max)] {
+            candidate.duration = invalid
+            XCTAssertEqual(candidate.durationDisplay?.time, "04:18")
+            XCTAssertEqual(candidate.durationDisplay?.isLastLine, true)
+        }
+        for (seconds, expected) in [(0.9, "00:00"), (59.99, "00:59"), (60.0, "01:00"), (6000.0, "100:00")] {
+            candidate.duration = seconds
+            XCTAssertEqual(candidate.durationDisplay?.time, expected)
+            XCTAssertEqual(candidate.durationDisplay?.isLastLine, false)
+        }
+        let plain = LyricsCandidate(id: "plain", label: "", resolution: LyricsResolution(
+            lines: LyricLine.untimedLines(from: "Plain lyrics")))
+        XCTAssertNil(plain.durationDisplay)
+        var timedPlain = plain
+        timedPlain.duration = 272
+        XCTAssertEqual(timedPlain.durationDisplay?.time, "04:32")
+        XCTAssertEqual(timedPlain.durationDisplay?.isLastLine, false)
+
+        let zero = LyricsCandidate(id: "zero", label: "", resolution: LyricsResolution(lines: [
+            LyricLine(timestamp: .nan, text: "Invalid"),
+            LyricLine(timestamp: .infinity, text: "Invalid"),
+            LyricLine(timestamp: -1, text: "Invalid"),
+            LyricLine(timestamp: 0, text: "First and last")
+        ]))
+        XCTAssertEqual(zero.durationDisplay?.time, "00:00")
+        XCTAssertEqual(zero.durationDisplay?.isLastLine, true)
+    }
+
     func testIdenticalLyricsKeepDistinctProviderIdentities() {
         let rows: [[String: Any]] = [1, 2].map {
             ["id": $0, "trackName": "Song", "artistName": "Artist", "syncedLyrics": "[00:01]Hello"]

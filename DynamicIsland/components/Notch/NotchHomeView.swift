@@ -343,8 +343,21 @@ struct LyricsSidePanelView: View {
                                                     .font(.callout)
                                                     .lineLimit(2)
                                                     .help(candidate.label)
-                                                Text(candidate.resolution.availability == .timed ? "Synced lyrics" : "Plain lyrics")
-                                                    .font(.caption).foregroundStyle(.secondary)
+                                                HStack(spacing: 0) {
+                                                    Text(candidate.resolution.availability == .timed ? "Synced lyrics" : "Plain lyrics")
+                                                    Text(verbatim: " · ")
+                                                    if let duration = candidate.durationDisplay {
+                                                        if duration.isLastLine {
+                                                            Text("Last line \(duration.time)")
+                                                                .help("Start time of the last lyric line, not the full song duration.")
+                                                        } else {
+                                                            Text("Duration \(duration.time)")
+                                                        }
+                                                    } else {
+                                                        Text("Duration unknown")
+                                                    }
+                                                }
+                                                .font(.caption).foregroundStyle(.secondary)
                                             }
                                             Spacer(minLength: 0)
                                         }

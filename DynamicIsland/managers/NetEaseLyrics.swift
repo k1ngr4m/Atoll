@@ -91,7 +91,7 @@ enum NetEaseLyrics {
             guard resolution.availability == .timed || resolution.availability == .untimed else { continue }
             candidates.append(LyricsCandidate(id: "netease-\(song.id)",
                 label: "网易云 · \(song.name) · \(song.artists.joined(separator: "/")) · #\(song.id)",
-                resolution: resolution))
+                resolution: resolution, duration: song.duration))
         }
         return candidates
     }

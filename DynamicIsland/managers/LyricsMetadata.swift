@@ -356,6 +356,25 @@ struct LyricsCandidate: Identifiable {
     let id: String
     let label: String
     let resolution: LyricsResolution
+    var duration: TimeInterval? = nil
+
+    var durationDisplay: (time: String, isLastLine: Bool)? {
+        if let duration, duration > 0, let time = Self.formattedTime(duration) {
+            return (time, false)
+        }
+        let lastLine = resolution.lines.filter {
+            $0.isTimed && $0.timestamp.isFinite && $0.timestamp >= 0
+                && $0.timestamp < Double(Int.max) && LyricTextSemantics.isLyric($0.text)
+        }.map(\.timestamp).max()
+        guard let lastLine, let time = Self.formattedTime(lastLine) else { return nil }
+        return (time, true)
+    }
+
+    private static func formattedTime(_ seconds: TimeInterval) -> String? {
+        guard seconds.isFinite, seconds >= 0, seconds < Double(Int.max) else { return nil }
+        let wholeSeconds = Int(seconds)
+        return String(format: "%02ld:%02ld", wholeSeconds / 60, wholeSeconds % 60)
+    }
 
     static func lrclibResults(title: String, artist: String) async throws -> [[String: Any]] {
         var url = URLComponents(string: "https://lrclib.net/api/search")!
@@ -377,7 +396,8 @@ struct LyricsCandidate: Identifiable {
             let details = [result["trackName"] as? String, result["artistName"] as? String,
                            result["albumName"] as? String].compactMap { $0 }.filter { !$0.isEmpty }
             return LyricsCandidate(id: "lrclib-\(id)",
-                label: "LRCLIB · " + details.joined(separator: " · ") + " · #\(id)", resolution: resolution)
+                label: "LRCLIB · " + details.joined(separator: " · ") + " · #\(id)",
+                resolution: resolution, duration: result["duration"] as? Double)
         }
     }
 }
