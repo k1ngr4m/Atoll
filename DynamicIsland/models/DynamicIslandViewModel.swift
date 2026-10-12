@@ -157,6 +157,21 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
         
         setupDetectorObserver()
 
+        Defaults.publisher(.stockWatchlist, options: []).map { _ in () }
+            .merge(with: Defaults.publisher(.stockChartCollapsed, options: []).map { _ in () })
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in
+                guard let self, self.notchState == .open,
+                      self.coordinator.currentView == .stocks else { return }
+                let size = self.calculateDynamicNotchSize()
+                self.notchSize = size
+                AppDelegate.shared?.ensureWindowSize(
+                    addShadowPadding(to: size, isMinimalistic: Defaults[.enableMinimalisticUI]),
+                    animated: false
+                )
+            }
+            .store(in: &cancellables)
+
         ReminderLiveActivityManager.shared.$activeWindowReminders
             .removeDuplicates()
             .receive(on: RunLoop.main)
@@ -210,6 +225,12 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
             .sink { [weak self] _, _ in
                 self?.handleMinimalisticTimerHeightChange()
             }
+            .store(in: &cancellables)
+
+        coordinator.$codexDetailPresented
+            .removeDuplicates()
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in self?.updateSideLyricsNotchSizeIfNeeded() }
             .store(in: &cancellables)
 
         coordinator.$statsSecondRowExpansion
@@ -411,6 +432,16 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
         let baseSize = Defaults[.enableMinimalisticUI] ? minimalisticOpenNotchSize(isDynamicIslandMode: shouldUseDynamicIslandMode(for: screen)) : openNotchSize
         var adjustedSize = baseSize
 
+        if coordinator.currentView == .llmUsage && coordinator.codexDetailPresented {
+            adjustedSize.height = codexDetailNotchHeight(headerHeight: effectiveClosedNotchHeight, screenName: screen)
+            return adjustedSize
+        }
+
+        if coordinator.currentView == .stocks {
+            adjustedSize.height = stocksOpenNotchHeight(headerHeight: effectiveClosedNotchHeight)
+            return adjustedSize
+        }
+
         if coordinator.currentView == .notes || coordinator.currentView == .clipboard {
             let preferred = coordinator.notesLayoutState.preferredHeight
             adjustedSize.height = max(adjustedSize.height, preferred)
@@ -434,6 +465,7 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
         notchSize = targetSize
         closedNotchSize = targetSize
         notchState = .closed
+        coordinator.codexDetailPresented = false
         resetScrollGestureSuppression()
         resetAutoCloseSuppression()
     }
@@ -444,6 +476,7 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
             notchSize = targetSize
             closedNotchSize = targetSize
             notchState = .closed
+            coordinator.codexDetailPresented = false
             resetScrollGestureSuppression()
             resetAutoCloseSuppression()
         }

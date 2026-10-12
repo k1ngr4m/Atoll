@@ -1307,6 +1307,8 @@ extension Defaults.Keys {
     static let stockShowWhenClosed = Key<Bool>("stockShowWhenClosed", default: true)
     static let stockPinnedCode = Key<String>("stockPinnedCode", default: "")
     static let stockWatchlist = Key<[String]>("stockWatchlist", default: [])
+    static let stockChartCollapsed = Key<Bool>("stockChartCollapsed", default: true)
+    static let stockSelectedCode = Key<String?>("stockSelectedCode", default: nil)
     static let enableLLMUsageFeature = Key<Bool>("enableLLMUsageFeature", default: false)
     static let enableClaudeProvider = Key<Bool>("enableClaudeProvider", default: true)
     static let enableCodexProvider = Key<Bool>("enableCodexProvider", default: true)

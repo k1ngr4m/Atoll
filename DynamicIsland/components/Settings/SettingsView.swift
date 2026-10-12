@@ -58,6 +58,7 @@ private enum SettingsTab: String, CaseIterable, Identifiable {
     case hudAndOSD
     case battery
     case stats
+    case llmAgents
     case stocks
     case clipboard
     case screenAssistant
@@ -76,11 +77,11 @@ private enum SettingsTab: String, CaseIterable, Identifiable {
         switch self {
         case .general, .appearance:                                          return .core
         case .media, .liveActivities, .lockScreen, .devices:                 return .mediaAndDisplay
-        case .hudAndOSD, .battery:                                           return .system
+        case .hudAndOSD, .battery, .stats:                                   return .system
         case .timer, .calendar, .notes:                                      return .productivity
         case .clipboard, .screenAssistant, .colorPicker, .shelf,
              .downloads, .shortcuts, .stocks:                                return .utilities
-        case .stats, .terminal:                                              return .developer
+        case .llmAgents, .terminal:                                          return .developer
         case .extensions:                                                    return .integrations
         case .about:                                                         return .info
         }
@@ -100,7 +101,8 @@ private enum SettingsTab: String, CaseIterable, Identifiable {
         case .hudAndOSD: return String(localized: "Controls")
         case .battery: return String(localized: "Battery")
         case .stocks: return String(localized: "Stocks")
-        case .stats: return String(localized: "Stats")
+        case .stats: return String(localized: "Monitoring")
+        case .llmAgents: return String(localized: "LLM Agents")
         case .clipboard: return String(localized: "Clipboard")
         case .screenAssistant: return String(localized: "Screen Assistant")
         case .colorPicker: return String(localized: "Color Picker")
@@ -128,6 +130,7 @@ private enum SettingsTab: String, CaseIterable, Identifiable {
         case .battery: return "battery.100.bolt"
         case .stocks: return "chart.line.uptrend.xyaxis"
         case .stats: return "chart.xyaxis.line"
+        case .llmAgents: return "sparkles"
         case .clipboard: return "clipboard"
         case .screenAssistant: return "brain.head.profile"
         case .colorPicker: return "eyedropper"
@@ -155,6 +158,7 @@ private enum SettingsTab: String, CaseIterable, Identifiable {
         case .battery: return Color(red: 0.202, green: 0.783, blue: 0.348, opacity: 1.000)
         case .stocks: return .red
         case .stats: return .teal
+        case .llmAgents: return .purple
         case .clipboard: return .mint
         case .screenAssistant: return .pink
         case .colorPicker: return .accentColor
@@ -445,13 +449,13 @@ private enum SettingsSearchIndex {
 
         // Stats
         SettingsSearchEntry(tab: .stats, title: "Enable system stats monitoring", keywords: ["stats", "monitoring"], highlightID: SettingsTab.stats.highlightID(for: "Enable system stats monitoring")),
-        SettingsSearchEntry(tab: .stats, title: "Enable LLM Usage Monitor", keywords: ["llm", "usage", "ai", "monitor"], highlightID: SettingsTab.stats.highlightID(for: "Enable LLM Usage Monitor")),
-        SettingsSearchEntry(tab: .stats, title: "Claude Provider", keywords: ["llm", "claude", "provider", "toggle"], highlightID: SettingsTab.stats.highlightID(for: "Claude Provider")),
-        SettingsSearchEntry(tab: .stats, title: "Codex Provider", keywords: ["llm", "codex", "provider", "toggle"], highlightID: SettingsTab.stats.highlightID(for: "Codex Provider")),
-        SettingsSearchEntry(tab: .stats, title: "Cursor Provider", keywords: ["llm", "cursor", "provider", "toggle"], highlightID: SettingsTab.stats.highlightID(for: "Cursor Provider")),
-        SettingsSearchEntry(tab: .stats, title: "Antigravity Provider", keywords: ["llm", "antigravity", "provider", "toggle"], highlightID: SettingsTab.stats.highlightID(for: "Antigravity Provider")),
-        SettingsSearchEntry(tab: .stats, title: "New API Provider", keywords: ["llm", "new api", "newapi", "provider", "toggle"], highlightID: SettingsTab.stats.highlightID(for: "New API Provider")),
-        SettingsSearchEntry(tab: .stats, title: "New API Accounts", keywords: ["llm", "new api", "newapi", "accounts", "key", "token"], highlightID: SettingsTab.stats.highlightID(for: "New API Accounts")),
+        SettingsSearchEntry(tab: .llmAgents, title: "Enable LLM Usage Monitor", keywords: ["llm", "usage", "ai", "monitor"], highlightID: SettingsTab.llmAgents.highlightID(for: "Enable LLM Usage Monitor")),
+        SettingsSearchEntry(tab: .llmAgents, title: "Claude Provider", keywords: ["llm", "claude", "provider", "toggle"], highlightID: SettingsTab.llmAgents.highlightID(for: "Claude Provider")),
+        SettingsSearchEntry(tab: .llmAgents, title: "Codex Provider", keywords: ["llm", "codex", "provider", "toggle"], highlightID: SettingsTab.llmAgents.highlightID(for: "Codex Provider")),
+        SettingsSearchEntry(tab: .llmAgents, title: "Cursor Provider", keywords: ["llm", "cursor", "provider", "toggle"], highlightID: SettingsTab.llmAgents.highlightID(for: "Cursor Provider")),
+        SettingsSearchEntry(tab: .llmAgents, title: "Antigravity Provider", keywords: ["llm", "antigravity", "provider", "toggle"], highlightID: SettingsTab.llmAgents.highlightID(for: "Antigravity Provider")),
+        SettingsSearchEntry(tab: .llmAgents, title: "New API Provider", keywords: ["llm", "new api", "newapi", "provider", "toggle"], highlightID: SettingsTab.llmAgents.highlightID(for: "New API Provider")),
+        SettingsSearchEntry(tab: .llmAgents, title: "New API Accounts", keywords: ["llm", "new api", "newapi", "accounts", "key", "token"], highlightID: SettingsTab.llmAgents.highlightID(for: "New API Accounts")),
         SettingsSearchEntry(tab: .stats, title: "Stop monitoring after closing the notch", keywords: ["stats", "auto stop"], highlightID: SettingsTab.stats.highlightID(for: "Stop monitoring after closing the notch")),
         SettingsSearchEntry(tab: .stats, title: "CPU Usage", keywords: ["cpu", "graph"], highlightID: SettingsTab.stats.highlightID(for: "CPU Usage")),
         SettingsSearchEntry(tab: .stats, title: "Temperature unit", keywords: ["cpu", "temperature", "celsius", "fahrenheit"], highlightID: SettingsTab.stats.highlightID(for: "Temperature unit")),
@@ -817,6 +821,7 @@ struct SettingsView: View {
             // System
             .hudAndOSD,
             .battery,
+            .stats,
             // Productivity
             .timer,
             .calendar,
@@ -830,7 +835,7 @@ struct SettingsView: View {
             .shortcuts,
             .stocks,
             // Developer
-            .stats,
+            .llmAgents,
             .terminal,
             // Integrations
             .extensions,
@@ -1025,7 +1030,7 @@ struct SettingsView: View {
 
     private func isTabVisible(_ tab: SettingsTab) -> Bool {
         switch tab {
-        case .timer, .stats, .stocks, .clipboard, .screenAssistant, .colorPicker, .shelf, .notes, .terminal:
+        case .timer, .stats, .llmAgents, .stocks, .clipboard, .screenAssistant, .colorPicker, .shelf, .notes, .terminal:
             return !enableMinimalisticUI
         default:
             return true
@@ -1086,6 +1091,10 @@ struct SettingsView: View {
         case .stats:
             SettingsForm(tab: .stats) {
                 StatsSettings()
+            }
+        case .llmAgents:
+            SettingsForm(tab: .llmAgents) {
+                LLMAgentsSettings()
             }
         case .clipboard:
             SettingsForm(tab: .clipboard) {
@@ -8047,8 +8056,6 @@ private struct TimerPresetComponentControl: View {
 struct StatsSettings: View {
     @ObservedObject var statsManager = StatsManager.shared
     @Default(.enableStatsFeature) var enableStatsFeature
-    @Default(.enableLLMUsageFeature) var enableLLMUsageFeature
-    @Default(.enableNewAPIProvider) var enableNewAPIProvider
     @Default(.statsStopWhenNotchCloses) var statsStopWhenNotchCloses
     @Default(.statsUpdateInterval) var statsUpdateInterval
     @Default(.showCpuGraph) var showCpuGraph
@@ -8057,11 +8064,6 @@ struct StatsSettings: View {
     @Default(.showNetworkGraph) var showNetworkGraph
     @Default(.showDiskGraph) var showDiskGraph
     @Default(.cpuTemperatureUnit) var cpuTemperatureUnit
-    @State private var newAPIAccounts = Defaults[.newAPIAccounts]
-    @State private var isNewAPIEditorPresented = false
-    @State private var editingNewAPIAccount: NewAPIAccount?
-    @State private var accountPendingDeletion: NewAPIAccount?
-    @State private var newAPIAccountErrorMessage: String?
 
     private func highlightID(_ title: String) -> String {
         SettingsTab.stats.highlightID(for: title)
@@ -8099,114 +8101,13 @@ struct StatsSettings: View {
                     }
                     // Note: Smart monitoring will handle starting when switching to stats tab
                 }
-
-                Defaults.Toggle(key: .enableLLMUsageFeature) {
-                    Text("Enable LLM Usage Monitor")
-                }
-                .settingsHighlight(id: highlightID("Enable LLM Usage Monitor"))
-
             } header: {
                 Text("General")
             } footer: {
-                Text("When enabled, the Stats tab will display real-time system performance graphs. This feature requires system permissions and may use additional battery. Enabling LLM Usage Monitor adds a Usage tab that tracks token usage and spend across your configured AI providers.")
+                Text("When enabled, the Stats tab will display real-time system performance graphs. This feature requires system permissions and may use additional battery.")
                     .multilineTextAlignment(.trailing)
                     .foregroundStyle(.secondary)
                     .font(.caption)
-            }
-
-            if enableLLMUsageFeature {
-                Section {
-                    Defaults.Toggle(key: .enableClaudeProvider) {
-                        Text("Claude")
-                    }
-                    .settingsHighlight(id: highlightID("Claude Provider"))
-
-                    Defaults.Toggle(key: .enableCodexProvider) {
-                        Text("Codex")
-                    }
-                    .settingsHighlight(id: highlightID("Codex Provider"))
-
-                    Defaults.Toggle(key: .enableCursorProvider) {
-                        Text("Cursor")
-                    }
-                    .settingsHighlight(id: highlightID("Cursor Provider"))
-
-                    Defaults.Toggle(key: .enableAntigravityProvider) {
-                        Text("Antigravity")
-                    }
-                    .settingsHighlight(id: highlightID("Antigravity Provider"))
-
-                    Defaults.Toggle(key: .enableNewAPIProvider) {
-                        Text("New API")
-                    }
-                    .settingsHighlight(id: highlightID("New API Provider"))
-                    .onChange(of: enableNewAPIProvider) { _, _ in
-                        LLMUsageManager.shared.refreshAll(force: true)
-                    }
-                } header: {
-                    Text("LLM Providers")
-                } footer: {
-                    Text("Choose which AI providers appear in the Usage tab.")
-                        .multilineTextAlignment(.trailing)
-                        .foregroundStyle(.secondary)
-                    .font(.caption)
-                }
-
-                Section {
-                    if newAPIAccounts.isEmpty {
-                        Text("Add one or more New API accounts to monitor their balance and usage.")
-                            .foregroundStyle(.secondary)
-                            .font(.caption)
-                    } else {
-                        ForEach(newAPIAccounts) { account in
-                            HStack(spacing: 10) {
-                                VStack(alignment: .leading, spacing: 2) {
-                                    Text(account.name)
-                                    Text(account.baseURL)
-                                        .font(.caption)
-                                        .foregroundStyle(.secondary)
-                                        .lineLimit(1)
-                                        .truncationMode(.middle)
-                                }
-
-                                Spacer()
-
-                                Button {
-                                    editingNewAPIAccount = account
-                                    isNewAPIEditorPresented = true
-                                } label: {
-                                    Image(systemName: "pencil")
-                                }
-                                .buttonStyle(.borderless)
-                                .help("Edit New API account")
-
-                                Button(role: .destructive) {
-                                    accountPendingDeletion = account
-                                } label: {
-                                    Image(systemName: "trash")
-                                }
-                                .buttonStyle(.borderless)
-                                .help("Delete New API account")
-                            }
-                        }
-                    }
-
-                    Button {
-                        editingNewAPIAccount = nil
-                        isNewAPIEditorPresented = true
-                    } label: {
-                        Label("Add New API Account", systemImage: "plus")
-                    }
-                    .buttonStyle(.bordered)
-                    .settingsHighlight(id: highlightID("New API Accounts"))
-                } header: {
-                    Text("New API Accounts")
-                } footer: {
-                    Text("API keys are stored in the macOS Keychain. Balance and usage are shown in the quota units reported by your New API server.")
-                        .multilineTextAlignment(.trailing)
-                        .foregroundStyle(.secondary)
-                        .font(.caption)
-                }
             }
 
             if enableStatsFeature {
@@ -8407,7 +8308,135 @@ struct StatsSettings: View {
                 }
             }
         }
-        .navigationTitle("Stats")
+        .navigationTitle("Monitoring")
+    }
+}
+
+struct LLMAgentsSettings: View {
+    @Default(.enableLLMUsageFeature) var enableLLMUsageFeature
+    @Default(.enableNewAPIProvider) var enableNewAPIProvider
+    @State private var newAPIAccounts = Defaults[.newAPIAccounts]
+    @State private var isNewAPIEditorPresented = false
+    @State private var editingNewAPIAccount: NewAPIAccount?
+    @State private var accountPendingDeletion: NewAPIAccount?
+    @State private var newAPIAccountErrorMessage: String?
+
+    private func highlightID(_ title: String) -> String {
+        SettingsTab.llmAgents.highlightID(for: title)
+    }
+
+    var body: some View {
+        Form {
+            Section {
+                Defaults.Toggle(key: .enableLLMUsageFeature) {
+                    Text("Enable LLM Usage Monitor")
+                }
+                .settingsHighlight(id: highlightID("Enable LLM Usage Monitor"))
+            } header: {
+                Text("General")
+            } footer: {
+                Text("Enabling LLM Usage Monitor adds a Usage tab that tracks token usage and spend across your configured AI providers.")
+                    .multilineTextAlignment(.trailing)
+                    .foregroundStyle(.secondary)
+                    .font(.caption)
+            }
+
+            if enableLLMUsageFeature {
+                Section {
+                    Defaults.Toggle(key: .enableClaudeProvider) {
+                        Text("Claude")
+                    }
+                    .settingsHighlight(id: highlightID("Claude Provider"))
+
+                    Defaults.Toggle(key: .enableCodexProvider) {
+                        Text("Codex")
+                    }
+                    .settingsHighlight(id: highlightID("Codex Provider"))
+
+                    Defaults.Toggle(key: .enableCursorProvider) {
+                        Text("Cursor")
+                    }
+                    .settingsHighlight(id: highlightID("Cursor Provider"))
+
+                    Defaults.Toggle(key: .enableAntigravityProvider) {
+                        Text("Antigravity")
+                    }
+                    .settingsHighlight(id: highlightID("Antigravity Provider"))
+
+                    Defaults.Toggle(key: .enableNewAPIProvider) {
+                        Text("New API")
+                    }
+                    .settingsHighlight(id: highlightID("New API Provider"))
+                    .onChange(of: enableNewAPIProvider) { _, _ in
+                        LLMUsageManager.shared.refreshAll(force: true)
+                    }
+                } header: {
+                    Text("LLM Providers")
+                } footer: {
+                    Text("Choose which AI providers appear in the Usage tab.")
+                        .multilineTextAlignment(.trailing)
+                        .foregroundStyle(.secondary)
+                    .font(.caption)
+                }
+
+                Section {
+                    if newAPIAccounts.isEmpty {
+                        Text("Add one or more New API accounts to monitor their balance and usage.")
+                            .foregroundStyle(.secondary)
+                            .font(.caption)
+                    } else {
+                        ForEach(newAPIAccounts) { account in
+                            HStack(spacing: 10) {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(account.name)
+                                    Text(account.baseURL)
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                        .lineLimit(1)
+                                        .truncationMode(.middle)
+                                }
+
+                                Spacer()
+
+                                Button {
+                                    editingNewAPIAccount = account
+                                    isNewAPIEditorPresented = true
+                                } label: {
+                                    Image(systemName: "pencil")
+                                }
+                                .buttonStyle(.borderless)
+                                .help("Edit New API account")
+
+                                Button(role: .destructive) {
+                                    accountPendingDeletion = account
+                                } label: {
+                                    Image(systemName: "trash")
+                                }
+                                .buttonStyle(.borderless)
+                                .help("Delete New API account")
+                            }
+                        }
+                    }
+
+                    Button {
+                        editingNewAPIAccount = nil
+                        isNewAPIEditorPresented = true
+                    } label: {
+                        Label("Add New API Account", systemImage: "plus")
+                    }
+                    .buttonStyle(.bordered)
+                    .settingsHighlight(id: highlightID("New API Accounts"))
+                } header: {
+                    Text("New API Accounts")
+                } footer: {
+                    Text("API keys are stored in the macOS Keychain. Balance and usage are shown in the quota units reported by your New API server.")
+                        .multilineTextAlignment(.trailing)
+                        .foregroundStyle(.secondary)
+                        .font(.caption)
+                }
+            }
+        }
+        .navigationTitle("LLM Agents")
         .onAppear {
             newAPIAccounts = Defaults[.newAPIAccounts]
         }

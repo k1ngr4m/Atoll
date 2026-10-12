@@ -1,213 +1,794 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Duration %@" : {
+    "Session": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Duration %@"
+            "value": "Session"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "时长 %@"
+            "value": "会话"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工作階段"
           }
         }
       }
     },
-    "Last line %@" : {
+    "Week": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Last line %@"
+            "value": "Week"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "末句 %@"
+            "value": "本周"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本週"
           }
         }
       }
     },
-    "Duration unknown" : {
+    "Today": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Duration unknown"
+            "value": "Today"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "时长未知"
+            "value": "今天"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今天"
           }
         }
       }
     },
-    "Start time of the last lyric line, not the full song duration." : {
+    "Back to usage": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Start time of the last lyric line, not the full song duration."
+            "value": "Back to usage"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "最后一句歌词的开始时间，并非歌曲完整时长。"
+            "value": "返回用量概览"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "返回用量概覽"
           }
         }
       }
     },
-  "Home": {
-    "extractionState": "manual",
-    "localizations": {
-      "en": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "Home"
-        }
-      },
-      "zh-Hans": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "首页"
-        }
-      },
-      "zh-Hant": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "首頁"
-        }
-      }
-    }
-  },
-  "Last page": {
-    "localizations": {
-      "en": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "Last page"
-        }
-      },
-      "zh-Hans": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "上次的页面"
-        }
-      },
-      "zh-Hant": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "上次的頁面"
-        }
-      }
-    }
-  },
-  "When reopening": {
-    "localizations": {
-      "en": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "When reopening"
-        }
-      },
-      "zh-Hans": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "重新打开时"
-        }
-      },
-      "zh-Hant": {
-        "stringUnit": {
-          "state": "translated",
-          "value": "重新開啟時"
-        }
-      }
-    }
-  },
-    "Next page" : {
+    "Open Codex details": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Codex details"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "下一页"
+            "value": "打开 Codex 详情"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟 Codex 詳情"
           }
         }
       }
     },
-    "Previous page" : {
+    "Usage period": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usage period"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "上一页"
+            "value": "统计周期"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "統計週期"
           }
         }
       }
     },
-    "Plain lyrics" : {
+    "Last 7 days": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last 7 days"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "纯文本歌词"
+            "value": "近 7 天"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近 7 天"
           }
         }
       }
     },
-    "Synced lyrics" : {
+    "Last 30 days": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last 30 days"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "同步歌词"
+            "value": "近 30 天"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近 30 天"
           }
         }
       }
     },
-    "No alternative lyrics found" : {
+    "Spend": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spend"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "未找到可选歌词"
+            "value": "花费"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花費"
           }
         }
       }
     },
-    "Some lyrics sources could not be loaded. Reopen to retry." : {
+    "Estimated API value": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimated API value"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "部分歌词源加载失败，请重新打开重试。"
+            "value": "估算 API 价值"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "估算 API 價值"
           }
         }
       }
     },
-    "Searching lyrics…" : {
+    "Priced models only": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Priced models only"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "正在搜索歌词…"
+            "value": "仅包含已定价模型"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅包含已定價模型"
           }
         }
       }
     },
-    "Choose lyrics" : {
+    "Current tasks": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current tasks"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "选择歌词"
+            "value": "当前任务"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目前任務"
+          }
+        }
+      }
+    },
+    "No active Codex tasks": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No active Codex tasks"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有进行中的 Codex 任务"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沒有進行中的 Codex 任務"
+          }
+        }
+      }
+    },
+    "Output tokens": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Output tokens"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输出令牌"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸出權杖"
+          }
+        }
+      }
+    },
+    "Waiting for updates": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for updates"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "等待更新"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "等待更新"
+          }
+        }
+      }
+    },
+    "Last known quota": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last known quota"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近已知额度"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近已知額度"
+          }
+        }
+      }
+    },
+    "Awaiting quota refresh": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Awaiting quota refresh"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "等待额度刷新"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "等待額度重新整理"
+          }
+        }
+      }
+    },
+    "Unknown project": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown project"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未知项目"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未知專案"
+          }
+        }
+      }
+    },
+    "Some Codex logs could not be read. Showing available data.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some Codex logs could not be read. Showing available data."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "部分 Codex 日志无法读取，正在显示可用数据。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "部分 Codex 日誌無法讀取，正在顯示可用資料。"
+          }
+        }
+      }
+    },
+    "No Codex usage logs found": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Codex usage logs found"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未找到 Codex 用量日志"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "找不到 Codex 用量日誌"
+          }
+        }
+      }
+    },
+    "No usage in this period": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No usage in this period"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此周期内没有用量"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此週期內沒有用量"
+          }
+        }
+      }
+    },
+    "Trend": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trend"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "趋势"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "趨勢"
+          }
+        }
+      }
+    },
+    "Models": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Models"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模型"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模型"
+          }
+        }
+      }
+    },
+    "Projects": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projects"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "项目"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "專案"
+          }
+        }
+      }
+    },
+    "Activity": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activity"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "活动"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "活動"
+          }
+        }
+      }
+    },
+    "Active days": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Active days"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "活跃天数"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "活躍天數"
+          }
+        }
+      }
+    },
+    "Consecutive active days": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consecutive active days"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连续活跃天数"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連續活躍天數"
+          }
+        }
+      }
+    },
+    "Busiest day": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Busiest day"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用量最多的一天"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用量最多的一天"
+          }
+        }
+      }
+    },
+    "Selected day": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selected day"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所选日期"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所選日期"
+          }
+        }
+      }
+    },
+    "13 weeks": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13 weeks"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13 周"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "13 週"
+          }
+        }
+      }
+    },
+    "Show all": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show all"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示全部"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示全部"
+          }
+        }
+      }
+    },
+    "Show less": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show less"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收起"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收合"
+          }
+        }
+      }
+    },
+    "Remaining": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remaining"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "剩余"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "剩餘"
+          }
+        }
+      }
+    },
+    "Updated": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Updated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新于"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新於"
+          }
+        }
+      }
+    },
+    "tokens": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tokens"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "令牌"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "權杖"
+          }
+        }
+      }
+    },
+    "Retry": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retry"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重试"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重試"
           }
         }
       }
@@ -2004,6 +2585,16 @@
         }
       },
       "shouldTranslate" : false
+    },
+    "%lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld"
+          }
+        }
+      }
     },
     "%lld %@" : {
       "comment" : "A text label showing the number of apps with which the current app has granted permissions. The argument is the count of such apps.",
@@ -18029,6 +18620,16 @@
         }
       }
     },
+    "Choose lyrics" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择歌词"
+          }
+        }
+      }
+    },
     "Choose the global material mode for lock screen widgets. Custom Liquid unlocks per-widget variant sliders while Standard sticks to the classic frosted/liquid options." : {
       "comment" : "merge:ko:alt='잠금 화면 위젯의 전체적인 Material 모드를 선택하세요. '사용자 지정 Liquid’를 선택하면 위젯별 스타일 슬라이더를 사용할 수 있으며, '표준'을 선택하면 기존의 Frosted/Liquid 옵션이 유지됩니다.'",
       "localizations" : {
@@ -30203,6 +30804,38 @@
         }
       }
     },
+    "Duration %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duration %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时长 %@"
+          }
+        }
+      }
+    },
+    "Duration unknown" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duration unknown"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时长未知"
+          }
+        }
+      }
+    },
     "Dynamic Island" : {
       "comment" : "Description of the dynamic island style.",
       "isCommentAutoGenerated" : true,
@@ -34663,6 +35296,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "啟用視窗陰影"
+          }
+        }
+      }
+    },
+    "Enabling LLM Usage Monitor adds a Usage tab that tracks token usage and spend across your configured AI providers." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enabling LLM Usage Monitor adds a Usage tab that tracks token usage and spend across your configured AI providers."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用 LLM 用量监视后，将添加用量标签页，追踪已配置 AI 提供商的令牌用量和费用。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟用 LLM 用量監視後，將新增用量標籤頁，追蹤已設定 AI 供應商的權杖用量與費用。"
           }
         }
       }
@@ -41151,6 +41806,29 @@
         }
       }
     },
+    "Home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首页"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首頁"
+          }
+        }
+      }
+    },
     "Horizontal Offset" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -43800,6 +44478,22 @@
         }
       }
     },
+    "Keep expanded" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持展开"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保持展開"
+          }
+        }
+      }
+    },
     "Keep lyrics under the closed notch" : {
       "localizations" : {
         "zh-Hans" : {
@@ -43818,38 +44512,6 @@
     },
     "Keep showing lyrics under the closed notch" : {
 
-    },
-    "Keep expanded" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保持展开"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保持展開"
-          }
-        }
-      }
-    },
-    "Keeps the panel expanded after opening, even when the pointer leaves. You can still close it manually." : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "面板展开后，鼠标移开也不会自动收起。仍可手动收起。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "面板展開後，游標移開也不會自動收合。仍可手動收合。"
-          }
-        }
-      }
     },
     "Keep terminal open until clicked outside" : {
       "localizations" : {
@@ -43947,6 +44609,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "保留劉海旁的彈出按鈕，不添加獨立標籤頁。"
+          }
+        }
+      }
+    },
+    "Keeps the panel expanded after opening, even when the pointer leaves. You can still close it manually." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "面板展开后，鼠标移开也不会自动收起。仍可手动收起。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "面板展開後，游標移開也不會自動收合。仍可手動收合。"
           }
         }
       }
@@ -44264,6 +44942,44 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "上次拒絕原因："
+          }
+        }
+      }
+    },
+    "Last line %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last line %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "末句 %@"
+          }
+        }
+      }
+    },
+    "Last page" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last page"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上次的页面"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上次的頁面"
           }
         }
       }
@@ -45704,6 +46420,28 @@
         }
       }
     },
+    "LLM Agents" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LLM Agents"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LLM 智能体"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LLM 智慧體"
+          }
+        }
+      }
+    },
     "LLM Providers" : {
       "localizations" : {
         "ko" : {
@@ -45948,6 +46686,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "加載失敗：%@"
+          }
+        }
+      }
+    },
+    "Loading local usage…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loading local usage…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在加载本地用量…"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在載入本機用量…"
           }
         }
       }
@@ -51944,6 +52704,28 @@
         }
       }
     },
+    "Monitoring" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monitoring"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "监视"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "監視"
+          }
+        }
+      }
+    },
     "Monitoring Behavior" : {
       "localizations" : {
         "ko" : {
@@ -53621,6 +54403,16 @@
         }
       }
     },
+    "Next page" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一页"
+          }
+        }
+      }
+    },
     "Next Track" : {
       "localizations" : {
         "ko" : {
@@ -53857,6 +54649,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "無可用 AirPlay 輸出"
+          }
+        }
+      }
+    },
+    "No alternative lyrics found" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到可选歌词"
           }
         }
       }
@@ -58089,6 +58891,7 @@
       }
     },
     "Open shelf tab by default if items added" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
@@ -60409,6 +61212,16 @@
         }
       }
     },
+    "Plain lyrics" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纯文本歌词"
+          }
+        }
+      }
+    },
     "Play" : {
       "localizations" : {
         "ko" : {
@@ -61716,6 +62529,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "預覽縮放"
+          }
+        }
+      }
+    },
+    "Previous page" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上一页"
           }
         }
       }
@@ -64061,6 +64884,7 @@
       }
     },
     "Remember last tab" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -68745,6 +69569,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "搜尋..."
+          }
+        }
+      }
+    },
+    "Searching lyrics…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在搜索歌词…"
           }
         }
       }
@@ -76412,6 +77246,16 @@
         }
       }
     },
+    "Some lyrics sources could not be loaded. Reopen to retry." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "部分歌词源加载失败，请重新打开重试。"
+          }
+        }
+      }
+    },
     "Source" : {
       "localizations" : {
         "zh-Hans" : {
@@ -77899,6 +78743,22 @@
         }
       }
     },
+    "Start time of the last lyric line, not the full song duration." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start time of the last lyric line, not the full song duration."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最后一句歌词的开始时间，并非歌曲完整时长。"
+          }
+        }
+      }
+    },
     "Start Timer" : {
       "comment" : "A button title that starts a timer.",
       "isCommentAutoGenerated" : true,
@@ -78064,6 +78924,7 @@
       }
     },
     "Stats" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -79754,6 +80615,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "與 Apple 備忘錄同步"
+          }
+        }
+      }
+    },
+    "Synced lyrics" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步歌词"
           }
         }
       }
@@ -88922,7 +89793,6 @@
       }
     },
     "When enabled, the Stats tab will display real-time system performance graphs. This feature requires system permissions and may use additional battery." : {
-      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
@@ -88975,6 +89845,7 @@
       }
     },
     "When enabled, the Stats tab will display real-time system performance graphs. This feature requires system permissions and may use additional battery. Enabling LLM Usage Monitor adds a Usage tab that tracks token usage and spend across your configured AI providers." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
@@ -89020,6 +89891,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關閉後，剪貼簿歷史僅保存在本次運行的內存中，不會寫入磁盤。關閉此選項也會清除已保存的歷史記錄。已固定的項目始終保留。"
+          }
+        }
+      }
+    },
+    "When reopening" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When reopening"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新打开时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新開啟時"
           }
         }
       }

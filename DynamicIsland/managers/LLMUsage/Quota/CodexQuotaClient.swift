@@ -37,13 +37,25 @@ struct CodexQuotaClient {
 
     private struct UsageResponse: Decodable {
         let rateLimit: RateLimit?
+        let planType: String?
     }
 
     // Never throws: any credential/network/parse failure yields (nil, nil).
+    struct Reading {
+        var session: UsageLimit?
+        var week: UsageLimit?
+        var plan: String?
+    }
+
     func fetchLimits() async -> (session: UsageLimit?, week: UsageLimit?) {
+        let reading = await fetchReading()
+        return (reading.session, reading.week)
+    }
+
+    func fetchReading() async -> Reading {
         guard let creds = loadCredentials() else {
             Self.log.notice("no credentials: auth.json/Keychain missing or unparseable")
-            return (nil, nil)
+            return Reading()
         }
         var request = URLRequest(url: URL(string: "https://chatgpt.com/backend-api/wham/usage")!)
         request.setValue("Bearer \(creds.accessToken)", forHTTPHeaderField: "Authorization")
@@ -57,7 +69,7 @@ struct CodexQuotaClient {
             guard let http = response as? HTTPURLResponse, (200..<300).contains(http.statusCode) else {
                 let code = (response as? HTTPURLResponse)?.statusCode ?? -1
                 Self.log.error("wham/usage HTTP \(code) — \(code == 401 || code == 403 ? "auth/credential" : "request") failure")
-                return (nil, nil)
+                return Reading()
             }
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -65,17 +77,17 @@ struct CodexQuotaClient {
             if let decoded = try? decoder.decode(UsageResponse.self, from: data) {
                 let sessionLimit = decoded.rateLimit?.primaryWindow.map { limit(from: $0, now: now) }
                 let weekLimit = decoded.rateLimit?.secondaryWindow.map { limit(from: $0, now: now) }
-                if sessionLimit != nil || weekLimit != nil { return (sessionLimit, weekLimit) }
+                if sessionLimit != nil || weekLimit != nil { return Reading(session: sessionLimit, week: weekLimit, plan: decoded.planType) }
             }
             let sessionLimit = headerFallback(http, key: "x-codex-primary-used-percent")
             let weekLimit = headerFallback(http, key: "x-codex-secondary-used-percent")
             if sessionLimit == nil && weekLimit == nil {
                 Self.log.error("wham/usage 200 but no usage found — response shape may have changed (\(data.count) bytes)")
             }
-            return (sessionLimit, weekLimit)
+            return Reading(session: sessionLimit, week: weekLimit)
         } catch {
             Self.log.error("wham/usage request errored: \(error.localizedDescription, privacy: .public)")
-            return (nil, nil)
+            return Reading()
         }
     }
 

@@ -41,6 +41,7 @@ struct ContentView: View {
     @Default(.stockShowWhenClosed) private var stockShowWhenClosed
     @Default(.stockPinnedCode) private var stockPinnedCode
     @Default(.stockWatchlist) private var stockWatchlist
+    @Default(.stockChartCollapsed) private var stockChartCollapsed
     @Default(.pinLyricsWhenClosed) private var pinLyricsWhenClosed
     @Default(.enableLyrics) private var enableLyrics
     @EnvironmentObject var vm: DynamicIslandViewModel
@@ -189,8 +190,12 @@ struct ContentView: View {
             }
         }
         
+        if coordinator.currentView == .llmUsage && coordinator.codexDetailPresented {
+            return CGSize(width: baseSize.width, height: codexDetailNotchHeight(headerHeight: vm.effectiveClosedNotchHeight, screenName: vm.screen))
+        }
+
         if coordinator.currentView == .stocks {
-            return CGSize(width: baseSize.width, height: 460)
+            return CGSize(width: baseSize.width, height: stocksOpenNotchHeight(headerHeight: vm.effectiveClosedNotchHeight))
         }
 
         if coordinator.currentView == .timer {

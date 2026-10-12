@@ -5,8 +5,8 @@ struct NotchStocksView: View {
     @ObservedObject private var manager = StockManager.shared
     @Default(.stockWatchlist) private var watchlist
     @Default(.stockPinnedCode) private var pinnedCode
-    @State private var isChartCollapsed = false
-    @State private var selectedCode: String?
+    @Default(.stockChartCollapsed) private var isChartCollapsed
+    @Default(.stockSelectedCode) private var selectedCode
     @State private var code = ""
 
     private var activeCode: String? {
@@ -41,16 +41,17 @@ struct NotchStocksView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 ScrollView {
-                    LazyVStack(spacing: 8) {
+                    LazyVStack(spacing: StockListLayout.spacing) {
                         ForEach(watchlist, id: \.self) { symbol in
                             row(symbol)
                         }
                     }
                 }
+                .frame(maxHeight: StockListLayout.listHeight(count: watchlist.count))
             }
             if let activeCode {
                 StockIntradayView(code: activeCode, onCollapse: { isChartCollapsed = true })
-                    .frame(height: 135)
+                    .frame(height: StockListLayout.chartHeight)
                     .task(id: activeCode) { await manager.refreshIntraday(activeCode) }
             }
             HStack {
@@ -84,7 +85,6 @@ struct NotchStocksView: View {
             return
         }
         watchlist.append(symbol)
-        isChartCollapsed = false
         selectedCode = symbol
         code = ""
         inputError = nil
@@ -133,6 +133,7 @@ struct NotchStocksView: View {
             .accessibilityLabel(Text("Remove \(symbol)"))
         }
         .padding(8)
+        .frame(height: StockListLayout.rowHeight)
         .contentShape(Rectangle())
         .onTapGesture { isChartCollapsed = false; selectedCode = symbol }
         .background(.white.opacity(0.06), in: RoundedRectangle(cornerRadius: 8))

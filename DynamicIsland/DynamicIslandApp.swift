@@ -565,7 +565,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         var baseSize = Defaults[.enableMinimalisticUI] ? minimalisticOpenNotchSize(isDynamicIslandMode: shouldUseDynamicIslandMode(for: vm.screen)) : openNotchSize
         
         // Use a consistent height for different view types
-        if coordinator.currentView == .timer {
+        if coordinator.currentView == .stocks {
+            baseSize.height = stocksOpenNotchHeight(headerHeight: vm.effectiveClosedNotchHeight)
+        } else if coordinator.currentView == .timer {
             baseSize.height = 250 // Extra space for timer presets
         } else if coordinator.currentView == .notes {
             let preferredHeight = coordinator.notesLayoutState.preferredHeight

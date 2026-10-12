@@ -26,6 +26,9 @@ enum AntigravityPool: String, CaseIterable {
 
 struct NotchLLMUsageView: View {
     @ObservedObject private var manager = LLMUsageManager.shared
+    @ObservedObject private var coordinator = DynamicIslandViewCoordinator.shared
+    @Default(.enableCodexProvider) private var enableCodexProvider
+    @Default(.enableLLMUsageFeature) private var enableLLMUsageFeature
     @State private var antigravityPool: AntigravityPool = .gemini
 
     private func isEnabled(_ provider: ProviderID) -> Bool { Defaults[provider.enabledKey] }
@@ -35,15 +38,29 @@ struct NotchLLMUsageView: View {
     }
 
     var body: some View {
-        HStack(alignment: .top, spacing: 10) {
-            ForEach(enabledProviders) { provider in
-                card(for: provider)
+        Group {
+            if coordinator.codexDetailPresented && enableCodexProvider && enableLLMUsageFeature {
+                CodexUsageDetailView { coordinator.codexDetailPresented = false }
+            } else {
+                HStack(alignment: .top, spacing: 10) {
+                    ForEach(enabledProviders) { provider in
+                        if provider == .codex {
+                            Button { coordinator.codexDetailPresented = true } label: { card(for: provider) }
+                                .buttonStyle(.plain)
+                                .help("Open Codex details")
+                                .accessibilityLabel(Text("Open Codex details"))
+                        } else { card(for: provider) }
+                    }
+                }
             }
         }
         .padding(.horizontal, 8)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         .environment(\.colorScheme, .dark)
         .onAppear { manager.refreshAll() }
+        .onDisappear { coordinator.codexDetailPresented = false }
+        .onChange(of: enableCodexProvider) { _, enabled in if !enabled { coordinator.codexDetailPresented = false } }
+        .onChange(of: enableLLMUsageFeature) { _, enabled in if !enabled { coordinator.codexDetailPresented = false } }
     }
 
     @ViewBuilder
@@ -55,7 +72,7 @@ struct NotchLLMUsageView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
                     .layoutPriority(1)
-                // Subscription plan badge (e.g. "Max 5x"). Only set for Claude; nil elsewhere.
+                // Subscription plan badge when the provider reports one.
                 if case .success(let snap) = manager.results[provider] ?? .loading, let plan = snap.plan {
                     Text(plan)
                         .font(.caption2.weight(.semibold))

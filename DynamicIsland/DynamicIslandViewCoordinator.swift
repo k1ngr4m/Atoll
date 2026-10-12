@@ -110,6 +110,7 @@ class DynamicIslandViewCoordinator: ObservableObject {
                 currentView = .home
                 return
             }
+            if currentView != .llmUsage { codexDetailPresented = false }
             // Track direction before SwiftUI re-renders
             let oldIdx = Self.tabOrder.firstIndex(of: oldValue) ?? 0
             let newIdx = Self.tabOrder.firstIndex(of: currentView) ?? 0
@@ -118,6 +119,7 @@ class DynamicIslandViewCoordinator: ObservableObject {
         }
     }
     
+    @Published var codexDetailPresented = false
     @Published var statsSecondRowExpansion: CGFloat = 1
     @Published var notesLayoutState: NotesLayoutState = .list
     @Published var selectedExtensionExperienceID: String?

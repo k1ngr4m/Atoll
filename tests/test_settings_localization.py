@@ -11,7 +11,9 @@ files.append(root / 'DynamicIsland/components/Tabs/TabSelectionView.swift')
 files += [root / 'DynamicIsland' / name for name in (
     'models/Constants.swift', 'models/UpdateChannel.swift', 'models/MusicControlButton.swift',
     'managers/SpotifyAuthManager.swift', 'managers/IdleAnimationManager.swift',
-    'managers/TerminalManager.swift', 'managers/LLMUsage/NewAPIUsage.swift')]
+    'managers/TerminalManager.swift', 'managers/LLMUsage/NewAPIUsage.swift',
+    'components/Notch/CodexUsageDetailView.swift', 'components/Notch/NotchLLMUsageView.swift',
+    'managers/LLMUsage/CodexUsageDetails.swift')]
 source = '\n'.join(path.read_text() for path in files)
 
 literal = r'"(?:[^"\\]|\\.)*"'

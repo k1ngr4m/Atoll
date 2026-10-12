@@ -27,6 +27,17 @@ import SwiftUI
 let downloadSneakSize: CGSize = .init(width: 65, height: 1)
 let batterySneakSize: CGSize = .init(width: 160, height: 1)
 
+func codexDetailNotchHeight(headerHeight: CGFloat, screenName: String?) -> CGFloat {
+    let screen = NSScreen.screens.first { $0.localizedName == screenName } ?? NSScreen.main
+    return min(headerHeight + 380, max(200, (screen?.visibleFrame.height ?? 800) - 30))
+}
+
+func stocksOpenNotchHeight(headerHeight: CGFloat) -> CGFloat {
+    StockListLayout.height(count: Defaults[.stockWatchlist].count,
+                          chartCollapsed: Defaults[.stockChartCollapsed],
+                          headerHeight: headerHeight)
+}
+
 /// Layout budgets applied to the home view only while the side lyrics panel is active
 enum SideLyricsLayout {
     /// Room the standard player needs for its album art and five-button control row
