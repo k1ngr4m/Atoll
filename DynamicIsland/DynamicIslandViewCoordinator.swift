@@ -131,25 +131,27 @@ class DynamicIslandViewCoordinator: ObservableObject {
     @Default(.enableTimerFeature) private var enableTimerFeature
     @Default(.timerDisplayMode) private var timerDisplayMode
     
-    @AppStorage("alwaysShowTabs") var alwaysShowTabs: Bool = true {
-        didSet {
-            if !alwaysShowTabs {
-                openLastTabByDefault = false
-                if TrayDrop.shared.isEmpty || !Defaults[.openShelfByDefault] {
-                    currentView = .home
-                }
-            }
-        }
+    @AppStorage("alwaysShowTabs") var alwaysShowTabs: Bool = true
+
+    var availableTabs: [TabModel] {
+        TabModel.availableTabs(experiences: extensionNotchExperienceManager.activeExperiences)
     }
-    
-    @AppStorage("openLastTabByDefault") var openLastTabByDefault: Bool = false {
-        didSet {
-            if openLastTabByDefault {
-                alwaysShowTabs = true
-            }
-        }
+
+    func selectTabForOpening(target: NotchViews? = nil) {
+        let tabs = availableTabs
+        let currentID = currentView == .extensionExperience
+            ? selectedExtensionExperienceID.map { "extension-\($0)" }
+            : "system-\(currentView.rawValue)"
+        let targetID = target.map { "system-\($0.rawValue)" }
+        let id = ReopenTabSelection.resolve(
+            preference: Defaults[.reopenTab], lastPage: currentID,
+            available: tabs.map(\.id), explicitTarget: targetID
+        )
+        let tab = tabs.first { $0.id == id }
+        selectedExtensionExperienceID = tab?.experienceID
+        currentView = tab?.view ?? .home
     }
-    
+
     @AppStorage("hudReplacement") var hudReplacement: Bool = true
     
     @AppStorage("preferred_screen_name") var preferredScreen = NSScreen.main?.localizedName ?? "Unknown" {
@@ -226,15 +228,21 @@ class DynamicIslandViewCoordinator: ObservableObject {
             Defaults.publisher(.enableTimerFeature).map { _ in () }.eraseToAnyPublisher(),
             Defaults.publisher(.timerDisplayMode).map { _ in () }.eraseToAnyPublisher(),
             Defaults.publisher(.enableStocksFeature).map { _ in () }.eraseToAnyPublisher(),
+            Defaults.publisher(.enableLLMUsageFeature).map { _ in () }.eraseToAnyPublisher(),
             Defaults.publisher(.enableStatsFeature).map { _ in () }.eraseToAnyPublisher(),
             Defaults.publisher(.enableNotes).map { _ in () }.eraseToAnyPublisher(),
             Defaults.publisher(.enableClipboardManager).map { _ in () }.eraseToAnyPublisher(),
             Defaults.publisher(.clipboardDisplayMode).map { _ in () }.eraseToAnyPublisher(),
             Defaults.publisher(.enableTerminalFeature).map { _ in () }.eraseToAnyPublisher(),
-            Defaults.publisher(.enableMinimalisticUI).map { _ in () }.eraseToAnyPublisher()
+            Defaults.publisher(.enableMinimalisticUI).map { _ in () }.eraseToAnyPublisher(),
+            Defaults.publisher(.enableThirdPartyExtensions).map { _ in () }.eraseToAnyPublisher(),
+            Defaults.publisher(.enableExtensionNotchExperiences).map { _ in () }.eraseToAnyPublisher(),
+            Defaults.publisher(.enableExtensionNotchTabs).map { _ in () }.eraseToAnyPublisher(),
+            extensionNotchExperienceManager.$activeExperiences.map { _ in () }.eraseToAnyPublisher()
         )
         .debounce(for: .milliseconds(100), scheduler: DispatchQueue.main)
-        .sink { _ in
+        .sink { [weak self] _ in
+            self?.objectWillChange.send()
             enforceMinimumNotchWidth()
         }
         .store(in: &cancellables)

@@ -244,6 +244,7 @@ private enum SettingsSearchIndex {
         SettingsSearchEntry(tab: .general, title: "Reverse scroll gestures", keywords: ["reverse", "scroll", "open", "close"], highlightID: SettingsTab.general.highlightID(for: "Reverse scroll gestures")),
         SettingsSearchEntry(tab: .general, title: "Extend hover area", keywords: ["hover", "cursor"], highlightID: SettingsTab.general.highlightID(for: "Extend hover area")),
         SettingsSearchEntry(tab: .general, title: "Enable haptics", keywords: ["haptic", "feedback"], highlightID: SettingsTab.general.highlightID(for: "Enable haptics")),
+        SettingsSearchEntry(tab: .general, title: "When reopening", keywords: ["reopen", "last tab", "default tab", "重新打开", "上次的页面"], highlightID: SettingsTab.general.highlightID(for: "When reopening")),
         SettingsSearchEntry(tab: .general, title: "Keep expanded", keywords: ["keep open", "pin", "保持展开", "常驻"], highlightID: SettingsTab.general.highlightID(for: "Keep expanded")),
         SettingsSearchEntry(tab: .general, title: "Open notch on hover", keywords: ["hover to open", "auto open"], highlightID: SettingsTab.general.highlightID(for: "Open notch on hover")),
         SettingsSearchEntry(tab: .general, title: "External display style", keywords: ["dynamic island", "pill", "external display", "non-notch", "floating", "capsule"], highlightID: SettingsTab.general.highlightID(for: "External display style")),
@@ -359,7 +360,6 @@ private enum SettingsSearchIndex {
 
         // Shelf
         SettingsSearchEntry(tab: .shelf, title: "Enable shelf", keywords: ["shelf", "dock"], highlightID: SettingsTab.shelf.highlightID(for: "Enable shelf")),
-        SettingsSearchEntry(tab: .shelf, title: "Open shelf tab by default if items added", keywords: ["auto open", "shelf tab"], highlightID: SettingsTab.shelf.highlightID(for: "Open shelf tab by default if items added")),
         SettingsSearchEntry(tab: .shelf, title: "Expanded drag detection area", keywords: ["shelf", "drag"], highlightID: SettingsTab.shelf.highlightID(for: "Expanded drag detection area")),
         SettingsSearchEntry(tab: .shelf, title: "Copy items on drag", keywords: ["shelf", "drag", "copy"], highlightID: SettingsTab.shelf.highlightID(for: "Copy items on drag")),
         SettingsSearchEntry(tab: .shelf, title: "Remove from shelf after dragging", keywords: ["shelf", "drag", "remove"], highlightID: SettingsTab.shelf.highlightID(for: "Remove from shelf after dragging")),
@@ -1151,6 +1151,7 @@ struct GeneralSettings: View {
     @Default(.automaticallySwitchDisplay) var automaticallySwitchDisplay
     @Default(.enableGestures) var enableGestures
     @Default(.openNotchOnHover) var openNotchOnHover
+    @Default(.reopenTab) private var reopenTab
     @Default(.enableMinimalisticUI) var enableMinimalisticUI
     @Default(.showBatteryIndicator) var showBatteryIndicator
     @Default(.showMinimalisticBatteryIndicator) var showMinimalisticBatteryIndicator
@@ -1446,7 +1447,24 @@ struct GeneralSettings: View {
             Text("Keeps the panel expanded after opening, even when the pointer leaves. You can still close it manually.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
-            Toggle("Remember last tab", isOn: $coordinator.openLastTabByDefault)
+            Picker("When reopening", selection: Binding(
+                get: { coordinator.availableTabs.contains { $0.id == reopenTab } ? reopenTab : ReopenTabSelection.lastPage },
+                set: { reopenTab = $0 }
+            )) {
+                Text("Last page").tag(ReopenTabSelection.lastPage)
+                ForEach(coordinator.availableTabs) { tab in
+                    Group {
+                        if tab.experienceID != nil {
+                            Text(verbatim: tab.label)
+                        } else {
+                            Text(LocalizedStringKey(tab.label))
+                        }
+                    }
+                    .tag(tab.id)
+                }
+            }
+            .pickerStyle(.menu)
+            .settingsHighlight(id: highlightID("When reopening"))
             if openNotchOnHover {
                 Slider(value: $minimumHoverDuration, in: 0...1, step: 0.1) {
                     HStack {
@@ -4541,11 +4559,6 @@ struct Shelf: View {
                 }
                 .disabled(!canEnableShelf)
                 .settingsHighlight(id: highlightID("Enable shelf"))
-
-                Defaults.Toggle(key: .openShelfByDefault) {
-                    Text("Open shelf tab by default if items added")
-                }
-                .settingsHighlight(id: highlightID("Open shelf tab by default if items added"))
 
                 Defaults.Toggle(key: .expandedDragDetection) {
                     Text("Expanded drag detection area")

@@ -1038,7 +1038,7 @@ extension Defaults.Keys {
     static let openNotchWidth = Key<CGFloat>("openNotchWidth", default: 640)
     static let closedNotchWidth = Key<CGFloat>("closedNotchWidth", default: 150)
     static let customizePhysicalNotchWidth = Key<Bool>("customizePhysicalNotchWidth", default: false)
-        //static let openLastTabByDefault = Key<Bool>("openLastTabByDefault", default: false)
+    static let reopenTab = Key<String>("reopenTab", default: ReopenTabSelection.lastPage)
     
         // MARK: Appearance
     static let showEmojis = Key<Bool>("showEmojis", default: false)
@@ -1237,7 +1237,6 @@ extension Defaults.Keys {
     
         // MARK: Shelf
     static let dynamicShelf = Key<Bool>("dynamicShelf", default: true)
-    static let openShelfByDefault = Key<Bool>("openShelfByDefault", default: true)
         static let quickShareProvider = Key<String>("quickShareProvider", default: "AirDrop")
         static let localSendSelectedDeviceID = Key<String>("localSendSelectedDeviceID", default: "")
         static let localSendDevicePickerGlassMode = Key<LockScreenGlassCustomizationMode>("localSendDevicePickerGlassMode", default: .standard)

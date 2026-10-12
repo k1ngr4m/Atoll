@@ -2105,8 +2105,7 @@ struct ContentView: View {
                 .onDrop(of: [.data], isTargeted: $vm.dragDetectorTargeting) { _ in true }
                 .onChange(of: vm.anyDropZoneTargeting) { _, isTargeted in
                     if isTargeted, vm.notchState == .closed {
-                        coordinator.currentView = .shelf
-                        openNotch()
+                        vm.open(target: .shelf)
                     } else if !isTargeted {
                         if vm.dropEvent {
                             vm.dropEvent = false
@@ -2126,9 +2125,7 @@ struct ContentView: View {
 
     // MARK: - Private Methods
     private func openNotch() {
-        let opensStocks = showClosedStock
         vm.open()
-        if opensStocks { coordinator.currentView = .stocks }
     }
 
     private func shouldShowClosedMusicWaveformPlayPauseOverlay(for secondary: MusicSecondaryLiveActivity?) -> Bool {
@@ -2367,13 +2364,13 @@ struct ContentView: View {
                 triggerHapticIfAllowed()
             }
 
-            let shouldFocusTimerTab = enableTimerFeature && timerDisplayMode == .tab && timerManager.isTimerActive && !enableMinimalisticUI
+            let canHoverOpenActiveTimer = enableTimerFeature && timerDisplayMode == .tab && timerManager.isTimerActive && !enableMinimalisticUI
 
             guard vm.notchState == .closed,
                 !isSneakPeekVisibleOnCurrentScreen,
                 !isConnectivityHUDVisible,
                 !recordingLiveActivityVisibleOnClosedNotch,
-                (Defaults[.openNotchOnHover] || shouldFocusTimerTab) else { return }
+                (Defaults[.openNotchOnHover] || canHoverOpenActiveTimer) else { return }
 
             hoverTask = Task {
                 try? await Task.sleep(for: .seconds(Defaults[.minimumHoverDuration]))
@@ -2388,11 +2385,6 @@ struct ContentView: View {
                           !self.isConnectivityHUDVisible,
                           !self.coordinator.isHoverOpenSuppressed else { return }
 
-                    if shouldFocusTimerTab {
-                        withAnimation(.smooth) {
-                            self.coordinator.currentView = .timer
-                        }
-                    }
                     self.openNotch()
                 }
             }

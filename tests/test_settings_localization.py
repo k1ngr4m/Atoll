@@ -7,6 +7,7 @@ root = Path(__file__).resolve().parents[1]
 catalog = json.loads((root / 'DynamicIsland/Localizable.xcstrings').read_text())['strings']
 settings = root / 'DynamicIsland/components/Settings'
 files = list(settings.rglob('*.swift')) + list((root / 'DynamicIsland/enums').glob('*.swift'))
+files.append(root / 'DynamicIsland/components/Tabs/TabSelectionView.swift')
 files += [root / 'DynamicIsland' / name for name in (
     'models/Constants.swift', 'models/UpdateChannel.swift', 'models/MusicControlButton.swift',
     'managers/SpotifyAuthManager.swift', 'managers/IdleAnimationManager.swift',

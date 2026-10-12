@@ -83,7 +83,6 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
     private var scrollGestureSuppressionTokens: Set<UUID> = []
     @Published private(set) var isAutoCloseSuppressed: Bool = false
     private var autoCloseSuppressionTokens: Set<UUID> = []
-    private let clipboardFocusWindow: TimeInterval = 10
 
     func setScrollGestureSuppression(_ active: Bool, token: UUID) {
         if active {
@@ -119,18 +118,6 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
         isAutoCloseSuppressed = false
     }
 
-    private func focusClipboardTabIfNeeded() {
-        guard !Defaults[.enableMinimalisticUI] else { return }
-        guard Defaults[.enableClipboardManager] else { return }
-        guard Defaults[.clipboardDisplayMode] == .separateTab else { return }
-        guard let lastCopyDate = ClipboardManager.shared.lastCopiedItemDate else { return }
-        guard Date().timeIntervalSince(lastCopyDate) <= clipboardFocusWindow else { return }
-        guard coordinator.currentView != .notes else { return }
-        withAnimation(.smooth) {
-            coordinator.currentView = .notes
-        }
-    }
-    
     let webcamManager = WebcamManager.shared
     @Published var isCameraExpanded: Bool = false
     @Published var isRequestingAuthorization: Bool = false
@@ -392,7 +379,10 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
         return false
     }
 
-    func open() {
+    func open(target: NotchViews? = nil) {
+        if notchState == .closed {
+            coordinator.selectTabForOpening(target: target)
+        }
         let targetSize = calculateDynamicNotchSize()
 
         let applyWindowResize: () -> Void = {
@@ -415,7 +405,6 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
 
         // Force music information update when notch is opened
         MusicManager.shared.forceUpdate()
-        focusClipboardTabIfNeeded()
     }
     
     private func calculateDynamicNotchSize() -> CGSize {
@@ -447,14 +436,6 @@ class DynamicIslandViewModel: NSObject, ObservableObject {
         notchState = .closed
         resetScrollGestureSuppression()
         resetAutoCloseSuppression()
-
-        // Set the current view to shelf if it contains files and the user enables openShelfByDefault
-        // Otherwise, if the user has not enabled openLastShelfByDefault, set the view to home
-        if !ShelfStateViewModel.shared.isEmpty && Defaults[.openShelfByDefault] && !Defaults[.enableMinimalisticUI] {
-            coordinator.currentView = .shelf
-        } else if !coordinator.openLastTabByDefault {
-            coordinator.currentView = .home
-        }
     }
 
     func closeForLockScreen() {
